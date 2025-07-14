@@ -1,41 +1,29 @@
-# 👋 Hi, I’m Parveez Banu Syed Azizuddin
+# Parveez Azizuddin | Robotics Portfolio
 
-Welcome to my Robotics & ROS 2 portfolio!  
-I’m passionate about robotics, automation, and simulation using ROS 2 and Gazebo.
+This repository hosts my professional robotics portfolio website, built using HTML and CSS and deployed via GitHub Pages.
 
----
+🔗 **Live Website:** [parveezsyed28.github.io](https://parveezsyed28.github.io)
 
-## 🚀 Featured Project: ROS 2 Gazebo Two-Wheeled Robot
+## 📄 About
 
-A full simulation pipeline demonstrating:
+I'm a Mechatronics Specialist with a B.E. in Electrical and Electronics Engineering and a post-graduate certificate in Industrial Automation. I have hands-on experience in both hardware and software, working on projects involving:
 
-- **CAD Design:** Custom 2-wheeled differential-drive robot designed in Fusion 360
-- **Conversion:** Exported meshes and URDF/Xacro files for ROS 2 compatibility
-- **Simulation:** Deployed in Gazebo Classic integrated with ROS 2 Humble Hawksbill
-- **Control:** Powered by Gazebo plugins for diff drive and teleoperation using keyboard input
+- ROS 2 (Humble)
+- Gazebo simulation
+- Fusion 360 robot design
+- Python scripting for robotics
 
-**GitHub Repo:** [ros2_bot_description](https://github.com/parveezsyed28/ros2_bot_description)
+## 🚀 Featured Projects
 
+- [Obstacle Avoidance with LiDAR](https://github.com/parveezsyed28/obstacle_avoidance_lidar)
+- [ROS 2 Gazebo Two-Wheeled Robot](https://github.com/parveezsyed28/ros2_bot_description)
 
----
+## ⚙️ Tech Stack
 
-## 🔧 Skills & Tools
+- HTML, CSS
+- GitHub Pages
 
-- ROS 2 Humble Hawksbill  
-- Gazebo Classic Simulation  
-- Fusion 360 CAD Design  
-- URDF / Xacro Robot Description  
-- Python for ROS Nodes  
-- Linux & Ubuntu Environment  
-- Version Control with Git & GitHub
+## 📨 Contact
 
----
-
-## 📫 Connect with Me
-
-- GitHub: [github.com/parveezsyed28](https://github.com/parveezsyed28)  
-- Email: parveezbanu.s@gmail.com  
-
----
-
-*Thank you for visiting! I’m always excited to collaborate on robotics projects or share knowledge about ROS 2 and simulation.*
+- GitHub: [@parveezsyed28](https://github.com/parveezsyed28)
+- Email: [parveezbanu.s@gmail.com](mailto:parveezbanu.s@gmail.com)
