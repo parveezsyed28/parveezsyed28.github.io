@@ -1,83 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Parveez Azizuddin | Robotics Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parveez Banu Syed Azizuddin | Robotics Portfolio</title>
   <style>
-    body { margin:0; font-family: Arial, sans-serif; background:#f9f9f9; color:#333; }
-    header { background:#0a3d62; color:#fff; padding:60px 20px; text-align:center; }
-    header h1 { margin:0; font-size:2.8em; }
-    header p { margin:10px 0; font-size:1.2em; }
-    section { padding:60px 20px; max-width:800px; margin:0 auto; }
-    h2 { color:#0a3d62; border-bottom:2px solid #eee; padding-bottom:8px; margin-bottom:20px; }
-    .project { margin-bottom:36px; }
-    .project h3 { margin:0 0 8px 0; color:#0984e3; }
-    .project p { margin:0 0 8px; }
-    .skills li { margin-bottom:6px; }
-    a { color:#0984e3; }
-    footer { text-align:center; padding:40px 20px; background:#eef; font-size:0.9em; }
-    .button { display:inline-block; background:#0984e3; color:#fff; padding:8px 16px; border-radius:4px; text-decoration:none; margin-top:10px; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #0a3d62;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background: #fff;
+    }
+    h1, h2, h3 {
+      color: #0a3d62;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .project {
+      margin-bottom: 30px;
+    }
+    .contact a {
+      color: #0984e3;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Parveez Banu Syed Azizuddin</h1>
+    <p>Mechatronics Specialist | Robotics Enthusiast | ROS 2 Developer</p>
+  </header>
 
-<header>
-  <h1>Parveez Azizuddin</h1>
-  <p>Mechatronics Specialist • Robotics & ROS 2 Developer</p>
-  <p>B.E. in Electrical & Electronics Engineering | Post‑Graduate Certificate in Industrial Automation</p>
-</header>
+  <div class="container">
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I’m a Mechatronics Specialist with a Bachelor’s degree in Electrical and Electronics Engineering and a Postgraduate Certificate in Industrial Automation. I’m passionate about robotics and thrive in building both hardware and software systems. I have hands-on experience with ROS 2, Gazebo, Python, Fusion 360, and embedded systems. My goal is to become a well-rounded roboticist contributing to intelligent autonomous systems.
+      </p>
+    </section>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>Hello! I'm Parveez—passionate about robotics and automation. With a strong foundation in both hardware and software, I’ve designed and programmed robot systems using Fusion 360, ROS 2, Gazebo, and Python. I love building full-stack robotics solutions from CAD model to simulation runtime. My goal is to become a skilled roboticist contributing to real-world systems and research.</p>
-</section>
+    <section>
+      <h2>Featured Projects</h2>
 
-<section id="projects">
-  <h2>Featured Projects</h2>
+      <div class="project">
+        <h3>Obstacle Avoidance with LiDAR (ROS 2 + Gazebo)</h3>
+        <p>Simulates a 2-wheel differential drive robot avoiding obstacles using LiDAR in Gazebo.</p>
+        <ul>
+          <li>Built using ROS 2 Humble and Gazebo Classic</li>
+          <li>Processes /scan data and publishes to /cmd_vel</li>
+          <li>Includes custom URDF/Xacro robot model and Gazebo world</li>
+        </ul>
+        <p><strong>GitHub:</strong> <a href="https://github.com/parveezsyed28/obstacle_avoidance_lidar">obstacle_avoidance_lidar</a></p>
+      </div>
 
-  <div class="project">
-    <h3>ROS 2 Gazebo Two-Wheeled Robot</h3>
-    <p>Designed a differential-drive robot in Fusion 360, converted to URDF/Xacro, and simulated in Gazebo Classic with ROS 2 Humble for realistic behavior and navigation control.</p>
-    <a class="button" href="https://github.com/parveezsyed28/ros2_bot_description" target="_blank">View on GitHub</a>
+      <div class="project">
+        <h3>ROS 2 Bot Description</h3>
+        <p>Custom two-wheeled robot modeled in Fusion 360, described in URDF/Xacro, and simulated in Gazebo.</p>
+        <ul>
+          <li>Includes differential drive plugin and STL meshes</li>
+          <li>Simulates realistic robot motion in Gazebo</li>
+        </ul>
+        <p><strong>GitHub:</strong> <a href="https://github.com/parveezsyed28/ros2_bot_description">ros2_bot_description</a></p>
+      </div>
+
+      <div class="project">
+        <h3>Turtlesim Shape Drawer</h3>
+        <p>ROS 2 node to control turtlesim and draw geometric shapes.</p>
+        <ul>
+          <li>Interactive CLI input from user</li>
+          <li>Service call to reset turtlesim for repeated runs</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>Obstacle Avoider Robot</h3>
+        <p>Microcontroller-based robot that avoids obstacles using IR sensors.</p>
+        <ul>
+          <li>Programmed in Embedded C on ATmega16</li>
+          <li>IR sensors for obstacle detection</li>
+          <li>L293D motor driver for motion control</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>Table Top Robot</h3>
+        <p>Designed to detect edges of a table and avoid falling using IR sensors.</p>
+        <ul>
+          <li>Embedded logic using ATmega16</li>
+          <li>Real-time edge detection and maneuvering</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>Line Follower Robot</h3>
+        <p>Robot that follows a black line using bottom-mounted IR sensors.</p>
+        <ul>
+          <li>Dual-sensor based PD line following logic</li>
+          <li>Compact design with reliable analog sensing</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills & Tools</h2>
+      <ul>
+        <li>ROS 2 Humble, Gazebo Classic</li>
+        <li>URDF / Xacro Robot Modeling</li>
+        <li>Python, Embedded C</li>
+        <li>ATmega16, L293D, IR sensors</li>
+        <li>Fusion 360, KiCad</li>
+        <li>Linux, Git & GitHub</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:parveezbanu.s@gmail.com">parveezbanu.s@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/parveezsyed28">github.com/parveezsyed28</a></p>
+    </section>
+
+    <footer style="text-align:center; padding: 20px 0; font-size: 0.9em; color: #999">
+      © 2025 Parveez Banu Syed Azizuddin — Robotics Portfolio
+    </footer>
   </div>
-
-  <div class="project">
-    <h3>Obstacle Avoidance LiDAR</h3>
-    <p>Developed a ROS 2 package that processes LiDAR data in real time to detect and avoid obstacles autonomously. Integrated with Gazebo simulation and custom launch files for seamless deployment.</p>
-    <a class="button" href="https://github.com/parveezsyed28/obstacle_avoidance_lidar" target="_blank">View on GitHub</a>
-  </div>
-</section>
-
-<section id="skills">
-  <h2>Skills & Tools</h2>
-  <ul class="skills">
-    <li>ROS 2 Humble — real-time node programming</li>
-    <li>Gazebo Classic simulation</li>
-    <li>Fusion 360 CAD & URDF/Xacro</li>
-    <li>Python scripting for control and perception</li>
-    <li>Linux & Ubuntu development</li>
-    <li>Version control with Git & GitHub</li>
-    <li>Hardware-software integration for robotics</li>
-  </ul>
-</section>
-
-<section id="resume">
-  <h2>Resume</h2>
-  <p><a class="button" href="resume.pdf" target="_blank">Download My Resume (PDF)</a></p>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>
-    GitHub: <a href="https://github.com/parveezsyed28" target="_blank">parveezsyed28</a><br>
-    Email: <a href="mailto:parveezbanu.s@gmail.com">parveezbanu.s@gmail.com</a>
-  </p>
-</section>
-
-<footer>
-  Built by Parveez Azizuddin • © 2025
-</footer>
-
 </body>
 </html>
