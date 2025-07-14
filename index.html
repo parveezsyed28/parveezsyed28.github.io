@@ -1,247 +1,138 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Parveez Banu Syed Azizuddin | Robotics Portfolio</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0; padding: 0;
-      background: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #0a3d62;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-      letter-spacing: 1px;
-    }
-    header p {
-      margin-top: 10px;
-      font-weight: 500;
-      font-size: 1.1em;
-      font-style: italic;
-    }
-    .container {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 20px;
-      background: white;
-      box-shadow: 0 0 12px rgba(0,0,0,0.05);
-      border-radius: 8px;
-    }
-    h2 {
-      color: #0a3d62;
-      border-bottom: 3px solid #0984e3;
-      padding-bottom: 8px;
-      margin-bottom: 20px;
-    }
-    h3 {
-      color: #0984e3;
-      margin-top: 30px;
-    }
-    ul {
-      padding-left: 20px;
-      margin-top: 8px;
-    }
-    .project {
-      margin-bottom: 40px;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 25px;
-    }
-    .project:last-child {
-      border-bottom: none;
-    }
-    /* Adjust images inside projects */
-    .project img {
-      max-width: 80%;       /* Smaller max width for images */
-      border-radius: 6px;
-      margin-top: 10px;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      height: auto;
-    }
-    /* Images container for multiple images side by side */
-    .project .images-container {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-      margin-top: 10px;
-      justify-content: center;
-    }
-    .project .images-container img {
-      max-width: 45%;   /* Adjusted smaller width */
-      height: auto;
-      border: 1px solid #ddd;
-      border-radius: 6px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    /* Video styling */
-    video {
-      margin-top: 15px;
-      max-width: 100%;
-      width: 350px;    /* Smaller fixed width */
-      height: auto;
-      border-radius: 6px;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .contact a {
-      color: #0984e3;
-      text-decoration: none;
-    }
-    .contact a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 15px 0;
-      font-size: 0.9em;
-      color: #666;
-      margin-top: 40px;
-      border-top: 1px solid #ddd;
-    }
-    @media (max-width: 600px) {
-      .project .images-container img {
-        max-width: 100%;
-      }
-      video {
-        width: 100%;  /* Full width on small screens */
-      }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Parveez Banu Syed Azizuddin</h1>
-    <p>Mechatronics Specialist | Robotics Enthusiast | ROS 2 Developer</p>
-  </header>
+<section>
+  <h2>Featured Projects</h2>
 
-  <div class="container">
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I’m a Mechatronics Specialist with a Bachelor’s degree in Electrical and Electronics Engineering and a Postgraduate Certificate in Industrial Automation. I’m passionate about robotics and thrive in building both hardware and software systems. I have hands-on experience with ROS 2, Gazebo, Python, Fusion 360, and embedded systems. My goal is to become a well-rounded roboticist contributing to intelligent autonomous systems.
-      </p>
-    </section>
-
-    <section>
-      <h2>Featured Projects</h2>
-
-      <div class="project">
-        <h3>Obstacle Avoidance with LiDAR (ROS 2 + Gazebo)</h3>
-        <p>Simulates a 2-wheel differential drive robot avoiding obstacles using LiDAR in Gazebo.</p>
-        <ul>
-          <li>Built using ROS 2 Humble and Gazebo Classic</li>
-          <li>Processes /scan data and publishes velocity commands to /cmd_vel</li>
-          <li>Includes custom URDF/Xacro robot model and Gazebo world</li>
-        </ul>
-        <p><strong>GitHub:</strong> <a href="https://github.com/parveezsyed28/obstacle_avoidance_lidar" target="_blank" rel="noopener">obstacle_avoidance_lidar</a></p>
-        <video controls>
-          <source src="assets/images/Obstacle_Avoidance.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
-      <div class="project">
-        <h3>ROS 2 Bot Description</h3>
-        <p>Custom two-wheeled robot modeled in Fusion 360, described in URDF/Xacro, and simulated in Gazebo.</p>
-        <ul>
-          <li>Includes differential drive plugin and STL meshes</li>
-          <li>Simulates realistic robot motion in Gazebo</li>
-        </ul>
-        <p><strong>GitHub:</strong> <a href="https://github.com/parveezsyed28/ros2_bot_description" target="_blank" rel="noopener">ros2_bot_description</a></p>
-        <img src="assets/images/ros2_bot_description.png" alt="ROS 2 Bot Description" />
-        <video controls>
-          <source src="assets/images/robot_teleop.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
-      <div class="project">
-        <h3>Turtlesim Shape Drawer</h3>
-        <p>ROS 2 node to control turtlesim and draw geometric shapes.</p>
-        <ul>
-          <li>Interactive CLI input from user</li>
-          <li>Service call to reset turtlesim for repeated runs</li>
-        </ul>
-        <video controls>
-          <source src="assets/images/Turtlesim.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
-      <div class="project">
-        <h3>Obstacle Avoider Robot</h3>
-        <p>Microcontroller-based robot that avoids obstacles using IR sensors.</p>
-        <ul>
-          <li>Programmed in Embedded C on ATmega16</li>
-          <li>IR sensors for obstacle detection</li>
-          <li>L293D motor driver for motion control</li>
-        </ul>
-        <div class="images-container">
-          <img src="assets/images/obstacle_avoider.png" alt="Obstacle Avoider Robot" />
-          <img src="assets/images/Obstacle_avoider_connection.png" alt="Obstacle Avoider Circuit" />
-        </div>
-      </div>
-
-      <div class="project">
-        <h3>Table Top Robot</h3>
-        <p>Designed to detect edges of a table and avoid falling using IR sensors.</p>
-        <ul>
-          <li>Embedded logic using ATmega16</li>
-          <li>Real-time edge detection and maneuvering</li>
-        </ul>
-        <img src="assets/images/table_top.png" alt="Table Top Robot" />
-      </div>
-
-      <div class="project">
-        <h3>Line Follower Robot</h3>
-        <p>Robot that follows a black line using bottom-mounted IR sensors.</p>
-        <ul>
-          <li>Dual-sensor based PD line following logic</li>
-          <li>Compact design with reliable analog sensing</li>
-        </ul>
-        <div class="images-container">
-          <img src="assets/images/line_follower.png" alt="Line Follower Robot" />
-          <img src="assets/images/line_follower_connection.png" alt="Line Follower Circuit" />
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Skills & Tools</h2>
-      <ul>
-        <li>ROS 2 Humble, Gazebo Classic</li>
-        <li>URDF / Xacro Robot Modeling</li>
-        <li>Python, Embedded C</li>
-        <li>ATmega16, L293D, IR sensors</li>
-        <li>Fusion 360, KiCad</li>
-        <li>Linux, Git & GitHub</li>
-      </ul>
-    </section>
-
-    <section class="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:parveezbanu.s@gmail.com">parveezbanu.s@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/parveezsyed28" target="_blank" rel="noopener">github.com/parveezsyed28</a></p>
-    </section>
+  <div class="project">
+    <h3>Obstacle Avoidance with LiDAR (ROS 2 + Gazebo)</h3>
+    <p>Simulates a 2-wheel differential drive robot avoiding obstacles using LiDAR in Gazebo.</p>
+    <ul>
+      <li>Built using ROS 2 Humble and Gazebo Classic</li>
+      <li>Processes /scan data and publishes velocity commands to /cmd_vel</li>
+      <li>Includes custom URDF/Xacro robot model and Gazebo world</li>
+    </ul>
+    <p><strong>GitHub:</strong> <a href="https://github.com/parveezsyed28/obstacle_avoidance_lidar" target="_blank" rel="noopener">obstacle_avoidance_lidar</a></p>
+    <video controls>
+      <source src="assets/images/Obstacle_Avoidance.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <h4>Challenges Faced</h4>
+    <p>Integrating LiDAR sensor data processing in ROS 2, tuning obstacle avoidance algorithms, and simulating realistic physics in Gazebo.</p>
+    <h4>Learning Outcome</h4>
+    <p>Gained practical experience in sensor integration, ROS 2 node communication, and simulation environment setup.</p>
+    <h4>Skills & Tools Used</h4>
+    <p>ROS 2 Humble, Gazebo Classic, Python, URDF/Xacro, LiDAR sensor simulation</p>
   </div>
 
-  <footer>
-    © 2025 Parveez Banu Syed Azizuddin — Robotics Portfolio
-  </footer>
-</body>
-</html>
+  <div class="project">
+    <h3>ROS 2 Bot Description</h3>
+    <p>Custom two-wheeled robot modeled in Fusion 360, described in URDF/Xacro, and simulated in Gazebo.</p>
+    <ul>
+      <li>Includes differential drive plugin and STL meshes</li>
+      <li>Simulates realistic robot motion in Gazebo</li>
+    </ul>
+    <p><strong>GitHub:</strong> <a href="https://github.com/parveezsyed28/ros2_bot_description" target="_blank" rel="noopener">ros2_bot_description</a></p>
+    <img src="assets/images/ros2_bot_description.png" alt="ROS 2 Bot Description" />
+    <video controls>
+      <source src="assets/images/robot_teleop.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <h4>Challenges Faced</h4>
+    <p>Creating accurate 3D models and integrating them into a functional URDF with Gazebo plugins.</p>
+    <h4>Learning Outcome</h4>
+    <p>Improved skills in robot modeling, URDF/Xacro syntax, and Gazebo simulation configuration.</p>
+    <h4>Skills & Tools Used</h4>
+    <p>Fusion 360, ROS 2 Humble, Gazebo Classic, URDF/Xacro, STL Meshes</p>
+  </div>
+
+  <div class="project">
+    <h3>Turtlesim Shape Drawer</h3>
+    <p>ROS 2 node to control turtlesim and draw geometric shapes.</p>
+    <ul>
+      <li>Interactive CLI input from user</li>
+      <li>Service call to reset turtlesim for repeated runs</li>
+    </ul>
+    <video controls>
+      <source src="assets/images/Turtlesim.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <h4>Challenges Faced</h4>
+    <p>Designing a simple yet interactive CLI and managing service calls for state reset.</p>
+    <h4>Learning Outcome</h4>
+    <p>Learned ROS 2 node programming, publishers, subscribers, and service clients.</p>
+    <h4>Skills & Tools Used</h4>
+    <p>ROS 2 Humble, Python, Turtlesim package</p>
+  </div>
+
+  <div class="project">
+    <h3>ADC-Based Speed Control Robot</h3>
+    <p>
+      A microcontroller-based robot that integrates multiple IR sensors for obstacle detection, cliff detection, and line following, with dynamic motor speed control using an onboard potentiometer connected to ATmega16’s built-in ADC.
+    </p>
+    <ul>
+      <li>Obstacle detection using front IR sensor</li>
+      <li>Cliff (cave) detection with top IR sensor</li>
+      <li>Black line following using two bottom IR sensors</li>
+      <li>Speed control through analog voltage from potentiometer (ADC0)</li>
+    </ul>
+    <h4>Challenges Faced</h4>
+    <p>Implementing reliable ADC reading on ATmega16, coordinating multiple sensor inputs, and integrating speed control with motor driver PWM.</p>
+    <h4>Learning Outcome</h4>
+    <p>Gained strong understanding of embedded ADC operation, sensor interfacing, and real-time motor control using PWM signals.</p>
+    <h4>Skills & Tools Used</h4>
+    <p>ATmega16 Microcontroller, Embedded C, L293D Motor Driver, IR Sensors, Analog-to-Digital Conversion (ADC)</p>
+  </div>
+
+  <div class="project">
+    <h3>Obstacle Avoider Robot</h3>
+    <p>Microcontroller-based robot that avoids obstacles using IR sensors.</p>
+    <ul>
+      <li>Programmed in Embedded C on ATmega16</li>
+      <li>IR sensors for obstacle detection</li>
+      <li>L293D motor driver for motion control</li>
+    </ul>
+    <div class="images-container">
+      <img src="assets/images/obstacle_avoider.png" alt="Obstacle Avoider Robot" />
+      <img src="assets/images/Obstacle_avoider_connection.png" alt="Obstacle Avoider Circuit" />
+    </div>
+    <h4>Challenges Faced</h4>
+    <p>Dealing with sensor placement for optimal obstacle detection and tuning motor response timing.</p>
+    <h4>Learning Outcome</h4>
+    <p>Improved embedded programming skills and practical circuit design experience.</p>
+    <h4>Skills & Tools Used</h4>
+    <p>ATmega16, Embedded C, IR Sensors, L293D Motor Driver</p>
+  </div>
+
+  <div class="project">
+    <h3>Table Top Robot</h3>
+    <p>Designed to detect edges of a table and avoid falling using IR sensors.</p>
+    <ul>
+      <li>Embedded logic using ATmega16</li>
+      <li>Real-time edge detection and maneuvering</li>
+    </ul>
+    <img src="assets/images/table_top.png" alt="Table Top Robot" />
+    <h4>Challenges Faced</h4>
+    <p>Calibrating sensors to detect table edges reliably and programming real-time motor response.</p>
+    <h4>Learning Outcome</h4>
+    <p>Hands-on experience with embedded sensor interfacing and real-time control.</p>
+    <h4>Skills & Tools Used</h4>
+    <p>ATmega16, Embedded C, IR Sensors</p>
+  </div>
+
+  <div class="project">
+    <h3>Line Follower Robot</h3>
+    <p>Robot that follows a black line using bottom-mounted IR sensors.</p>
+    <ul>
+      <li>Simple threshold-based line detection using dual IR sensors</li>
+      <li>Compact design with reliable analog sensing (no noise filtering)</li>
+    </ul>
+    <div class="images-container">
+      <img src="assets/images/line_follower.png" alt="Line Follower Robot" />
+      <img src="assets/images/line_follower_connection.png" alt="Line Follower Circuit" />
+    </div>
+    <h4>Challenges Faced</h4>
+    <p>Ensuring consistent sensor readings without noise filtering and precise motor control with analog inputs.</p>
+    <h4>Learning Outcome</h4>
+    <p>Understanding of analog sensor interfacing and basic embedded motor control.</p>
+    <h4>Skills & Tools Used</h4>
+    <p>ATmega16, Embedded C, IR Sensors</p>
+  </div>
+</section>
