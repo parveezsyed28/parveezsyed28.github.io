@@ -1,8 +1,11 @@
 ---
-layout: home
-title: "Parveez Banu Syed Azizuddin | Robotics Portfolio"
+layout: single
+title: "Parveez Banu Syed Azizuddin"
+author_profile: false
 permalink: /
+classes: wide
 ---
+
 
 ## About Me
 
