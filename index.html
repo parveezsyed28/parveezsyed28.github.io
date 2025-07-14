@@ -1,75 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Parveez Azizuddin | Robotics Portfolio</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto; background: #f5f5f5; color: #333; margin: 0; }
-    header { background: #0a3d62; color: #fff; padding: 60px 20px; text-align: center; }
-    header h1 { font-size: 2.4em; margin: 0; }
-    header p { font-size: 1.2em; margin-top: 10px; max-width: 600px; margin-left: auto; margin-right: auto; }
-    section { padding: 40px 20px; max-width: 800px; margin: 0 auto; }
-    h2 { color: #0a3d62; border-bottom: 2px solid #ddd; padding-bottom: 8px; margin-bottom: 20px; }
-    .project { margin-bottom: 24px; }
-    .project h3 { margin: 0; color: #0984e3; }
-    .project p { margin: 8px 0; }
-    .project a { color: #0a3d62; text-decoration: underline; }
-    .skills ul li { margin: 6px 0; }
-    footer { padding: 20px; text-align: center; font-size: 0.9em; background: #eef; }
-    a:hover { text-decoration: none; }
+    body { margin:0; font-family: Arial, sans-serif; background:#f9f9f9; color:#333; }
+    header { background:#0a3d62; color:#fff; padding:60px 20px; text-align:center; }
+    header h1 { margin:0; font-size:2.8em; }
+    header p { margin:10px 0; font-size:1.2em; }
+    section { padding:60px 20px; max-width:800px; margin:0 auto; }
+    h2 { color:#0a3d62; border-bottom:2px solid #eee; padding-bottom:8px; margin-bottom:20px; }
+    .project { margin-bottom:36px; }
+    .project h3 { margin:0 0 8px 0; color:#0984e3; }
+    .project p { margin:0 0 8px; }
+    .skills li { margin-bottom:6px; }
+    a { color:#0984e3; }
+    footer { text-align:center; padding:40px 20px; background:#eef; font-size:0.9em; }
+    .button { display:inline-block; background:#0984e3; color:#fff; padding:8px 16px; border-radius:4px; text-decoration:none; margin-top:10px; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Parveez Azizuddin</h1>
-    <p>Mechatronics Specialist • Robotics Engineer • ROS 2 Developer</p>
-    <p>B.E. in Electrical & Electronics Engineering • Post‑Graduate Certificate in Industrial Automation</p>
-  </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am passionate about robotics, with hands‑on experience in both hardware and software integration. I have developed multiple personal robotics projects using Fusion 360, ROS 2, Gazebo, and Python. My goal is to continue growing as a full-stack roboticist, bridging real-world design and simulation.</p>
-  </section>
+<header>
+  <h1>Parveez Azizuddin</h1>
+  <p>Mechatronics Specialist • Robotics & ROS 2 Developer</p>
+  <p>B.E. in Electrical & Electronics Engineering | Post‑Graduate Certificate in Industrial Automation</p>
+</header>
 
-  <section id="projects">
-    <h2>Featured Projects</h2>
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hello! I'm Parveez—passionate about robotics and automation. With a strong foundation in both hardware and software, I’ve designed and programmed robot systems using Fusion 360, ROS 2, Gazebo, and Python. I love building full-stack robotics solutions from CAD model to simulation runtime. My goal is to become a skilled roboticist contributing to real-world systems and research.</p>
+</section>
 
-    <div class="project">
-      <h3><a href="https://github.com/parveezsyed28/ros2_bot_description" target="_blank">ROS 2 Gazebo Two‑Wheeled Robot</a></h3>
-      <p>Designed in Fusion 360, converted to URDF/Xacro, simulated in Gazebo Classic with ROS 2 Humble for real-time robot control.</p>
-    </div>
+<section id="projects">
+  <h2>Featured Projects</h2>
 
-    <div class="project">
-      <h3><a href="https://github.com/parveezsyed28/obstacle_avoidance_lidar" target="_blank">Obstacle Avoidance LiDAR</a></h3>
-      <p>ROS 2 package that processes LiDAR data for real-time obstacle avoidance. Publishes velocity commands and is fully integrated into Gazebo simulation with launch files.</p>
-    </div>
-  </section>
+  <div class="project">
+    <h3>ROS 2 Gazebo Two-Wheeled Robot</h3>
+    <p>Designed a differential-drive robot in Fusion 360, converted to URDF/Xacro, and simulated in Gazebo Classic with ROS 2 Humble for realistic behavior and navigation control.</p>
+    <a class="button" href="https://github.com/parveezsyed28/ros2_bot_description" target="_blank">View on GitHub</a>
+  </div>
 
-  <section id="skills">
-    <h2>Skills & Tools</h2>
-    <ul>
-      <li>ROS 2 (Humble): Real-Time Node Development</li>
-      <li>Gazebo Classic Simulation</li>
-      <li>Fusion 360 CAD & URDF / Xacro</li>
-      <li>Python for ROS Nodes & Algorithms</li>
-      <li>Hardware/Software Integration on Ubuntu</li>
-      <li>Git & GitHub Version Control</li>
-    </ul>
-  </section>
+  <div class="project">
+    <h3>Obstacle Avoidance LiDAR</h3>
+    <p>Developed a ROS 2 package that processes LiDAR data in real time to detect and avoid obstacles autonomously. Integrated with Gazebo simulation and custom launch files for seamless deployment.</p>
+    <a class="button" href="https://github.com/parveezsyed28/obstacle_avoidance_lidar" target="_blank">View on GitHub</a>
+  </div>
+</section>
 
-  <section id="resume">
-    <h2>Resume</h2>
-    <p><a href="https://github.com/parveezsyed28/obstacle_avoidance_lidar/raw/main/resume.pdf" target="_blank">Download my full resume (PDF)</a></p>
-  </section>
+<section id="skills">
+  <h2>Skills & Tools</h2>
+  <ul class="skills">
+    <li>ROS 2 Humble — real-time node programming</li>
+    <li>Gazebo Classic simulation</li>
+    <li>Fusion 360 CAD & URDF/Xacro</li>
+    <li>Python scripting for control and perception</li>
+    <li>Linux & Ubuntu development</li>
+    <li>Version control with Git & GitHub</li>
+    <li>Hardware-software integration for robotics</li>
+  </ul>
+</section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>GitHub: <a href="https://github.com/parveezsyed28" target="_blank">parveezsyed28</a><br>Email: <a href="mailto:parveezbanu.s@gmail.com">parveezbanu.s@gmail.com</a></p>
-  </section>
+<section id="resume">
+  <h2>Resume</h2>
+  <p><a class="button" href="resume.pdf" target="_blank">Download My Resume (PDF)</a></p>
+</section>
 
-  <footer>
-    Built by Parveez Azizuddin • © 2025
-  </footer>
+<section id="contact">
+  <h2>Contact</h2>
+  <p>
+    GitHub: <a href="https://github.com/parveezsyed28" target="_blank">parveezsyed28</a><br>
+    Email: <a href="mailto:parveezbanu.s@gmail.com">parveezbanu.s@gmail.com</a>
+  </p>
+</section>
+
+<footer>
+  Built by Parveez Azizuddin • © 2025
+</footer>
+
 </body>
 </html>
