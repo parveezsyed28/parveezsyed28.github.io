@@ -5,24 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Parveez Banu Syed Azizuddin | Robotics Portfolio</title>
   <style>
-    /* Basic Reset */
+    /* Dark mode base */
     * {
       box-sizing: border-box;
     }
     body {
+      background-color: #121212;
+      color: #e0e0e0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0; padding: 0;
-      background: #fefefe;
-      color: #222;
-      line-height: 1.5;
+      line-height: 1.6;
       scroll-behavior: smooth;
     }
+    a {
+      color: #4fc3f7;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
     header {
-      background-color: #0a3d62;
-      color: white;
+      background-color: #1f2937;
+      color: #e0e0e0;
       padding: 60px 20px 40px;
       text-align: center;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+      box-shadow: 0 3px 10px rgba(0,0,0,0.8);
     }
     header h1 {
       margin: 0 0 10px;
@@ -30,6 +37,7 @@
       font-size: 3rem;
       letter-spacing: 1.5px;
       line-height: 1.1;
+      color: #81d4fa;
     }
     header p {
       font-weight: 500;
@@ -37,55 +45,46 @@
       font-style: italic;
       max-width: 600px;
       margin: 0 auto;
-      color: #dfe6e9;
+      color: #b0bec5;
       line-height: 1.4;
     }
-
     main {
       max-width: 960px;
       margin: 40px auto 80px;
       padding: 0 20px;
     }
-
     section {
       margin-bottom: 60px;
     }
-
     h2 {
       font-size: 2.2rem;
-      border-bottom: 3px solid #0984e3;
+      border-bottom: 3px solid #4fc3f7;
       padding-bottom: 12px;
       margin-bottom: 32px;
       font-weight: 700;
-      color: #0a3d62;
+      color: #81d4fa;
     }
-
-    /* About me paragraph */
     #about p {
       font-size: 1.1rem;
       max-width: 720px;
       margin: 0 auto;
       line-height: 1.6;
-      color: #333;
+      color: #cfd8dc;
     }
-
-    /* Project container */
     .project {
       margin-bottom: 60px;
       padding-bottom: 30px;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid #37474f;
     }
     .project:last-child {
       border-bottom: none;
     }
-
     .project-title {
       font-size: 1.7rem;
-      color: #0984e3;
+      color: #4fc3f7;
       font-weight: 700;
       margin-bottom: 12px;
     }
-
     .project-description,
     .project-challenges,
     .project-learning,
@@ -93,9 +92,8 @@
       max-width: 720px;
       margin-bottom: 16px;
       font-size: 1rem;
-      color: #444;
+      color: #b0bec5;
     }
-
     .project-description ul,
     .project-challenges ul,
     .project-learning ul,
@@ -104,7 +102,6 @@
       margin: 8px 0 0 0;
       list-style-type: disc;
     }
-
     .project-media {
       margin-top: 20px;
       max-width: 720px;
@@ -114,7 +111,7 @@
     .project-media video {
       max-width: 100%;
       border-radius: 6px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+      box-shadow: 0 3px 10px rgba(0,0,0,0.7);
       height: auto;
       display: inline-block;
     }
@@ -122,10 +119,9 @@
       max-width: 400px;
       width: 100%;
     }
-
     a.github-link {
       font-weight: 600;
-      color: #0984e3;
+      color: #4fc3f7;
       text-decoration: none;
       display: inline-block;
       margin-top: 8px;
@@ -133,41 +129,36 @@
     a.github-link:hover {
       text-decoration: underline;
     }
-
-    /* Skills & Contact */
     #skills ul {
       max-width: 720px;
       margin: 0 auto;
       padding-left: 20px;
       list-style-type: square;
-      color: #333;
+      color: #b0bec5;
       font-size: 1rem;
       line-height: 1.5;
     }
-
     #contact {
       text-align: center;
       font-size: 1rem;
-      color: #555;
+      color: #90a4ae;
     }
     #contact a {
-      color: #0984e3;
+      color: #4fc3f7;
       text-decoration: none;
       font-weight: 600;
     }
     #contact a:hover {
       text-decoration: underline;
     }
-
     footer {
       text-align: center;
       padding: 25px 10px;
       font-size: 0.9rem;
-      color: #888;
-      border-top: 1px solid #ddd;
+      color: #607d8b;
+      border-top: 1px solid #37474f;
       margin-top: 80px;
     }
-
     @media (max-width: 600px) {
       header h1 {
         font-size: 2.2rem;
@@ -374,8 +365,8 @@
           </ul>
         </div>
         <div class="project-media images-container" style="display:flex; justify-content:center; gap:20px;">
-          <img src="assets/images/obstacle_avoider.png" alt="Obstacle Avoider Robot" style="max-width:45%; border-radius:6px; box-shadow: 0 3px 10px rgba(0,0,0,0.12);" />
-          <img src="assets/images/Obstacle_avoider_connection.png" alt="Obstacle Avoider Circuit" style="max-width:45%; border-radius:6px; box-shadow: 0 3px 10px rgba(0,0,0,0.12);" />
+          <img src="assets/images/obstacle_avoider.png" alt="Obstacle Avoider Robot" style="max-width:45%; border-radius:6px; box-shadow: 0 3px 10px rgba(0,0,0,0.7);" />
+          <img src="assets/images/Obstacle_avoider_connection.png" alt="Obstacle Avoider Circuit" style="max-width:45%; border-radius:6px; box-shadow: 0 3px 10px rgba(0,0,0,0.7);" />
         </div>
       </div>
 
@@ -451,8 +442,8 @@
           </ul>
         </div>
         <div class="project-media images-container" style="display:flex; justify-content:center; gap:20px;">
-          <img src="assets/images/line_follower.png" alt="Line Follower Robot" style="max-width:45%; border-radius:6px; box-shadow: 0 3px 10px rgba(0,0,0,0.12);" />
-          <img src="assets/images/line_follower_connection.png" alt="Line Follower Circuit" style="max-width:45%; border-radius:6px; box-shadow: 0 3px 10px rgba(0,0,0,0.12);" />
+          <img src="assets/images/line_follower.png" alt="Line Follower Robot" style="max-width:45%; border-radius:6px; box-shadow: 0 3px 10px rgba(0,0,0,0.7);" />
+          <img src="assets/images/line_follower_connection.png" alt="Line Follower Circuit" style="max-width:45%; border-radius:6px; box-shadow: 0 3px 10px rgba(0,0,0,0.7);" />
         </div>
       </div>
 
@@ -493,7 +484,7 @@
           </ul>
         </div>
         <div class="project-media">
-          <img src="assets/images/adc_robot_diagram.png" alt="ADC Robot Diagram" style="max-width: 80%; border-radius:6px; box-shadow: 0 3px 10px rgba(0,0,0,0.12);" />
+          <img src="assets/images/adc_robot_diagram.png" alt="ADC Robot Diagram" style="max-width: 80%; border-radius:6px; box-shadow: 0 3px 10px rgba(0,0,0,0.7);" />
         </div>
       </div>
     </section>
@@ -514,6 +505,7 @@
       <h2>Contact</h2>
       <p>Email: <a href="mailto:parveezbanu.s@gmail.com">parveezbanu.s@gmail.com</a></p>
       <p>GitHub: <a href="https://github.com/parveezsyed28" target="_blank" rel="noopener">github.com/parveezsyed28</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/parveez-banu-syed-azizuddin2807" target="_blank" rel="noopener">linkedin.com/in/parveez-banu-syed-azizuddin2807</a></p>
     </section>
   </main>
 
