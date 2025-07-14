@@ -1,29 +1,45 @@
-# Parveez Azizuddin | Robotics Portfolio
+# 🧠 Parveez Banu Syed Azizuddin | Robotics Portfolio
 
-This repository hosts my professional robotics portfolio website, built using HTML and CSS and deployed via GitHub Pages.
+Welcome to my robotics portfolio! I'm a **Mechatronics Specialist** with hands-on experience in **ROS 2**, **Gazebo simulation**, **embedded systems**, and **robot modeling**. This site showcases my projects involving both simulation and real hardware.
 
-🔗 **Live Website:** [parveezsyed28.github.io](https://parveezsyed28.github.io)
+🌐 **Live Portfolio Site**:  
+👉 [parveezsyed28.github.io](https://parveezsyed28.github.io)
 
-## 📄 About
+---
 
-I'm a Mechatronics Specialist with a B.E. in Electrical and Electronics Engineering and a post-graduate certificate in Industrial Automation. I have hands-on experience in both hardware and software, working on projects involving:
+## 🛠️ Tools & Technologies
 
-- ROS 2 (Humble)
-- Gazebo simulation
-- Fusion 360 robot design
-- Python scripting for robotics
+![ROS 2](https://img.shields.io/badge/ROS2-Humble-blue?logo=ros)
+![Gazebo](https://img.shields.io/badge/Gazebo-Simulation-yellowgreen?logo=linux)
+![Fusion 360](https://img.shields.io/badge/Fusion%20360-CAD-orange)
+![Embedded C](https://img.shields.io/badge/Embedded%20C-Microcontroller-blueviolet)
+![GitHub](https://img.shields.io/badge/GitHub-Code%20Hosting-black?logo=github)
+![Linux](https://img.shields.io/badge/Linux-Ubuntu-ff7043?logo=linux)
 
-## 🚀 Featured Projects
+---
 
-- [Obstacle Avoidance with LiDAR](https://github.com/parveezsyed28/obstacle_avoidance_lidar)
-- [ROS 2 Gazebo Two-Wheeled Robot](https://github.com/parveezsyed28/ros2_bot_description)
+## 🔧 Featured Projects
 
-## ⚙️ Tech Stack
+- 🦾 **[Obstacle Avoidance with LiDAR (ROS 2 + Gazebo)](https://github.com/parveezsyed28/obstacle_avoidance_lidar)**  
+  Simulates a LiDAR-equipped robot in a virtual environment using ROS 2 and Gazebo.
 
-- HTML, CSS
-- GitHub Pages
+- 🤖 **[ROS 2 Bot Description](https://github.com/parveezsyed28/ros2_bot_description)**  
+  Custom 3D robot designed in Fusion 360 with URDF/Xacro and plugin integration.
 
-## 📨 Contact
+- 🐢 **Turtlesim Shape Drawer**  
+  A fun Python node to draw geometric shapes using ROS 2 Turtlesim simulator.
 
-- GitHub: [@parveezsyed28](https://github.com/parveezsyed28)
-- Email: [parveezbanu.s@gmail.com](mailto:parveezbanu.s@gmail.com)
+- 🔌 **Obstacle Avoider / Line Follower / Tabletop Robot**  
+  Real-time robots built using ATmega16, IR sensors, and Embedded C.
+
+---
+
+## 📬 Contact Me
+
+- 📧 Email: [parveezbanu.s@gmail.com](mailto:parveezbanu.s@gmail.com)  
+- 💼 LinkedIn: [linkedin.com/in/parveez-banu-syed-azizuddin2807](https://www.linkedin.com/in/parveez-banu-syed-azizuddin2807)  
+- 🧠 GitHub: [github.com/parveezsyed28](https://github.com/parveezsyed28)
+
+---
+
+> ✨ This portfolio is built using [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/).
