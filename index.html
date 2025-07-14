@@ -60,28 +60,43 @@
     .project:last-child {
       border-bottom: none;
     }
+    /* Adjust images inside projects */
     .project img {
-      max-width: 100%;
+      max-width: 80%;       /* Smaller max width for images */
       border-radius: 6px;
       margin-top: 10px;
       box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
     }
+    /* Images container for multiple images side by side */
     .project .images-container {
       display: flex;
       gap: 15px;
       flex-wrap: wrap;
       margin-top: 10px;
+      justify-content: center;
     }
     .project .images-container img {
-      max-width: 48%;
+      max-width: 45%;   /* Adjusted smaller width */
       height: auto;
       border: 1px solid #ddd;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+    /* Video styling */
     video {
       margin-top: 15px;
       max-width: 100%;
+      width: 350px;    /* Smaller fixed width */
+      height: auto;
       border-radius: 6px;
       box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
     .contact a {
       color: #0984e3;
@@ -101,6 +116,9 @@
     @media (max-width: 600px) {
       .project .images-container img {
         max-width: 100%;
+      }
+      video {
+        width: 100%;  /* Full width on small screens */
       }
     }
   </style>
@@ -131,8 +149,7 @@
           <li>Includes custom URDF/Xacro robot model and Gazebo world</li>
         </ul>
         <p><strong>GitHub:</strong> <a href="https://github.com/parveezsyed28/obstacle_avoidance_lidar" target="_blank" rel="noopener">obstacle_avoidance_lidar</a></p>
-        <!-- Video for obstacle avoidance -->
-        <video controls preload="metadata" poster="assets/images/obstacle_avoider.png">
+        <video controls>
           <source src="assets/images/Obstacle_Avoidance.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -147,8 +164,7 @@
         </ul>
         <p><strong>GitHub:</strong> <a href="https://github.com/parveezsyed28/ros2_bot_description" target="_blank" rel="noopener">ros2_bot_description</a></p>
         <img src="assets/images/ros2_bot_description.png" alt="ROS 2 Bot Description" />
-        <!-- Video for robot teleop -->
-        <video controls preload="metadata" poster="assets/images/ros2_bot_description.png">
+        <video controls>
           <source src="assets/images/robot_teleop.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -161,14 +177,12 @@
           <li>Interactive CLI input from user</li>
           <li>Service call to reset turtlesim for repeated runs</li>
         </ul>
-        <!-- Video for turtlesim -->
-        <video controls preload="metadata" poster="assets/images/turtlesim.png">
+        <video controls>
           <source src="assets/images/Turtlesim.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
 
-      <!-- Other projects -->
       <div class="project">
         <h3>Obstacle Avoider Robot</h3>
         <p>Microcontroller-based robot that avoids obstacles using IR sensors.</p>
