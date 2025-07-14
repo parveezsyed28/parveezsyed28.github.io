@@ -16,14 +16,25 @@
     header {
       background: #0a3d62;
       color: #fff;
-      padding: 20px 0;
+      padding: 40px 20px 20px 20px;
       text-align: center;
+    }
+    header h1 {
+      font-size: 2.8em;
+      margin: 0 0 10px 0;
+    }
+    header p {
+      font-size: 1.2em;
+      margin: 0;
+      font-weight: 500;
     }
     .container {
       max-width: 900px;
-      margin: auto;
+      margin: 30px auto;
       padding: 20px;
       background: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 12px;
     }
     h1, h2, h3 {
       color: #0a3d62;
@@ -32,7 +43,15 @@
       padding-left: 20px;
     }
     .project {
+      margin-bottom: 40px;
+    }
+    .project img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 12px;
+      margin-top: 10px;
       margin-bottom: 30px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     .contact a {
       color: #0984e3;
@@ -41,13 +60,18 @@
     .contact a:hover {
       text-decoration: underline;
     }
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9em;
+      color: #999;
+      margin-top: 60px;
+    }
   </style>
 </head>
 <body>
   <header>
-   <h1 style="text-align:center; font-size:2.5em; margin-top: 40px;">
-      Parveez Banu Syed Azizuddin
-    </h1>
+    <h1>Parveez Banu Syed Azizuddin</h1>
     <p>Mechatronics Specialist | Robotics Enthusiast | ROS 2 Developer</p>
   </header>
 
@@ -70,7 +94,7 @@
           <li>Processes /scan data and publishes to /cmd_vel</li>
           <li>Includes custom URDF/Xacro robot model and Gazebo world</li>
         </ul>
-        <p><strong>GitHub:</strong> <a href="https://github.com/parveezsyed28/obstacle_avoidance_lidar">obstacle_avoidance_lidar</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/parveezsyed28/obstacle_avoidance_lidar" target="_blank" rel="noopener noreferrer">obstacle_avoidance_lidar</a></p>
       </div>
 
       <div class="project">
@@ -80,7 +104,7 @@
           <li>Includes differential drive plugin and STL meshes</li>
           <li>Simulates realistic robot motion in Gazebo</li>
         </ul>
-        <p><strong>GitHub:</strong> <a href="https://github.com/parveezsyed28/ros2_bot_description">ros2_bot_description</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/parveezsyed28/ros2_bot_description" target="_blank" rel="noopener noreferrer">ros2_bot_description</a></p>
       </div>
 
       <div class="project">
@@ -100,6 +124,8 @@
           <li>IR sensors for obstacle detection</li>
           <li>L293D motor driver for motion control</li>
         </ul>
+        <img src="assets/images/obstacle_avoider.png" alt="Obstacle Avoider Robot" />
+        <img src="assets/images/obstacle_avoider_circuit.png" alt="Obstacle Avoider Circuit" />
       </div>
 
       <div class="project">
@@ -109,6 +135,7 @@
           <li>Embedded logic using ATmega16</li>
           <li>Real-time edge detection and maneuvering</li>
         </ul>
+        <img src="assets/images/table_top.png" alt="Table Top Robot" />
       </div>
 
       <div class="project">
@@ -118,6 +145,8 @@
           <li>Dual-sensor based PD line following logic</li>
           <li>Compact design with reliable analog sensing</li>
         </ul>
+        <img src="assets/images/line_follower.png" alt="Line Follower Robot" />
+        <img src="assets/images/line_follower_circuit.png" alt="Line Follower Circuit" />
       </div>
     </section>
 
@@ -136,10 +165,10 @@
     <section class="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:parveezbanu.s@gmail.com">parveezbanu.s@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/parveezsyed28">github.com/parveezsyed28</a></p>
+      <p>GitHub: <a href="https://github.com/parveezsyed28" target="_blank" rel="noopener noreferrer">github.com/parveezsyed28</a></p>
     </section>
 
-    <footer style="text-align:center; padding: 20px 0; font-size: 0.9em; color: #999">
+    <footer>
       © 2025 Parveez Banu Syed Azizuddin — Robotics Portfolio
     </footer>
   </div>
