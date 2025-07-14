@@ -1,270 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Parveez Banu Syed Azizuddin | Robotics Portfolio</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0; padding: 0;
-      background: #f9f9f9;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fdfdfd;
       color: #333;
-      line-height: 1.6;
     }
-
     header {
-      background-color: #0a3d62;
-      color: white;
+      background: #0a3d62;
+      color: #fff;
       padding: 40px 20px;
       text-align: center;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
-
     header h1 {
       margin: 0;
-      font-size: 2.7em;
+      font-size: 2.4rem;
     }
-
     header p {
-      font-size: 1.2em;
-      margin-top: 10px;
+      margin: 10px 0 0;
+      font-size: 1.1rem;
       font-style: italic;
-      color: #dff9fb;
     }
-
     .container {
       max-width: 900px;
-      margin: 30px auto;
+      margin: auto;
       padding: 20px;
-      background: white;
-      box-shadow: 0 0 12px rgba(0,0,0,0.05);
-      border-radius: 8px;
     }
-
     h2 {
-      font-size: 1.8em;
-      color: #0a3d62;
       border-bottom: 3px solid #0984e3;
-      padding-bottom: 8px;
-      margin-bottom: 20px;
+      padding-bottom: 5px;
+      color: #0a3d62;
     }
-
     .project {
-      margin-bottom: 60px;
-      padding-bottom: 30px;
-      border-bottom: 1px solid #ccc;
+      margin: 40px 0;
     }
-
     .project h3 {
-      font-size: 1.5em;
       color: #0984e3;
+      font-size: 1.5rem;
       margin-bottom: 10px;
     }
-
     .project video, .project img {
       display: block;
       margin: 15px auto;
-      max-width: 80%;
-      border-radius: 6px;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      max-width: 90%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-
     ul {
       margin-top: 10px;
       padding-left: 20px;
     }
-
-    .section-title {
-      font-weight: bold;
-      color: #222;
-      margin-top: 20px;
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #888;
+      border-top: 1px solid #ccc;
+      margin-top: 50px;
     }
-
     .contact a {
       color: #0984e3;
       text-decoration: none;
     }
-
-    .contact a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px 0;
-      color: #666;
-      font-size: 0.9em;
-      margin-top: 40px;
-      border-top: 1px solid #ccc;
-    }
-
-    @media (max-width: 600px) {
-      .project video, .project img {
-        max-width: 100%;
-      }
-    }
   </style>
 </head>
-
 <body>
   <header>
     <h1>Parveez Banu Syed Azizuddin</h1>
-    <p>Mechatronics Specialist | Robotics Enthusiast | ROS 2 Developer</p>
+    <p>Mechatronics Specialist | Robotics Engineer | ROS 2 Developer</p>
   </header>
 
   <div class="container">
     <section>
       <h2>About Me</h2>
       <p>
-        I'm a Mechatronics Specialist with a Bachelor's degree in Electrical and Electronics Engineering and a Postgraduate Certificate in Industrial Automation. Passionate about robotics, I design and build both hardware and software systems—from embedded microcontroller robots to advanced ROS 2 simulations in Gazebo. My interests span autonomous navigation, sensor integration, and robot modeling. I aim to contribute to intelligent robotic systems that solve real-world problems.
+        I am a Mechatronics Specialist with a Bachelor's degree in Electrical and Electronics Engineering and a Postgraduate Certificate in Industrial Automation. My passion lies in designing and building intelligent robotic systems from scratch — both in simulation and in hardware. With experience in ROS 2, Gazebo, embedded systems (ATmega16), and design tools like Fusion 360 and KiCad, I bring a strong multidisciplinary foundation. I aim to contribute to real-world autonomous robotic solutions with a focus on precision, reliability, and innovation.
       </p>
     </section>
 
     <section>
-      <h2>Featured Projects</h2>
+      <h2>Projects</h2>
 
       <div class="project">
         <h3>Obstacle Avoidance with LiDAR (ROS 2 + Gazebo)</h3>
+        <p><strong>Tools:</strong> ROS 2 Humble, Gazebo Classic, Xacro/URDF, Python</p>
+        <p><strong>Challenges Faced:</strong> Integrating LiDAR into the robot model, tuning simulation parameters for real-time performance, handling /scan data effectively.</p>
+        <p><strong>Learning Outcome:</strong> Learned how to create a differential drive robot from scratch in URDF/Xacro, integrate sensors in Gazebo, and process sensor data in ROS 2 to avoid obstacles.</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/parveezsyed28/obstacle_avoidance_lidar" target="_blank">obstacle_avoidance_lidar</a></p>
         <video controls>
-          <source src="assets/images/Obstacle_Avoidance.mp4" type="video/mp4" />
+          <source src="assets/images/Obstacle_Avoidance.mp4" type="video/mp4">
         </video>
-        <p>Simulates a 2-wheel differential drive robot avoiding obstacles using LiDAR in Gazebo.</p>
-        <div class="section-title">Challenges Faced:</div>
-        <ul>
-          <li>Integrating LiDAR with robot URDF model and tuning scan parameters</li>
-          <li>Configuring differential drive plugin to react to /scan topic</li>
-        </ul>
-        <div class="section-title">Learning Outcome:</div>
-        <ul>
-          <li>Developed autonomous decision-making using laser scan data</li>
-          <li>Mastered ROS 2 publisher-subscriber logic with real-time robot simulation</li>
-        </ul>
-        <div class="section-title">Skills/Tools Used:</div>
-        <ul>
-          <li>ROS 2 Humble, Gazebo Classic, Python, Xacro, LiDAR plugin, RViz</li>
-        </ul>
-        <p><strong>GitHub:</strong> <a href="https://github.com/parveezsyed28/obstacle_avoidance_lidar" target="_blank">View Repository</a></p>
       </div>
 
       <div class="project">
         <h3>ROS 2 Bot Description</h3>
+        <p><strong>Tools:</strong> Fusion 360, ROS 2, URDF/Xacro, Gazebo</p>
+        <p><strong>Challenges Faced:</strong> Creating accurate STL meshes, integrating differential drive plugin with proper inertial and joint parameters.</p>
+        <p><strong>Learning Outcome:</strong> Understood the full pipeline of modeling, simulation, and motion testing for custom robots in Gazebo.</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/parveezsyed28/ros2_bot_description" target="_blank">ros2_bot_description</a></p>
+        <img src="assets/images/ros2_bot_description.png" alt="ROS 2 Bot">
         <video controls>
-          <source src="assets/images/robot_teleop.mp4" type="video/mp4" />
+          <source src="assets/images/robot_teleop.mp4" type="video/mp4">
         </video>
-        <img src="assets/images/ros2_bot_description.png" alt="ROS 2 Bot" />
-        <p>Created a robot model in Fusion 360 and simulated it in Gazebo using ROS 2 URDF/Xacro.</p>
-        <div class="section-title">Challenges Faced:</div>
-        <ul>
-          <li>Correcting link and joint alignment in URDF</li>
-          <li>Mesh scaling and placement for accurate visualization</li>
-        </ul>
-        <div class="section-title">Learning Outcome:</div>
-        <ul>
-          <li>Acquired deep knowledge of robot kinematics and Xacro macros</li>
-        </ul>
-        <div class="section-title">Skills/Tools Used:</div>
-        <ul>
-          <li>Fusion 360, ROS 2, URDF, Xacro, Gazebo, STL mesh handling</li>
-        </ul>
-        <p><strong>GitHub:</strong> <a href="https://github.com/parveezsyed28/ros2_bot_description" target="_blank">View Repository</a></p>
       </div>
 
       <div class="project">
         <h3>Turtlesim Shape Drawer</h3>
+        <p><strong>Tools:</strong> ROS 2 Python, turtlesim</p>
+        <p><strong>Challenges Faced:</strong> User interaction through CLI, repeated shape drawing with reset via service calls.</p>
+        <p><strong>Learning Outcome:</strong> Learned ROS 2 publishing, services, and interactive CLI node design.</p>
         <video controls>
-          <source src="assets/images/Turtlesim.mp4" type="video/mp4" />
+          <source src="assets/images/Turtlesim.mp4" type="video/mp4">
         </video>
-        <p>ROS 2 node to control turtlesim and draw user-defined geometric shapes.</p>
-        <div class="section-title">Challenges Faced:</div>
-        <ul>
-          <li>Managing angle and velocity calculations for shapes</li>
-          <li>Resetting turtlesim for repeated user input</li>
-        </ul>
-        <div class="section-title">Learning Outcome:</div>
-        <ul>
-          <li>Practiced ROS 2 services and user input handling in Python</li>
-        </ul>
-        <div class="section-title">Skills/Tools Used:</div>
-        <ul>
-          <li>ROS 2, Python, Turtlesim, rclpy</li>
-        </ul>
       </div>
 
       <div class="project">
         <h3>ADC Speed Control Robot</h3>
-        <img src="assets/images/adc_robot.png" alt="ADC Robot" />
-        <p>A microcontroller-based robot with dynamic speed control via potentiometer using ADC input.</p>
-        <div class="section-title">Challenges Faced:</div>
+        <p><strong>Tools:</strong> ATmega16, Embedded C, ADC, PWM, IR sensors, L293D</p>
+        <p><strong>Challenges Faced:</strong> Mapping analog voltage to speed using ADC, configuring multiple sensors and I/O pins.</p>
+        <p><strong>Learning Outcome:</strong> Developed strong understanding of embedded systems, ADC principles, and real-time control.</p>
         <ul>
-          <li>Mapping analog voltage from trimpot to motor speed (PWM)</li>
-          <li>Ensuring ADC accuracy and proper interrupt configuration</li>
-        </ul>
-        <div class="section-title">Learning Outcome:</div>
-        <ul>
-          <li>Learned real-time analog signal processing and ADC in ATmega16</li>
-          <li>Implemented PWM logic for speed control</li>
-        </ul>
-        <div class="section-title">Skills/Tools Used:</div>
-        <ul>
-          <li>ATmega16, Embedded C, Trimpot, IR Sensors, ADC, L293D</li>
+          <li>Front obstacle detection with IR sensor</li>
+          <li>Cliff (top) sensor for fall prevention</li>
+          <li>Line detection with bottom sensors</li>
+          <li>Speed control via potentiometer (ADC)</li>
         </ul>
       </div>
 
       <div class="project">
         <h3>Obstacle Avoider Robot</h3>
-        <img src="assets/images/obstacle_avoider.png" alt="Obstacle Avoider" />
-        <div class="section-title">Challenges Faced:</div>
-        <ul>
-          <li>Synchronizing IR sensor logic with motor response</li>
-        </ul>
-        <div class="section-title">Learning Outcome:</div>
-        <ul>
-          <li>Built basic decision logic for reactive behavior</li>
-        </ul>
-        <div class="section-title">Skills/Tools Used:</div>
-        <ul>
-          <li>ATmega16, Embedded C, IR Sensors, Motor Driver</li>
-        </ul>
+        <p><strong>Tools:</strong> ATmega16, L293D, Embedded C</p>
+        <p><strong>Challenges Faced:</strong> Aligning sensors and logic for fast obstacle response</p>
+        <p><strong>Learning Outcome:</strong> Reinforced microcontroller programming and autonomous navigation basics.</p>
+        <div class="images-container">
+          <img src="assets/images/obstacle_avoider.png" alt="Obstacle Avoider">
+          <img src="assets/images/Obstacle_avoider_connection.png" alt="Circuit">
+        </div>
       </div>
 
       <div class="project">
         <h3>Table Top Robot</h3>
-        <img src="assets/images/table_top.png" alt="Table Top" />
-        <div class="section-title">Challenges Faced:</div>
-        <ul>
-          <li>IR sensor calibration for edge detection</li>
-        </ul>
-        <div class="section-title">Learning Outcome:</div>
-        <ul>
-          <li>Developed robot safety logic to prevent fall</li>
-        </ul>
-        <div class="section-title">Skills/Tools Used:</div>
-        <ul>
-          <li>IR Sensors, Embedded C, ATmega16</li>
-        </ul>
+        <p><strong>Tools:</strong> ATmega16, IR Sensors, Embedded C</p>
+        <p><strong>Challenges Faced:</strong> Designing logic to detect edges and corners in time</p>
+        <p><strong>Learning Outcome:</strong> Implemented simple logic to prevent fall-off in real-world tabletop settings.</p>
+        <img src="assets/images/table_top.png" alt="Table Top Robot">
       </div>
 
       <div class="project">
         <h3>Line Follower Robot</h3>
-        <img src="assets/images/line_follower.png" alt="Line Follower" />
-        <img src="assets/images/line_follower_connection.png" alt="Line Follower Circuit" />
-        <div class="section-title">Challenges Faced:</div>
-        <ul>
-          <li>Balancing left/right sensor thresholds for accuracy</li>
-        </ul>
-        <div class="section-title">Learning Outcome:</div>
-        <ul>
-          <li>Understood sensor-based feedback loop for basic navigation</li>
-        </ul>
-        <div class="section-title">Skills/Tools Used:</div>
-        <ul>
-          <li>IR Sensors, ATmega16, Embedded C</li>
-        </ul>
+        <p><strong>Tools:</strong> ATmega16, IR sensors, Embedded C</p>
+        <p><strong>Challenges Faced:</strong> Calibrating line sensors and motor control logic</p>
+        <p><strong>Learning Outcome:</strong> Practiced sensor-based control and embedded programming for analog input.</p>
+        <div class="images-container">
+          <img src="assets/images/line_follower.png" alt="Line Follower">
+          <img src="assets/images/line_follower_connection.png" alt="Line Circuit">
+        </div>
       </div>
+
     </section>
 
-    <section class="contact">
+    <section>
       <h2>Contact</h2>
       <p>Email: <a href="mailto:parveezbanu.s@gmail.com">parveezbanu.s@gmail.com</a></p>
       <p>GitHub: <a href="https://github.com/parveezsyed28" target="_blank">github.com/parveezsyed28</a></p>
