@@ -2,56 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Parveez Banu Syed Azizuddin | Robotics Portfolio</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
+      margin: 0; padding: 0;
+      background: #f9f9f9;
       color: #333;
       line-height: 1.6;
     }
     header {
-      background: #0a3d62;
-      color: #fff;
-      padding: 40px 20px 20px 20px;
+      background-color: #0a3d62;
+      color: white;
+      padding: 30px 20px;
       text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
     header h1 {
-      font-size: 2.8em;
-      margin: 0 0 10px 0;
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 1px;
     }
     header p {
-      font-size: 1.2em;
-      margin: 0;
+      margin-top: 10px;
       font-weight: 500;
+      font-size: 1.1em;
+      font-style: italic;
     }
     .container {
       max-width: 900px;
       margin: 30px auto;
       padding: 20px;
-      background: #fff;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      border-radius: 12px;
+      background: white;
+      box-shadow: 0 0 12px rgba(0,0,0,0.05);
+      border-radius: 8px;
     }
-    h1, h2, h3 {
+    h2 {
       color: #0a3d62;
+      border-bottom: 3px solid #0984e3;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+    h3 {
+      color: #0984e3;
+      margin-top: 30px;
     }
     ul {
       padding-left: 20px;
+      margin-top: 8px;
     }
     .project {
       margin-bottom: 40px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 25px;
+    }
+    .project:last-child {
+      border-bottom: none;
     }
     .project img {
-      width: 100%;
-      max-width: 600px;
-      border-radius: 12px;
+      max-width: 100%;
+      border-radius: 6px;
       margin-top: 10px;
-      margin-bottom: 30px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    .project .images-container {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .project .images-container img {
+      max-width: 48%;
+      height: auto;
+      border: 1px solid #ddd;
     }
     .contact a {
       color: #0984e3;
@@ -62,10 +86,16 @@
     }
     footer {
       text-align: center;
-      padding: 20px 0;
+      padding: 15px 0;
       font-size: 0.9em;
-      color: #999;
-      margin-top: 60px;
+      color: #666;
+      margin-top: 40px;
+      border-top: 1px solid #ddd;
+    }
+    @media (max-width: 600px) {
+      .project .images-container img {
+        max-width: 100%;
+      }
     }
   </style>
 </head>
@@ -91,10 +121,14 @@
         <p>Simulates a 2-wheel differential drive robot avoiding obstacles using LiDAR in Gazebo.</p>
         <ul>
           <li>Built using ROS 2 Humble and Gazebo Classic</li>
-          <li>Processes /scan data and publishes to /cmd_vel</li>
+          <li>Processes /scan data and publishes velocity commands to /cmd_vel</li>
           <li>Includes custom URDF/Xacro robot model and Gazebo world</li>
         </ul>
-        <p><strong>GitHub:</strong> <a href="https://github.com/parveezsyed28/obstacle_avoidance_lidar" target="_blank" rel="noopener noreferrer">obstacle_avoidance_lidar</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/parveezsyed28/obstacle_avoidance_lidar" target="_blank" rel="noopener">obstacle_avoidance_lidar</a></p>
+        <div class="images-container">
+          <img src="assets/images/obstacle_avoider.png" alt="Obstacle Avoidance Robot" />
+          <img src="assets/images/Obstacle_avoider_connection.png" alt="Obstacle Avoidance Circuit" />
+        </div>
       </div>
 
       <div class="project">
@@ -104,7 +138,8 @@
           <li>Includes differential drive plugin and STL meshes</li>
           <li>Simulates realistic robot motion in Gazebo</li>
         </ul>
-        <p><strong>GitHub:</strong> <a href="https://github.com/parveezsyed28/ros2_bot_description" target="_blank" rel="noopener noreferrer">ros2_bot_description</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/parveezsyed28/ros2_bot_description" target="_blank" rel="noopener">ros2_bot_description</a></p>
+        <img src="assets/images/ros2_bot_description.png" alt="ROS 2 Bot Description" />
       </div>
 
       <div class="project">
@@ -124,8 +159,10 @@
           <li>IR sensors for obstacle detection</li>
           <li>L293D motor driver for motion control</li>
         </ul>
-        <img src="assets/images/obstacle_avoider.png" alt="Obstacle Avoider Robot" />
-        <img src="assets/images/obstacle_avoider_circuit.png" alt="Obstacle Avoider Circuit" />
+        <div class="images-container">
+          <img src="assets/images/obstacle_avoider.png" alt="Obstacle Avoider Robot" />
+          <img src="assets/images/Obstacle_avoider_connection.png" alt="Obstacle Avoider Circuit" />
+        </div>
       </div>
 
       <div class="project">
@@ -145,8 +182,10 @@
           <li>Dual-sensor based PD line following logic</li>
           <li>Compact design with reliable analog sensing</li>
         </ul>
-        <img src="assets/images/line_follower.png" alt="Line Follower Robot" />
-        <img src="assets/images/line_follower_circuit.png" alt="Line Follower Circuit" />
+        <div class="images-container">
+          <img src="assets/images/line_follower.png" alt="Line Follower Robot" />
+          <img src="assets/images/line_follower_connection.png" alt="Line Follower Circuit" />
+        </div>
       </div>
     </section>
 
@@ -165,12 +204,12 @@
     <section class="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:parveezbanu.s@gmail.com">parveezbanu.s@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/parveezsyed28" target="_blank" rel="noopener noreferrer">github.com/parveezsyed28</a></p>
+      <p>GitHub: <a href="https://github.com/parveezsyed28" target="_blank" rel="noopener">github.com/parveezsyed28</a></p>
     </section>
-
-    <footer>
-      © 2025 Parveez Banu Syed Azizuddin — Robotics Portfolio
-    </footer>
   </div>
+
+  <footer>
+    © 2025 Parveez Banu Syed Azizuddin — Robotics Portfolio
+  </footer>
 </body>
 </html>
