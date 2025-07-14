@@ -1,46 +1,49 @@
-# Site settings
 title: "Parveez Banu Syed Azizuddin"
 description: "Robotics Engineer Portfolio | ROS 2, Embedded Systems, Automation"
-url: "https://parveezsyed28.github.io"      # Replace with your GitHub Pages URL
-baseurl: ""                             
+baseurl: "" 
+url: "https://parveezsyed28.github.io" 
 
 # Theme
 theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "default"
 
-# Plugins (required by Minimal Mistakes)
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Author info (optional)
-author:
-  name: "Parveez Banu Syed Azizuddin"
-  email: "parveezbanu.s@gmail.com"
+# Navigation Bar
+header_pages:
+  - index.md
 
-# Navigation links
 nav:
   - title: "Home"
     url: /
   - title: "Projects"
-    url: /projects/
+    url: /#projects
+  - title: "Skills"
+    url: /#skills
   - title: "Contact"
-    url: /contact/
+    url: /#contact
 
-# Markdown and highlighting
+# Author Info
+author:
+  name: "Parveez Banu Syed Azizuddin"
+  email: "parveezbanu.s@gmail.com"
+
+# Markdown & Highlighting
 markdown: kramdown
 highlighter: rouge
 
-# Exclude from processing
+# Rouge Syntax Options
+rouge:
+  line_numbers: true
+
+# Exclude from site build
 exclude:
-  - README.md
   - Gemfile
   - Gemfile.lock
   - node_modules
   - vendor
-
-# Syntax highlighting with line numbers (optional)
-rouge:
-  line_numbers: true
-
+  - README.md
