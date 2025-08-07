@@ -2,7 +2,7 @@
 layout: single
 title: "Parveez Banu Syed Azizuddin"
 subtitle: "Robotics Enthusiast | ROS 2 Developer"
-author_profile: false
+author_profile: true
 permalink: /
 classes: wide
 ---
