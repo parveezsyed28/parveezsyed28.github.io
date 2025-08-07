@@ -1,193 +1,132 @@
 ---
-layout: default
-title: Parveez Banu Syed Azizuddin | Robotics Portfolio
+layout: single
+title: "Parveez Banu Syed Azizuddin"
+author_profile: true
+permalink: /
+classes: wide
 ---
 
 <style>
-  body {
-    background-color: #e6f0ff;
-    color: #334466;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0 20px;
-  }
-  a {
-    color: #3366cc;
-    text-decoration: none;
-    font-weight: 600;
-  }
-  a:hover {
-    color: #003399;
-    text-decoration: underline;
-  }
-  header {
-    background-color: #4a69ad;
-    color: white;
-    padding: 60px 20px 40px;
+  .header-container {
     text-align: center;
-    box-shadow: 0 3px 10px rgba(0,0,80,0.4);
-    margin-bottom: 40px;
-    border-radius: 6px;
-  }
-  header h1 {
-    margin: 0 0 8px;
-    font-weight: 900;
-    font-size: 3rem;
-    letter-spacing: 1.5px;
-    line-height: 1.1;
-  }
-  header p {
-    font-weight: 500;
-    font-size: 1.3rem;
-    font-style: italic;
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.4;
-  }
-  h2 {
-    color: #3366cc;
-    border-bottom: 3px solid #4a69ad;
-    padding-bottom: 10px;
-    margin-bottom: 32px;
-    font-weight: 700;
-  }
-  .project {
+    margin-top: 40px;
     margin-bottom: 60px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #a3b1d1;
   }
-  .project-title {
-    font-size: 1.8rem;
-    color: #003366;
-    font-weight: 700;
-    margin-bottom: 15px;
+  .header-container h1 {
+    font-size: 3rem;
+    color: #4a90e2; /* pastel blue */
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 1.2px;
   }
-  .project-description,
-  .project-challenges,
-  .project-learning,
-  .project-skills {
-    max-width: 720px;
-    margin-bottom: 16px;
-    font-size: 1rem;
-    color: #334466;
-  }
-  ul {
-    padding-left: 20px;
-    margin: 8px 0 0 0;
-    list-style-type: disc;
+  .header-container p {
+    margin: 8px 0 0;
+    font-size: 1.25rem;
+    color: #6fa8dc; /* lighter pastel blue */
+    font-weight: 600;
   }
   .project-media {
     margin-top: 20px;
     max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
   }
   .project-media img,
   .project-media video {
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(51, 102, 204, 0.3);
     max-width: 100%;
     height: auto;
-    margin: 10px 0;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.7);
+    margin-bottom: 15px;
   }
-  .project-media video {
-    max-height: 320px;
-    width: 100%;
-  }
-  .images-container {
+  .side-by-side {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    max-width: 720px;
-    margin: 20px auto 0;
   }
-  .images-container img {
+  .side-by-side img {
     max-width: 48%;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(51,102,204,0.3);
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.7);
   }
-  .github-link {
-    color: #3366cc;
+  a.github-link {
     font-weight: 600;
+    color: #4a90e2;
+    text-decoration: none;
     display: inline-block;
     margin-top: 8px;
   }
-  .github-link:hover {
-    color: #003399;
-  }
-  footer {
-    color: #607799;
-    border-top: 1px solid #4a69ad;
-    padding: 20px;
-    text-align: center;
-    margin-top: 80px;
+  a.github-link:hover {
+    text-decoration: underline;
   }
 </style>
 
-<header>
+<div class="header-container">
   <h1>Parveez Banu Syed Azizuddin</h1>
   <p>Robotics Enthusiast | ROS2 Developer</p>
-</header>
+</div>
 
 ## About Me
 
-Hi, I’m **Parveez**, a passionate robotics enthusiast driven by curiosity and creativity.  
-I love bringing robots to life by blending code, sensors, and hardware into intelligent systems that solve real-world problems.  
-Whether it’s building autonomous bots or exploring new possibilities with ROS 2, every project is a journey of learning and innovation.  
-This portfolio showcases my hands-on experience and dedication to making robotics accessible and exciting for everyone.
+Welcome to my robotics portfolio! I am passionate about creating intelligent autonomous systems by combining hardware and software. Here you will find my featured projects showcasing my skills in ROS 2, Gazebo, embedded systems, and CAD modeling.
 
 ---
 
 ## Featured Projects
 
-### Wall Follower Robot
+### Wall Following Robot (ROS 2 + Gazebo)
 
-**Description:**  
-A robot designed to follow a black line using bottom-mounted IR sensors. The control system uses sensor feedback to maintain alignment on the path. Developed with embedded C on the ATmega16 microcontroller, utilizing analog sensor input for reliable line detection.
+This robot autonomously follows walls using LiDAR data and ROS 2 nodes, simulated within a maze-like Gazebo environment. The robot processes real-time sensor data to maintain a stable distance from the walls.
 
-- Implemented analog IR sensor interfacing for line detection.  
-- Developed control logic for real-time path following.  
-- Compact and efficient hardware design.
+**Challenges faced:**
 
-**Challenges faced:**  
-- Ensuring accurate sensor readings without noise filtering.  
-- Fine-tuning sensor placement for reliable line detection.  
-- Implementing smooth motor control to follow curves.
+- Maintaining consistent distance during tight corners with noisy sensor input.
+- Filtering LiDAR data to reduce false detections.
+- Tuning velocity commands for smooth navigation.
 
-**Learning outcomes:**  
-- Gained understanding of sensor-based path following.  
-- Applied embedded control techniques in constrained environments.
+**Learning outcomes:**
 
-**Skills & tools:** Embedded C, ATmega16, IR Sensors, Analog Signal Processing, Motor Driver Control
+- Developed sensor processing and feedback control skills.
+- Improved ROS 2 node programming for real-time navigation.
+- Gained experience with Gazebo simulation environments.
 
-<div class="project-media images-container">
-  <img src="assets/images/line_follower.png" alt="Line Follower Robot" />
-  <img src="assets/images/line_follower_connection.png" alt="Line Follower Circuit" />
+**Skills & tools used:**
+
+ROS 2 Humble, Gazebo Classic, Python, LiDAR sensor integration
+
+<div class="project-media">
+  <video controls>
+    <source src="assets/images/Wall_follower.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <br />
+  <a class="github-link" href="https://github.com/parveezsyed28/wall_follower_bot" target="_blank" rel="noopener">GitHub Repository</a>
 </div>
 
 ---
 
 ### Obstacle Avoidance with LiDAR (ROS 2 + Gazebo)
 
-**Description:**  
-Simulates a two-wheeled differential drive robot equipped with a LiDAR sensor that autonomously avoids obstacles within a Gazebo environment. Uses ROS 2 Humble and Gazebo Classic.
+A two-wheeled differential drive robot with LiDAR sensor to avoid obstacles autonomously in a Gazebo environment. Processes laser scan data and publishes velocity commands for smooth movement.
 
-- Developed custom robot model and integrated LiDAR sensor.  
-- Implemented obstacle detection and avoidance algorithms in Python.  
-- Designed simulation environment replicating real-world navigation challenges.
+**Challenges faced:**
 
-**Challenges faced:**  
-- Ensuring accurate sensor data processing and filtering.  
-- Tuning velocity commands for smooth robot movement.  
-- Configuring Gazebo plugins and model files.
+- Processing sensor data accurately for obstacle detection.
+- Tuning smooth velocity commands.
+- Configuring Gazebo plugins for sensor simulation.
 
-**Learning outcomes:**  
-- Mastered ROS 2 topics and message handling.  
-- Gained experience in Gazebo robot modeling and simulation.  
-- Enhanced understanding of LiDAR-based autonomous navigation.
+**Learning outcomes:**
 
-**Skills & tools:** ROS 2 Humble, Python, Gazebo Classic, URDF/Xacro, LiDAR Integration
+- Mastered ROS 2 message handling and sensor integration.
+- Learned Gazebo robot modeling and environment design.
+- Enhanced autonomous navigation understanding.
+
+**Skills & tools used:**
+
+ROS 2 Humble, Python, Gazebo Classic, URDF/Xacro
 
 <div class="project-media">
   <video controls>
@@ -195,152 +134,178 @@ Simulates a two-wheeled differential drive robot equipped with a LiDAR sensor th
     Your browser does not support the video tag.
   </video>
   <br />
-  <a class="github-link" href="https://github.com/parveezsyed28/obstacle_avoidance_lidar" target="_blank">GitHub Repository</a>
+  <a class="github-link" href="https://github.com/parveezsyed28/obstacle_avoidance_lidar" target="_blank" rel="noopener">GitHub Repository</a>
 </div>
 
 ---
 
-### ROS 2 Bot Description and Simulation
+### Robot Description and Simulation (Fusion 360 + ROS 2 + Gazebo)
 
-**Description:**  
-Custom two-wheeled robot designed in Fusion 360 and described with URDF/Xacro files. Includes detailed STL meshes and Gazebo plugins for realistic motion simulation.
+Custom two-wheeled robot designed in Fusion 360, described in URDF/Xacro with STL meshes, integrated with Gazebo plugins for realistic simulation.
 
-- Designed mechanical parts in Fusion 360.  
-- Created accurate URDF and Xacro descriptions.  
-- Simulated robot kinematics and sensors in Gazebo.
+**Challenges faced:**
 
-**Challenges faced:**  
-- Managing mesh file references.  
-- Configuring differential drive plugin parameters.  
-- Synchronizing URDF with Gazebo XML extensions.
+- Managing mesh references and visualization.
+- Configuring differential drive plugins.
+- Syncing URDF with Gazebo extensions.
 
-**Learning outcomes:**  
-- Experience in robot modeling and simulation workflows.  
-- Integration of CAD designs with ROS 2 simulation.  
-- Skills in configuring robot plugins for Gazebo.
+**Learning outcomes:**
 
-**Skills & tools:** Fusion 360, ROS 2 Humble, Gazebo Classic, URDF/Xacro, STL Meshes, Python
+- Experience in CAD to ROS simulation pipeline.
+- Robot plugin configuration in Gazebo.
+- Integration of hardware models into software simulation.
+
+**Skills & tools used:**
+
+Fusion 360, ROS 2 Humble, Gazebo Classic, URDF/Xacro
 
 <div class="project-media">
-  <img src="assets/images/ros2_bot_description.png" alt="ROS 2 Bot Description" />
+  <img src="assets/images/ros2_bot_description.png" alt="Robot Description" />
   <video controls>
     <source src="assets/images/robot_teleop.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
   <br />
-  <a class="github-link" href="https://github.com/parveezsyed28/ros2_bot_description" target="_blank">GitHub Repository</a>
+  <a class="github-link" href="https://github.com/parveezsyed28/ros2_bot_description" target="_blank" rel="noopener">GitHub Repository</a>
 </div>
 
 ---
 
-### Turtlesim Shape Drawer
+### Geometric Shape Drawer using Turtlesim (ROS 2)
 
-**Description:**  
-A ROS 2 Python node that controls turtlesim to draw geometric shapes based on user input. Includes service calls to reset turtlesim.
+A ROS 2 Python node that controls turtlesim to draw geometric shapes interactively. Demonstrates ROS 2 communication (publishers, subscribers, services).
 
-- Implemented publisher and subscriber nodes.  
-- Managed CLI input and reset services.  
-- Designed modular code for extensibility.
+**Challenges faced:**
 
-**Challenges faced:**  
-- Synchronizing service calls with publisher commands.  
-- Managing timing and velocity for precise shapes.
+- Synchronizing service calls and velocity commands.
+- Timing and velocity tuning for precise shapes.
 
-**Learning outcomes:**  
-- Deepened understanding of ROS 2 communication.  
-- Built interactive robotic applications.  
-- Practiced Python scripting.
+**Learning outcomes:**
 
-**Skills & tools:** ROS 2 Humble, Python, Turtlesim, Publisher/Subscriber, Service Calls
+- Improved ROS 2 communication skills.
+- Python scripting for interactive robotics.
+- Visualization with Turtlesim.
+
+**Skills & tools used:**
+
+ROS 2 Humble, Python, Turtlesim
 
 <div class="project-media">
   <video controls>
     <source src="assets/images/Turtlesim.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
+  <br />
+  <a class="github-link" href="https://github.com/parveezsyed28/turtlesim_shape_drawer" target="_blank" rel="noopener">GitHub Repository</a>
 </div>
 
 ---
 
-### ADC-Based Speed Controlled Robot
+### ADC-Based Speed-Controlled Robot
 
-**Description:**  
-Robot integrating multiple IR sensors for obstacle avoidance, cliff detection, and black line following, with dynamic speed control via a potentiometer connected to the ATmega16 ADC.
+Robot with multiple sensors for obstacle avoidance, cliff detection, and line following. Speed control through ADC potentiometer on ATmega16.
 
-- Utilizes multiple IR sensors.  
-- Speed control via ADC from trimpot.  
-- Embedded C for real-time processing.
+**Challenges faced:**
 
-**Challenges faced:**  
-- Balancing sensor readings and motor control.  
-- Accurate ADC sampling and PWM control.  
-- Hardware integration of sensors.
+- Balancing sensor input and motor speed.
+- Accurate ADC sampling and PWM control.
+- Integrating multiple sensors with microcontroller.
 
-**Learning outcomes:**  
-- Mastered ADC usage.  
-- Developed complex embedded systems.  
-- Improved hardware-software co-design.
+**Learning outcomes:**
 
-**Skills & tools:** Embedded C, ATmega16 ADC, IR Sensors, Potentiometer, L293D Motor Driver
+- Mastered ADC use in microcontrollers.
+- Developed embedded sensor integration.
+- Hardware-software co-design.
+
+**Skills & tools used:**
+
+Embedded C, ATmega16, ADC, IR sensors
 
 <div class="project-media">
   <img src="assets/images/adc_robot_diagram.png" alt="ADC Robot Diagram" />
+  <br />
+  <a class="github-link" href="https://github.com/parveezsyed28/adc_speed_controlled_robot" target="_blank" rel="noopener">GitHub Repository</a>
 </div>
 
 ---
 
-### Obstacle Avoider Robot (Embedded C)
+### Obstacle Avoider Robot
 
-**Description:**  
-Microcontroller-based robot using IR sensors to avoid obstacles, programmed in Embedded C on ATmega16. Controls motion via L293D driver.
+Microcontroller robot avoiding obstacles using IR sensors and L293D motor driver, programmed in Embedded C.
 
-- Implemented IR sensor logic.  
-- Controlled motors with embedded code.  
-- Developed optimized chassis.
+**Challenges faced:**
 
-**Challenges faced:**  
-- Ensuring reliable sensor readings.  
-- Timing motor signals for smooth movement.  
-- Power management.
+- Reliable IR sensor readings under various conditions.
+- Smooth motor control timing.
+- Effective power management.
 
-**Learning outcomes:**  
-- Expertise in embedded C.  
-- Sensor integration.  
+**Learning outcomes:**
+
+- Embedded C for real-time control.
+- Sensor integration on microcontrollers.
 - Motor driver interfacing.
 
-**Skills & tools:** Embedded C, ATmega16, IR Sensors, L293D Motor Driver
+**Skills & tools used:**
 
-<div class="project-media images-container">
+Embedded C, ATmega16, IR sensors, L293D
+
+<div class="project-media side-by-side">
   <img src="assets/images/obstacle_avoider.png" alt="Obstacle Avoider Robot" />
   <img src="assets/images/Obstacle_avoider_connection.png" alt="Obstacle Avoider Circuit" />
+  <br />
+  <a class="github-link" href="https://github.com/parveezsyed28/obstacle_avoider_robot" target="_blank" rel="noopener">GitHub Repository</a>
 </div>
 
 ---
 
 ### Table Top Robot
 
-**Description:**  
-Robot designed to detect table edges and avoid falling using IR sensors with ATmega16 microcontroller.
+Designed to detect table edges and avoid falls using IR sensors on ATmega16 microcontroller.
 
-- Real-time IR edge detection.  
-- Embedded control for safety.
+**Challenges faced:**
 
-**Challenges faced:**  
-- Fast, reliable edge detection.  
-- Sensor sensitivity balance.
+- Fast, reliable edge detection.
+- Reducing false positives.
 
-**Learning outcomes:**  
-- Mastered edge detection.  
-- Refined safety control.
+**Learning outcomes:**
 
-**Skills & tools:** Embedded C, ATmega16, IR Sensors
+- Mastered IR edge detection.
+- Embedded safety control design.
+
+**Skills & tools used:**
+
+Embedded C, ATmega16, IR Sensors
 
 <div class="project-media">
   <img src="assets/images/table_top.png" alt="Table Top Robot" />
+  <br />
+  <a class="github-link" href="https://github.com/parveezsyed28/table_top_robot" target="_blank" rel="noopener">GitHub Repository</a>
 </div>
 
 ---
 
-<footer>
-  &copy; {{ site.time | date: "%Y" }} Parveez Banu Syed Azizuddin — Robotics Portfolio
-</footer>
+### Line Follower Robot
+
+Robot following black line with bottom IR sensors. Embedded C programming with analog sensor input.
+
+**Challenges faced:**
+
+- Filtering sensor noise.
+- Sensor placement optimization.
+- Smooth motor control on curves.
+
+**Learning outcomes:**
+
+- Sensor-based path following.
+- Embedded control techniques.
+
+**Skills & tools used:**
+
+Embedded C, ATmega16, IR sensors, Motor driver
+
+<div class="project-media side-by-side">
+  <img src="assets/images/line_follower.png" alt="Line Follower Robot" />
+  <img src="assets/images/line_follower_connection.png" alt="Line Follower Circuit" />
+  <br />
+  <a class="github-link" href="https://github.com/parveezsyed28/line_follower_robot" target="_blank" rel="noopener">GitHub Repository</a>
+</div>
