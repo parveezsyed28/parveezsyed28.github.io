@@ -4,8 +4,7 @@ baseurl: ""
 url: "https://parveezsyed28.github.io" 
 
 # Theme
-remote_theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "default"
+theme: jekyll-theme-slate
 
 # Plugins
 plugins:
