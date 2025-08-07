@@ -5,32 +5,33 @@ title: Parveez Banu Syed Azizuddin | Robotics Portfolio
 
 <style>
   body {
-    background-color: #FAF3E0; /* warm off-white */
-    color: #5B5B5B; /* warm dark grey */
+    background-color: #e6f0ff; /* light pastel blue */
+    color: #334466; /* dark blue-gray */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0 20px;
   }
   a {
-    color: #6ABEA7; /* pastel teal */
+    color: #3366cc; /* medium blue */
     text-decoration: none;
     font-weight: 600;
   }
   a:hover {
-    color: #F28C8C; /* pastel coral */
+    color: #003399; /* dark blue */
     text-decoration: underline;
   }
   header {
-    background-color: #F4A261; /* pastel orange */
-    color: #FFF8F0;
+    background-color: #4a69ad; /* calm blue */
+    color: white;
     padding: 60px 20px 40px;
     text-align: center;
-    box-shadow: 0 3px 10px rgba(242, 140, 140, 0.7);
+    box-shadow: 0 3px 10px rgba(0,0,80,0.4);
     margin-bottom: 40px;
+    border-radius: 6px;
   }
   header h1 {
-    margin: 0 0 10px;
+    margin: 0 0 8px;
     font-weight: 900;
     font-size: 3rem;
     letter-spacing: 1.5px;
@@ -38,16 +39,15 @@ title: Parveez Banu Syed Azizuddin | Robotics Portfolio
   }
   header p {
     font-weight: 500;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     font-style: italic;
     max-width: 600px;
     margin: 0 auto;
-    color: #FFF8F0;
     line-height: 1.4;
   }
   h2 {
-    color: #F4A261; /* pastel orange */
-    border-bottom: 3px solid #6ABEA7; /* pastel teal */
+    color: #3366cc; /* medium blue */
+    border-bottom: 3px solid #4a69ad; /* calm blue */
     padding-bottom: 10px;
     margin-bottom: 32px;
     font-weight: 700;
@@ -55,11 +55,11 @@ title: Parveez Banu Syed Azizuddin | Robotics Portfolio
   .project {
     margin-bottom: 60px;
     padding-bottom: 30px;
-    border-bottom: 1px solid #d9c9b6;
+    border-bottom: 1px solid #a3b1d1;
   }
   .project-title {
     font-size: 1.8rem;
-    color: #F28C8C; /* pastel coral */
+    color: #003366; /* dark navy blue */
     font-weight: 700;
     margin-bottom: 15px;
   }
@@ -70,7 +70,7 @@ title: Parveez Banu Syed Azizuddin | Robotics Portfolio
     max-width: 720px;
     margin-bottom: 16px;
     font-size: 1rem;
-    color: #5B5B5B;
+    color: #334466;
   }
   ul {
     padding-left: 20px;
@@ -85,7 +85,7 @@ title: Parveez Banu Syed Azizuddin | Robotics Portfolio
   .project-media img,
   .project-media video {
     border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(242, 140, 140, 0.3);
+    box-shadow: 0 3px 10px rgba(51, 102, 204, 0.3);
     max-width: 100%;
     height: auto;
     margin: 10px 0;
@@ -101,20 +101,20 @@ title: Parveez Banu Syed Azizuddin | Robotics Portfolio
     flex-wrap: wrap;
   }
   .images-container img {
-    max-width: 45%;
+    max-width: 48%;
   }
   .github-link {
-    color: #6ABEA7;
+    color: #3366cc;
     font-weight: 600;
     display: inline-block;
     margin-top: 8px;
   }
   .github-link:hover {
-    color: #F28C8C;
+    color: #003399;
   }
   footer {
-    color: #8C8C8C;
-    border-top: 1px solid #F4A261;
+    color: #607799;
+    border-top: 1px solid #4a69ad;
     padding: 20px;
     text-align: center;
     margin-top: 80px;
@@ -280,7 +280,7 @@ Robot integrating multiple IR sensors for obstacle avoidance, cliff detection, a
 **Skills & tools:** Embedded C, ATmega16 ADC, IR Sensors, Potentiometer, L293D Motor Driver
 
 <div class="project-media">
-  <img src="assets/images/adc_robot_diagram.png" alt="ADC Robot Diagram" style="max-width: 80%; border-radius: 8px; box-shadow: 0 3px 10px rgba(242,140,140,0.3);" />
+  <img src="assets/images/adc_robot_diagram.png" alt="ADC Robot Diagram" style="max-width: 80%; border-radius: 8px; box-shadow: 0 3px 10px rgba(51,102,204,0.3);" />
 </div>
 
 ---
