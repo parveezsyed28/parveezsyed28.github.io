@@ -1,51 +1,11 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
-search: false
+# Only the main Sass file needs front matter
 ---
 
 @charset "utf-8";
 
-// Custom styles for Slate theme
-
-/* Make headings more vibrant */
-h1, h2, h3 {
-  color: #f8f8f2;
-  border-bottom: 2px solid #6272a4;
-  padding-bottom: 4px;
-}
-
-/* Add padding and soft background to sections */
-section {
-  padding: 1.5em;
+/* Your custom styles go here */
+body {
   background-color: #2e2e2e;
-  border-radius: 8px;
-  margin-bottom: 1.5em;
+  color: #ffffff;
 }
-
-/* Improve link visibility */
-a {
-  color: #8be9fd;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-/* Enhance image presentation */
-img {
-  max-width: 100%;
-  height: auto;
-  border: 2px solid #444;
-  border-radius: 6px;
-  margin: 0.5em 0;
-}
-
-/* Style code blocks */
-pre, code {
-  background-color: #44475a;
-  padding: 0.5em;
-  border-radius: 4px;
-  font-family: monospace;
-  color: #f1fa8c;
-}
-
