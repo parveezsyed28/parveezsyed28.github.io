@@ -45,28 +45,21 @@ This robot autonomously follows the wall using LiDAR data and ROS 2 nodes. The s
 
 ### Obstacle Avoidance with LiDAR (ROS 2 + Gazebo)
 
-This project simulates a two-wheeled differential drive robot equipped with a LiDAR sensor that autonomously avoids obstacles within a Gazebo environment. Using ROS 2 Humble and Gazebo Classic, the robot processes real-time laser scan data from the `/scan` topic and publishes velocity commands to `/cmd_vel` for smooth navigation. The setup includes a custom URDF/Xacro model and a detailed Gazebo world representing a cluttered environment.
+Simulates a differential drive robot equipped with a LiDAR sensor that autonomously avoids obstacles in a cluttered Gazebo world.
 
 - Developed custom robot model and integrated LiDAR sensor.  
 - Implemented obstacle detection and avoidance algorithms in Python.  
-- Designed simulation environment replicating real-world navigation challenges.
+- Designed simulation environment replicating real-world challenges.
 
 **Challenges faced:**  
-- Ensuring accurate sensor data processing and filtering for reliable obstacle detection.  
-- Tuning velocity commands to achieve smooth and safe robot movements.  
-- Configuring Gazebo plugins and model files for correct sensor simulation.
+- Accurate filtering of LiDAR data for reliable detection.  
+- Smooth and safe robot velocity tuning.  
+- Correct setup of Gazebo plugins and sensor simulation.
 
 **Learning outcomes:**  
-- Mastered ROS 2 topics and message handling for real-time sensor and control data.  
-- Gained experience in Gazebo robot modeling and simulation environment setup.  
-- Enhanced understanding of autonomous navigation using LiDAR-based perception.
-
-**Skills & tools used:**  
-- ROS 2 Humble, Python  
-- Gazebo Classic Simulation  
-- URDF / Xacro Robot Description  
-- LiDAR sensor integration  
-- Ubuntu Linux, Visual Studio Code
+- Mastered ROS 2 topic/message handling.  
+- Gained experience with URDF/Xacro and simulation setup.  
+- Improved navigation logic using real-time perception.
 
 [GitHub Repository](https://github.com/parveezsyed28/obstacle_avoidance_lidar)
 
@@ -74,28 +67,21 @@ This project simulates a two-wheeled differential drive robot equipped with a Li
 
 ### Robot Description and Simulation (Fusion 360 + ROS 2 + Gazebo)
 
-This project features a custom-designed two-wheeled robot created using Fusion 360 and described with URDF/Xacro files. The model includes detailed STL meshes and integrates Gazebo plugins such as the differential drive controller for realistic motion simulation. The robot is simulated within Gazebo to test movement and sensor plugins, providing a solid foundation for further ROS 2 robotic development.
+A custom-designed two-wheeled robot modeled in Fusion 360 and described with URDF/Xacro, simulated in Gazebo.
 
 - Designed mechanical components in Fusion 360 and exported STL meshes.  
-- Created accurate URDF and Xacro descriptions with sensors and plugins.  
-- Simulated robot kinematics and sensor data in Gazebo.
+- Created accurate URDF and Xacro files.  
+- Simulated movement and sensors using Gazebo plugins.
 
 **Challenges faced:**  
-- Managing mesh file references and ensuring proper visualization in Gazebo.  
-- Configuring differential drive plugin parameters for smooth robot control.  
-- Synchronizing URDF with Gazebo-specific XML extensions.
+- Ensuring correct mesh rendering in Gazebo.  
+- Tuning differential drive plugin.  
+- Integrating sensor and motion plugins with URDF.
 
 **Learning outcomes:**  
-- Gained experience in robot modeling and simulation workflows.  
-- Understood integration of hardware CAD designs with ROS 2 simulation environments.  
-- Developed skills in robot plugin configuration for Gazebo.
-
-**Skills & tools used:**  
-- Fusion 360 CAD  
-- ROS 2 Humble, Gazebo Classic  
-- URDF / Xacro Robot Modeling  
-- STL Meshes and Gazebo Plugins  
-- Python, Linux
+- Integration of CAD models with ROS 2 simulation.  
+- Practice with URDF/Xacro and Gazebo configuration.  
+- Improved understanding of simulation workflows.
 
 [GitHub Repository](https://github.com/parveezsyed28/ros2_bot_description)
 
@@ -103,27 +89,21 @@ This project features a custom-designed two-wheeled robot created using Fusion 3
 
 ### Geometric Shape Drawer using Turtlesim (ROS 2)
 
-A ROS 2 Python node that controls the turtlesim to draw geometric shapes based on interactive user input. It includes service calls to reset the turtlesim, allowing repeated shape drawing. This project demonstrates ROS 2 communication concepts like publishers, subscribers, and service clients in a simple and visual way.
+Draws user-defined geometric shapes in turtlesim using ROS 2 Python nodes and services.
 
-- Implemented publisher and subscriber nodes for turtle velocity commands.  
-- Handled CLI input and reset services in ROS 2.  
-- Designed code modularity for ease of extending shapes.
+- Implemented publisher/subscriber logic.  
+- Reset turtlesim via service calls.  
+- Allowed user input for interactive experience.
 
 **Challenges faced:**  
-- Synchronizing service calls and publisher commands for smooth turtle control.  
-- Managing timing and velocity parameters for precise shape drawing.
+- Synchronizing service and command timing.  
+- Handling velocity for precise shape creation.
 
 **Learning outcomes:**  
-- Deepened understanding of ROS 2 communication patterns.  
-- Improved ability to build interactive robotic applications.  
-- Practiced Python scripting in ROS 2 nodes.
+- ROS 2 communication concepts (topics, services).  
+- Modular code structuring for robotics.  
+- Python scripting in ROS 2.
 
-**Skills & tools used:**  
-- ROS 2 Humble, Python  
-- Turtlesim Simulator  
-- Publisher/Subscriber and Service Calls
-
-<!-- Example video placeholder -->
 <video width="600" controls>
   <source src="/assets/images/geometric_shape_drawer.mp4" type="video/mp4">
   Your browser does not support the video tag.
@@ -131,45 +111,42 @@ A ROS 2 Python node that controls the turtlesim to draw geometric shapes based o
 
 ---
 
-### ADC-Based Speed-Controlled Robot
+### ADC-Based Speed-Controlled Robot (Embedded C + ATmega16)
 
-An advanced robot integrating multiple sensors for obstacle avoidance, cliff detection, and black line following, with dynamic speed control via ADC input. Developed using Embedded C on an ATmega16 microcontroller.
+An embedded robot using IR sensors and ADC-based potentiometer input for dynamic speed control.
 
-- Utilizes multiple IR sensors for environmental awareness.  
-- Implements speed control using potentiometer input through ADC.  
-- Embedded C programming for real-time sensor and motor control.
+- Multi-sensor obstacle, cliff, and line detection.  
+- ADC input from potentiometer for speed regulation.  
+- Programmed in Embedded C on ATmega16.
 
 **Challenges faced:**  
-- Balancing sensor input and motor speed for smooth navigation.  
-- Implementing precise ADC sampling and PWM motor control.  
-- Hardware-software integration of multiple sensors.
+- Precise ADC sampling and PWM control.  
+- Balancing motor speed with sensor feedback.  
+- Integrating analog and digital signals effectively.
 
 **Learning outcomes:**  
-- Mastered ADC usage in microcontrollers.  
-- Developed complex embedded systems integrating sensors and control logic.  
-- Improved hardware-software co-design skills.
-
-[Image or schematic placeholder](/assets/images/adc_robot_diagram.png)
+- Mastered ADC and real-time sensor control.  
+- Developed advanced embedded motor control logic.  
+- Strengthened hardware-software integration skills.
 
 ---
 
-### Obstacle Avoider Robot
+### Obstacle Avoider Robot (Embedded C + ATmega16)
 
-A microcontroller-based robot that avoids obstacles using IR sensors and L293D motor driver, programmed in Embedded C for the ATmega16.
+An IR-sensor-based robot that avoids obstacles using motor control logic and L293D driver.
 
-- Implemented IR sensor interfacing and obstacle detection logic.  
-- Controlled motors via embedded C code.  
-- Designed chassis optimized for sensor placement.
+- Programmed using Embedded C on ATmega16.  
+- IR sensor integration for detection.  
+- Compact chassis for mobility.
 
 **Challenges faced:**  
-- Ensuring sensor reliability under varying conditions.  
-- Timing motor control signals to avoid jerky motion.  
-- Managing power distribution effectively.
+- IR accuracy under environmental noise.  
+- Motor timing and power balancing.
 
 **Learning outcomes:**  
-- Gained expertise in embedded C programming for real-time control.  
-- Practiced sensor integration on microcontrollers.  
-- Understood motor driver interfacing and control.
+- Embedded C in robotics.  
+- Sensor-based autonomous control.  
+- Real-time microcontroller programming.
 
 ![Obstacle Avoider Robot](/assets/images/obstacle_avoider_robot.png)
 
@@ -177,18 +154,18 @@ A microcontroller-based robot that avoids obstacles using IR sensors and L293D m
 
 ### Table Top Robot
 
-Designed to detect table edges and avoid falling using IR sensors programmed on ATmega16 microcontroller.
+A safety robot that detects table edges to prevent falls using IR sensors and embedded logic.
 
-- Used real-time IR sensor data for edge detection.  
-- Embedded control logic to adjust motion based on sensor feedback.
+- Programmed on ATmega16.  
+- Edge detection and feedback motion control.
 
 **Challenges faced:**  
-- Achieving fast, reliable edge detection.  
-- Balancing sensor sensitivity to reduce false positives.
+- Accurate edge detection without false triggers.  
+- Fast reaction to avoid fall-off.
 
 **Learning outcomes:**  
-- Mastered IR sensor edge detection.  
-- Refined embedded safety control strategies.
+- Embedded IR sensor control.  
+- Safety logic in embedded systems.
 
 ![Table Top Robot](/assets/images/table_top_robot.png)
 
@@ -196,19 +173,19 @@ Designed to detect table edges and avoid falling using IR sensors programmed on 
 
 ### Line Follower Robot
 
-A robot following a black line using bottom-mounted IR sensors. Developed in Embedded C on the ATmega16, using analog sensor input for line detection.
+Follows a black line using analog IR sensors and motor control on ATmega16.
 
-- Implemented analog IR sensor interfacing.  
-- Developed control logic for path following.  
-- Designed compact hardware.
+- IR sensor placement for accuracy.  
+- Embedded path following algorithm.  
+- Analog signal processing and filtering.
 
 **Challenges faced:**  
-- Filtering sensor noise for accurate line detection.  
-- Optimizing sensor placement and motor control.
+- Noise filtering in analog signals.  
+- Responsive motor control for sharp curves.
 
 **Learning outcomes:**  
-- Applied embedded control techniques in constrained environments.  
-- Gained understanding of sensor-based navigation.
+- Sensor-based embedded navigation.  
+- Microcontroller-level motor and sensor control.
 
 ![Line Follower Robot](/assets/images/line_follower_robot.png)
 
@@ -219,14 +196,15 @@ A robot following a black line using bottom-mounted IR sensors. Developed in Emb
 - ROS 2 Humble, Gazebo Classic Simulation  
 - URDF / Xacro Robot Description  
 - Python, Embedded C Programming  
-- ATmega16 Microcontroller, L293D Motor Driver, IR Sensors  
-- Fusion 360 CAD Modeling, KiCad PCB Design  
+- ATmega16, L293D, IR Sensors  
+- Fusion 360 CAD, KiCad PCB Design  
 - Linux (Ubuntu), Git & GitHub  
 
 ---
 
 ## Contact
 
-- Email: [parveezbanu.s@gmail.com](mailto:parveezbanu.s@gmail.com)  
-- GitHub: [github.com/parveezsyed28](https://github.com/parveezsyed28)  
-- LinkedIn: [linkedin.com/in/parveez-banu-syed-azizuddin2807](https://www.linkedin.com/in/parveez-banu-syed-azizuddin2807)  
+- 📧 [parveezbanu.s@gmail.com](mailto:parveezbanu.s@gmail.com)  
+- 🧠 [GitHub](https://github.com/parveezsyed28)  
+- 💼 [LinkedIn](https://www.linkedin.com/in/parveez-banu2807)
+- 
