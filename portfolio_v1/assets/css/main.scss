@@ -1,11 +1,110 @@
 ---
 # Only the main Sass file needs front matter
 ---
-
 @charset "utf-8";
 
-/* Your custom styles go here */
+/* Font and base styles */
 body {
-  background-color: #2e2e2e;
-  color: #ffffff;
+  background-color: #f6fbff;  /* Light pastel blue */
+  color: #2e2e2e;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+/* Main heading: Your name */
+h1 {
+  font-size: 2.8rem;
+  color: #003f7f;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+  text-align: center;
+}
+
+/* Subtitle: Robotics Enthusiast | ROS2 Developer */
+h2.subtitle {
+  font-size: 1.4rem;
+  color: #6c88c4;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Section titles: Projects, Skills, etc. */
+h2 {
+  font-size: 2rem;
+  color: #005f99;
+  border-bottom: 2px solid #80d0ff;
+  padding-bottom: 5px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+/* Project Titles */
+h3 {
+  font-size: 1.6rem;
+  color: #0074cc;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Subheadings like Challenges, Learning Outcomes */
+h4 {
+  font-size: 1.2rem;
+  color: #cc6699;
+  font-style: italic;
+  border-left: 4px solid #ffcce0;
+  padding-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* GitHub Repo link styling */
+a[href*="github.com"] {
+  color: #0056b3;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a[href*="github.com"]:hover {
+  text-decoration: underline;
+  color: #003f7f;
+}
+
+/* Videos and images full width */
+img, video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Side-by-side images */
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.image-row img {
+  flex: 1;
+  max-width: 48%;
+}
+
+/* Subtle animation */
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
