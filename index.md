@@ -145,20 +145,60 @@ classes: wide
 
 <div class="header-container">
   <h1>Parveez Banu Syed Azizuddin</h1>
-  <p>Mechatronics Specialist | Robotics Enthusiast | ROS 2 Developer</p>
+  <p>Mechatronics Engineer | Robotics Enthusiast | ROS 2 Developer</p>
 </div>
 
 ## About Me
 
-I am a Mechatronics Specialist with a Bachelor’s degree in Electrical and Electronics Engineering and a Postgraduate Certificate in Industrial Automation. Passionate about robotics, I excel in integrating both hardware and software systems. My hands-on experience includes ROS 2, Gazebo simulation, Python programming, Fusion 360 CAD modeling, and embedded microcontroller development. I aspire to contribute as a versatile roboticist building intelligent autonomous systems.
+Welcome to my portfolio, a space where curiosity and continuous learning drive my journey into robotics and autonomous systems. With a foundation in Electrical and Electronics Engineering and experience as a Mechatronics Engineer, I am actively expanding my skills in ROS 2, embedded systems, and simulation through hands-on projects and self-driven exploration. This collection highlights my growth as a robotics enthusiast and my commitment to mastering the integration of hardware and software to solve real-world challenges. Explore my work and join me as I build expertise and contribute to the exciting field of robotics.
 
 ---
 
 ## Featured Projects
 
+### Wall Following Robot (ROS 2 + Gazebo)
+
+This project focuses on creating a robot that maintains a steady distance alongside walls using LiDAR data. It leverages ROS 2 Humble and Gazebo Classic to simulate wall-following behavior by processing laser scan data and generating velocity commands to navigate corridors and turns smoothly. The robot’s custom URDF/Xacro model includes detailed sensor and actuator configurations optimized for precise wall tracking in maze-like environments.
+
+- Developed custom robot model and integrated LiDAR sensor.  
+- Implemented obstacle detection and avoidance algorithms in Python.  
+- Designed simulation environment replicating real-world navigation challenges.
+
+**Challenges faced:**
+
+- Ensuring accurate sensor data processing and filtering for reliable obstacle detection.  
+- Tuning velocity commands to achieve smooth and safe robot movements.  
+- Configuring Gazebo plugins and model files for correct sensor simulation.
+
+**Learning outcomes:**
+
+- Mastered ROS 2 topics and message handling for real-time sensor and control data.  
+- Gained experience in Gazebo robot modeling and simulation environment setup.  
+- Enhanced understanding of autonomous navigation using LiDAR-based perception.
+
+**Skills & tools used:**
+
+ROS 2 Humble, Python  
+Gazebo Classic Simulation  
+URDF / Xacro Robot Description  
+LiDAR sensor integration  
+Ubuntu Linux, Visual Studio Code
+
+<div class="project-media">
+  <video controls>
+    <source src="assets/images/Wall_follower.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <br />
+  <a class="github-link" href="https://github.com/parveezsyed28/Wall-Following-Robot-with-LiDAR" target="_blank" rel="noopener">GitHub Repository</a>
+</div>
+
+---
+
+
 ### Obstacle Avoidance with LiDAR (ROS 2 + Gazebo)
 
-This project simulates a two-wheeled differential drive robot equipped with a LiDAR sensor that autonomously avoids obstacles within a Gazebo environment. Using ROS 2 Humble and Gazebo Classic, the robot processes real-time laser scan data from the /scan topic and publishes velocity commands to /cmd_vel for smooth navigation. The setup includes a custom URDF/Xacro model and a detailed Gazebo world representing a cluttered environment.
+This project simulates a differential drive robot designed to detect and avoid obstacles dynamically while navigating an open or cluttered environment. Using ROS 2 and Gazebo Classic, the robot processes laser scan data to identify obstacles in real time, adapting its velocity commands to steer clear of collisions. The simulation includes a custom URDF/Xacro robot model with integrated sensors, enabling reactive navigation in unpredictable scenarios.
 
 - Developed custom robot model and integrated LiDAR sensor.
 - Implemented obstacle detection and avoidance algorithms in Python.
@@ -195,7 +235,7 @@ Ubuntu Linux, Visual Studio Code
 
 ---
 
-### ROS 2 Bot Description
+### Robot Description and Simulation using ROS2
 
 This project features a custom-designed two-wheeled robot created using Fusion 360 and described with URDF/Xacro files. The model includes detailed STL meshes and integrates Gazebo plugins such as the differential drive controller for realistic motion simulation. The robot is simulated within Gazebo to test movement and sensor plugins, providing a solid foundation for further ROS 2 robotic development.
 
@@ -224,7 +264,6 @@ STL Meshes and Gazebo Plugins
 Python, Linux
 
 <div class="media side-by-side">
-  <img src="assets/images/ros2_bot_description.png" alt="Robot Description Image" />
   <video controls>
     <source src="assets/images/robot_teleop.mp4" type="video/mp4" />
     Your browser does not support the video tag.
@@ -234,7 +273,7 @@ Python, Linux
 
 ---
 
-### Turtlesim Shape Drawer
+### Geometric Shape Drawer using Turtlesim
 
 A ROS 2 Python node that controls the turtlesim to draw geometric shapes based on interactive user input. It includes service calls to reset the turtlesim, allowing repeated shape drawing. This project helps demonstrate ROS 2 communication concepts like publishers, subscribers, and service clients in a simple and visual way.
 
@@ -266,6 +305,37 @@ Publisher/Subscriber and Service Calls
   </video>
 </div>
 <a href="https://github.com/parveezsyed28/user_input_turtle_shape" target="_blank" class="github-link">GitHub Repository</a>
+
+---
+
+### ADC-Based Robot (Analog to Digital Conversion)
+
+This advanced robot integrates multiple sensors for obstacle avoidance, cliff detection, and black line following. It also includes dynamic speed control using a potentiometer connected to the ATmega16 microcontroller's ADC module. The robot uses analog sensor inputs to adapt motor speed and navigate various environments.
+
+- Utilizes front, top, left, and right IR sensors for comprehensive environment awareness.
+- Speed control implemented via ADC reading from a trimpot.
+- Embedded C programming for real-time sensor processing and motor control.
+
+**Challenges faced:**
+
+- Balancing sensor readings and motor control for smooth navigation.
+- Implementing accurate ADC sampling and PWM motor speed control.
+- Hardware integration of multiple sensors with the microcontroller.
+
+**Learning outcomes:**
+
+- Mastered ADC usage in microcontrollers for analog sensor data.
+- Developed complex embedded systems integrating multiple sensors.
+- Improved skills in hardware-software co-design.
+
+**Skills & tools used:**
+
+Embedded C, ATmega16 ADC module  
+IR Sensors, Potentiometer for Speed Control  
+L293D Motor Driver  
+Real-time Embedded Systems
+
+<a href="https://github.com/parveezsyed28/adc_speed_controlled_robot" target="_blank" class="github-link">GitHub Repository</a>
 
 ---
 
@@ -366,47 +436,13 @@ Motor Driver Control
 
 ---
 
-### ADC-Based Robot (Analog to Digital Conversion)
-
-This advanced robot integrates multiple sensors for obstacle avoidance, cliff detection, and black line following. It also includes dynamic speed control using a potentiometer connected to the ATmega16 microcontroller's ADC module. The robot uses analog sensor inputs to adapt motor speed and navigate various environments.
-
-- Utilizes front, top, left, and right IR sensors for comprehensive environment awareness.
-- Speed control implemented via ADC reading from a trimpot.
-- Embedded C programming for real-time sensor processing and motor control.
-
-**Challenges faced:**
-
-- Balancing sensor readings and motor control for smooth navigation.
-- Implementing accurate ADC sampling and PWM motor speed control.
-- Hardware integration of multiple sensors with the microcontroller.
-
-**Learning outcomes:**
-
-- Mastered ADC usage in microcontrollers for analog sensor data.
-- Developed complex embedded systems integrating multiple sensors.
-- Improved skills in hardware-software co-design.
-
-**Skills & tools used:**
-
-Embedded C, ATmega16 ADC module  
-IR Sensors, Potentiometer for Speed Control  
-L293D Motor Driver  
-Real-time Embedded Systems
-
-<div class="media">
-  <img src="assets/images/adc_robot_diagram.png" alt="ADC Robot Diagram" />
-</div>
-<a href="https://github.com/parveezsyed28/adc_speed_controlled_robot" target="_blank" class="github-link">GitHub Repository</a>
-
----
-
 ## Skills & Tools
 
 - ROS 2 Humble, Gazebo Classic Simulation  
 - URDF / Xacro Robot Description  
 - Python, Embedded C Programming  
 - ATmega16 Microcontroller, L293D Motor Driver, IR Sensors  
-- Fusion 360 CAD Modeling, KiCad PCB Design  
+- Fusion 360, CAD Modeling, KiCad PCB Design  
 - Linux (Ubuntu), Git & GitHub
 
 ---
@@ -415,4 +451,4 @@ Real-time Embedded Systems
 
 Email: <a href="mailto:parveezbanu.s@gmail.com">parveezbanu.s@gmail.com</a>  
 GitHub: <a href="https://github.com/parveezsyed28" target="_blank">github.com/parveezsyed28</a>  
-LinkedIn: <a href="https://linkedin.com/in/parveez-banu-syed-azizuddin2807give" target="_blank">linkedin.com/in/parveez-banu-syed-azizuddin2807give</a>
+LinkedIn: <a href="https://linkedin.com/in/parveez-banu-syed-azizuddin2807give" target="_blank">linkedin.com/in/parveez-banu2807</a>
