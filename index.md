@@ -64,21 +64,28 @@ classes: wide
   }
 
   /* Paragraphs and lists */
-    p, ul, ol {
+   /* Paragraphs justified */
+    p {
       max-width: 720px;
       margin-left: auto;
       margin-right: auto;
+      text-align: justify;   /* justify paragraph text */
     }
     
+    /* Lists left-aligned inside centered container */
     ul, ol {
-      text-align: left;      /* left-align bullets and text */
-      padding-left: 1.2em;   /* proper indent for bullets */
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;      /* bullets and text aligned left */
+      padding-left: 1.2em;   /* indent for bullets */
       margin-bottom: 1em;    /* spacing below lists */
     }
     
     ul li, ol li {
       margin-bottom: 0.4em;  /* space between bullet items */
     }
+
 
 
   /* Project media container */
