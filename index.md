@@ -64,16 +64,22 @@ classes: wide
   }
 
   /* Paragraphs and lists */
-  p, ul, ol {
-    max-width: 720px;
-    margin: 0 auto 20px auto;
-    text-align: center;
-    animation: fadeIn 1s ease forwards;
-  }
+    p, ul, ol {
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    ul, ol {
+      text-align: left;      /* left-align bullets and text */
+      padding-left: 1.2em;   /* proper indent for bullets */
+      margin-bottom: 1em;    /* spacing below lists */
+    }
+    
+    ul li, ol li {
+      margin-bottom: 0.4em;  /* space between bullet items */
+    }
 
-  ul li, ol li {
-    margin-bottom: 8px;
-  }
 
   /* Project media container */
   .media {
