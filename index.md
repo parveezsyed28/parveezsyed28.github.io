@@ -14,6 +14,7 @@ classes: wide
     background-color: #f5f9ff;
     color: #1a1a1a;
     line-height: 1.6;
+    margin: 0 20px; /* side margins for the entire page */
   }
 
   /* Header container */
@@ -46,6 +47,8 @@ classes: wide
     margin-top: 60px;
     margin-bottom: 20px;
     font-weight: 700;
+    text-align: left;
+    padding-left: 10px;
   }
 
   h3 {
@@ -53,45 +56,51 @@ classes: wide
     font-weight: 700;
     margin-top: 40px;
     margin-bottom: 10px;
+    text-align: left;
+    padding-left: 10px;
   }
 
   /* Paragraphs and lists */
   p, ul, ol {
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 720px;
+    margin: 0 10px 20px 10px;
+    text-align: left;
   }
 
   ul li, ol li {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
   }
 
   /* Project media container */
   .media {
     margin-top: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     max-width: 720px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;  /* left align media */
   }
 
   /* Images and videos */
   .media img,
   .media video {
     max-width: 100%;
-    max-height: 400px;
+    max-height: 450px;
     border-radius: 6px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    display: block;
+    margin-top: 10px;
   }
 
   /* Side by side images/videos */
   .side-by-side {
     display: flex;
     gap: 20px;
-    justify-content: center;
+    justify-content: flex-start;  /* align left */
     flex-wrap: wrap;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .side-by-side img,
@@ -110,38 +119,62 @@ classes: wide
     font-weight: 600;
     font-size: 0.9rem;
     text-decoration: none;
+    transition: color 0.3s ease;
+    padding-left: 10px;
   }
 
   .github-link:hover {
     text-decoration: underline;
+    color: #2a3d78;
   }
 
   /* Contact info */
   .contact-info {
-    max-width: 700px;
-    margin: 50px auto 60px;
+    max-width: 720px;
+    margin: 50px 10px 60px 10px;
     font-size: 1rem;
     color: #555;
+    text-align: left;
   }
 
   .contact-info a {
     color: #357edd;
     text-decoration: none;
     font-weight: 600;
+    transition: color 0.3s ease;
   }
 
   .contact-info a:hover {
     text-decoration: underline;
+    color: #2a3d78;
   }
 
   /* Horizontal line style */
   hr {
-    max-width: 700px;
-    margin: 40px auto;
+    max-width: 720px;
+    margin: 40px 10px;
     border: 0;
     border-top: 1px solid #d0d7e5;
   }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    body {
+      margin: 0 10px;
+    }
+
+    .side-by-side {
+      flex-direction: column;
+    }
+
+    .side-by-side img,
+    .side-by-side video {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
 </style>
+
 
 <div class="header-container">
   <h1>Parveez Banu Syed Azizuddin</h1>
