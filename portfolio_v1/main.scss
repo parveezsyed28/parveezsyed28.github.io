@@ -1,110 +1,64 @@
 ---
-# Only the main Sass file needs front matter
+# Sass file required front matter
 ---
+
 @charset "utf-8";
 
-/* Font and base styles */
 body {
-  background-color: #f6fbff;  /* Light pastel blue */
-  color: #2e2e2e;
-  font-family: "Segoe UI", Roboto, sans-serif;
+  background-color: #f0f4ff;
+  color: #1e1e2f;
+  font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
-  padding: 0 1rem;
+  padding: 20px;
 }
 
-/* Main heading: Your name */
 h1 {
-  font-size: 2.8rem;
-  color: #003f7f;
-  font-weight: bold;
-  margin-bottom: 0.2em;
-  text-align: center;
-}
-
-/* Subtitle: Robotics Enthusiast | ROS2 Developer */
-h2.subtitle {
-  font-size: 1.4rem;
-  color: #6c88c4;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-/* Section titles: Projects, Skills, etc. */
-h2 {
-  font-size: 2rem;
-  color: #005f99;
-  border-bottom: 2px solid #80d0ff;
-  padding-bottom: 5px;
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-
-/* Project Titles */
-h3 {
-  font-size: 1.6rem;
-  color: #0074cc;
-  margin-top: 40px;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-
-/* Subheadings like Challenges, Learning Outcomes */
-h4 {
-  font-size: 1.2rem;
-  color: #cc6699;
-  font-style: italic;
-  border-left: 4px solid #ffcce0;
-  padding-left: 10px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-/* GitHub Repo link styling */
-a[href*="github.com"] {
+  font-size: 2.2rem;
   color: #0056b3;
-  font-weight: bold;
-  text-decoration: none;
+  margin-bottom: 0.5rem;
 }
 
-a[href*="github.com"]:hover {
-  text-decoration: underline;
-  color: #003f7f;
+h2 {
+  font-size: 1.8rem;
+  color: #0096c7;
+  margin-top: 1.5rem;
+  border-bottom: 2px solid #cce5ff;
 }
 
-/* Videos and images full width */
-img, video {
-  display: block;
+h3 {
+  font-size: 1.5rem;
+  color: #0056b3;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.project-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 100, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 12px rgba(0, 0, 100, 0.15);
+}
+
+video, img {
   max-width: 100%;
   height: auto;
-  margin: 1rem 0;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-bottom: 1rem;
 }
 
-/* Side-by-side images */
-.image-row {
+.img-row {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  gap: 10px;
 }
-
-.image-row img {
+.img-row img {
   flex: 1;
-  max-width: 48%;
-}
-
-/* Subtle animation */
-.fade-in {
-  animation: fadeIn 0.8s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  width: 100%;
+  border-radius: 5px;
 }
