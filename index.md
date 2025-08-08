@@ -7,61 +7,148 @@ classes: wide
 ---
 
 <style>
-  .header-container {
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 60px;
-  }
+/* Header */
+.header-container {
+  text-align: center;
+  margin: 40px auto 60px;
+}
+.header-container h1 {
+  font-size: 3rem;
+  color: #4a90e2; /* pastel blue */
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+}
+.header-container p {
+  margin: 8px 0 0;
+  font-size: 1.25rem;
+  color: #6fa8dc; /* lighter pastel blue */
+  font-weight: 600;
+}
+
+/* General text */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1a1a1a;
+  color: #d1d9e6;
+  line-height: 1.6;
+}
+h2, h3 {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+}
+h2 {
+  font-size: 2.2rem;
+  border-bottom: 3px solid #4a90e2;
+  padding-bottom: 8px;
+  color: #7db1f9;
+}
+h3 {
+  font-size: 1.4rem;
+  color: #a6c8ff;
+}
+
+/* Project section */
+.project-title {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #4a90e2;
+  margin-bottom: 10px;
+}
+
+.project-subsection {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  color: #b0bec5;
+}
+
+.project-subsection strong {
+  color: #7db1f9;
+  font-weight: 700;
+}
+
+.project-subsection ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-top: 6px;
+  color: #c0cbdc;
+}
+
+/* Media */
+.project-media {
+  margin-top: 15px;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.project-media img,
+.project-media video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.7);
+  margin-bottom: 12px;
+}
+
+/* Side by side images */
+.side-by-side {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.side-by-side img {
+  max-width: 48%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.7);
+  margin-bottom: 12px;
+}
+
+/* GitHub icon link */
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 4px;
+  gap: 6px;
+  font-size: 0.95rem;
+}
+.github-link svg {
+  width: 18px;
+  height: 18px;
+  fill: #4a90e2;
+  transition: fill 0.2s ease;
+}
+.github-link:hover svg {
+  fill: #7db1f9;
+}
+.github-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
   .header-container h1 {
-    font-size: 3rem;
-    color: #4a90e2; /* pastel blue */
-    margin: 0;
-    font-weight: 900;
-    letter-spacing: 1.2px;
+    font-size: 2.2rem;
   }
   .header-container p {
-    margin: 8px 0 0;
-    font-size: 1.25rem;
-    color: #6fa8dc; /* lighter pastel blue */
-    font-weight: 600;
+    font-size: 1rem;
   }
-  .project-media {
-    margin-top: 20px;
-    max-width: 720px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+  h2 {
+    font-size: 1.8rem;
   }
-  .project-media img,
-  .project-media video {
-    max-width: 100%;
-    height: auto;
-    border-radius: 6px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.7);
-    margin-bottom: 15px;
-  }
-  .side-by-side {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+  .project-title {
+    font-size: 1.3rem;
   }
   .side-by-side img {
-    max-width: 48%;
-    height: auto;
-    border-radius: 6px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.7);
+    max-width: 100%;
   }
-  a.github-link {
-    font-weight: 600;
-    color: #4a90e2;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 8px;
-  }
-  a.github-link:hover {
-    text-decoration: underline;
-  }
+}
 </style>
 
 <div class="header-container">
@@ -103,7 +190,10 @@ ROS 2 Humble, Gazebo Classic, Python, LiDAR sensor integration
     Your browser does not support the video tag.
   </video>
   <br />
-  <a class="github-link" href="https://github.com/parveezsyed28/wall_follower_bot" target="_blank" rel="noopener">GitHub Repository</a>
+  <a class="github-link" href="https://github.com/parveezsyed28/Wall-Following-Robot-with-LiDAR" target="_blank" rel="noopener">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.22 2.2.82a7.67 7.67 0 012-.27 7.65 7.65 0 012 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8 8 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+    GitHub Repository
+  </a>
 </div>
 
 ---
@@ -134,7 +224,10 @@ ROS 2 Humble, Python, Gazebo Classic, URDF/Xacro
     Your browser does not support the video tag.
   </video>
   <br />
-  <a class="github-link" href="https://github.com/parveezsyed28/obstacle_avoidance_lidar" target="_blank" rel="noopener">GitHub Repository</a>
+  <a class="github-link" href="https://github.com/parveezsyed28/obstacle_avoidance_lidar" target="_blank" rel="noopener">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.22 2.2.82a7.67 7.67 0 012-.27 7.65 7.65 0 012 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8 8 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+    GitHub Repository
+  </a>
 </div>
 
 ---
@@ -166,7 +259,10 @@ Fusion 360, ROS 2 Humble, Gazebo Classic, URDF/Xacro
     Your browser does not support the video tag.
   </video>
   <br />
-  <a class="github-link" href="https://github.com/parveezsyed28/ros2_bot_description" target="_blank" rel="noopener">GitHub Repository</a>
+  <a class="github-link" href="https://github.com/parveezsyed28/ros2_bot_description" target="_blank" rel="noopener">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.22 2.2.82a7.67 7.67 0 012-.27 7.65 7.65 0 012 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8 8 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+    GitHub Repository
+  </a>
 </div>
 
 ---
@@ -196,7 +292,10 @@ ROS 2 Humble, Python, Turtlesim
     Your browser does not support the video tag.
   </video>
   <br />
-  <a class="github-link" href="https://github.com/parveezsyed28/turtlesim_shape_drawer" target="_blank" rel="noopener">GitHub Repository</a>
+  <a class="github-link" href="https://github.com/parveezsyed28/user_input_turtle_shape" target="_blank" rel="noopener">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.22 2.2.82a7.67 7.67 0 012-.27 7.65 7.65 0 012 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8 8 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+    GitHub Repository
+  </a>
 </div>
 
 ---
@@ -222,9 +321,11 @@ Robot with multiple sensors for obstacle avoidance, cliff detection, and line fo
 Embedded C, ATmega16, ADC, IR sensors
 
 <div class="project-media">
-  <img src="assets/images/adc_robot_diagram.png" alt="ADC Robot Diagram" />
   <br />
-  <a class="github-link" href="https://github.com/parveezsyed28/adc_speed_controlled_robot" target="_blank" rel="noopener">GitHub Repository</a>
+  <a class="github-link" href="https://github.com/parveezsyed28/ADC_based_speed_controlled_robot" target="_blank" rel="noopener">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.22 2.2.82a7.67 7.67 0 012-.27 7.65 7.65 0 012 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8 8 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+    GitHub Repository
+  </a>
 </div>
 
 ---
@@ -252,9 +353,11 @@ Embedded C, ATmega16, IR sensors, L293D
 <div class="project-media side-by-side">
   <img src="assets/images/obstacle_avoider.png" alt="Obstacle Avoider Robot" />
   <img src="assets/images/Obstacle_avoider_connection.png" alt="Obstacle Avoider Circuit" />
-  <br />
-  <a class="github-link" href="https://github.com/parveezsyed28/obstacle_avoider_robot" target="_blank" rel="noopener">GitHub Repository</a>
 </div>
+<a class="github-link" href="https://github.com/parveezsyed28/obstacle_avoider_robot" target="_blank" rel="noopener" style="display:block; text-align:center; margin-top:6px;">
+  <svg viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.22 2.2.82a7.67 7.67 0 012-.27 7.65 7.65 0 012 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8 8 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+  GitHub Repository
+</a>
 
 ---
 
@@ -279,7 +382,10 @@ Embedded C, ATmega16, IR Sensors
 <div class="project-media">
   <img src="assets/images/table_top.png" alt="Table Top Robot" />
   <br />
-  <a class="github-link" href="https://github.com/parveezsyed28/table_top_robot" target="_blank" rel="noopener">GitHub Repository</a>
+  <a class="github-link" href="https://github.com/parveezsyed28/table_top_robot" target="_blank" rel="noopener">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.22 2.2.82a7.67 7.67 0 012-.27 7.65 7.65 0 012 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8 8 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+    GitHub Repository
+  </a>
 </div>
 
 ---
@@ -306,6 +412,8 @@ Embedded C, ATmega16, IR sensors, Motor driver
 <div class="project-media side-by-side">
   <img src="assets/images/line_follower.png" alt="Line Follower Robot" />
   <img src="assets/images/line_follower_connection.png" alt="Line Follower Circuit" />
-  <br />
-  <a class="github-link" href="https://github.com/parveezsyed28/line_follower_robot" target="_blank" rel="noopener">GitHub Repository</a>
 </div>
+<a class="github-link" href="https://github.com/parveezsyed28/line_follower_robot" target="_blank" rel="noopener" style="display:block; text-align:center; margin-top:6px;">
+  <svg viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.22 2.2.82a7.67 7.67 0 012-.27 7.65 7.65 0 012 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8 8 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+  GitHub Repository
+</a>
