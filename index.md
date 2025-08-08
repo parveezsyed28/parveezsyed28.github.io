@@ -14,12 +14,12 @@ classes: wide
     background-color: #f5f9ff;
     color: #1a1a1a;
     line-height: 1.6;
-    margin: 0 20px; /* side margins for the entire page */
+    margin: 0 20px;
+    text-align: center; /* Center align all text by default */
   }
 
   /* Header container */
   .header-container {
-    text-align: center;
     margin-top: 50px;
     margin-bottom: 40px;
   }
@@ -30,6 +30,7 @@ classes: wide
     margin: 0;
     font-weight: 800;
     letter-spacing: 1.2px;
+    animation: fadeInDown 1s ease forwards;
   }
 
   .header-container p {
@@ -37,18 +38,20 @@ classes: wide
     font-size: 1.3rem;
     color: #5a87c7; /* lighter pastel blue */
     font-weight: 600;
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.3s;
   }
 
   /* Section headings */
   h2 {
-    border-bottom: none;
     font-size: 2.2rem;
     color: #2a4d8f;
     margin-top: 60px;
     margin-bottom: 20px;
     font-weight: 700;
-    text-align: left;
-    padding-left: 10px;
+    padding-left: 0;
+    text-align: center;
+    animation: fadeIn 1s ease forwards;
   }
 
   h3 {
@@ -56,15 +59,16 @@ classes: wide
     font-weight: 700;
     margin-top: 40px;
     margin-bottom: 10px;
-    text-align: left;
-    padding-left: 10px;
+    text-align: center;
+    animation: fadeIn 1s ease forwards;
   }
 
   /* Paragraphs and lists */
   p, ul, ol {
     max-width: 720px;
-    margin: 0 10px 20px 10px;
-    text-align: left;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    animation: fadeIn 1s ease forwards;
   }
 
   ul li, ol li {
@@ -73,12 +77,10 @@ classes: wide
 
   /* Project media container */
   .media {
-    margin-top: 15px;
-    margin-bottom: 30px;
+    margin: 15px auto 30px auto;
     max-width: 720px;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: left;  /* left align media */
+    text-align: center;
+    animation: fadeIn 1s ease forwards;
   }
 
   /* Images and videos */
@@ -88,7 +90,7 @@ classes: wide
     max-height: 450px;
     border-radius: 6px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.15);
-    display: block;
+    display: inline-block;
     margin-top: 10px;
   }
 
@@ -96,11 +98,13 @@ classes: wide
   .side-by-side {
     display: flex;
     gap: 20px;
-    justify-content: flex-start;  /* align left */
+    justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeIn 1s ease forwards;
   }
 
   .side-by-side img,
@@ -119,42 +123,79 @@ classes: wide
     font-weight: 600;
     font-size: 0.9rem;
     text-decoration: none;
-    transition: color 0.3s ease;
-    padding-left: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 4px 10px;
+    border: 1.5px solid #357edd;
+    border-radius: 6px;
+    background-color: #f5f9ff;
   }
 
   .github-link:hover {
-    text-decoration: underline;
-    color: #2a3d78;
+    text-decoration: none;
+    color: #fff;
+    background-color: #357edd;
+    transform: scale(1.05);
   }
 
   /* Contact info */
   .contact-info {
     max-width: 720px;
-    margin: 50px 10px 60px 10px;
+    margin: 50px auto 60px auto;
     font-size: 1rem;
     color: #555;
-    text-align: left;
+    text-align: center;
   }
 
   .contact-info a {
+    display: inline-block;
+    margin: 0 15px;
     color: #357edd;
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.3s ease;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
   }
 
   .contact-info a:hover {
-    text-decoration: underline;
     color: #2a3d78;
+    transform: scale(1.1);
   }
 
   /* Horizontal line style */
   hr {
     max-width: 720px;
-    margin: 40px 10px;
+    margin: 40px auto;
     border: 0;
     border-top: 1px solid #d0d7e5;
+  }
+
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   /* Responsive adjustments */
@@ -172,8 +213,14 @@ classes: wide
       max-width: 100%;
       margin-bottom: 20px;
     }
+
+    .contact-info a {
+      margin: 0 10px;
+      font-size: 1rem;
+    }
   }
 </style>
+
 
 
 <div class="header-container">
