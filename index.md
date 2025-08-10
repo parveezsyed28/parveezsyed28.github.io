@@ -544,4 +544,4 @@ Motor Driver Control
 
 Email: <a href="mailto:parveezbanu.s@gmail.com">parveezbanu.s@gmail.com</a>  
 GitHub: <a href="https://github.com/parveezsyed28" target="_blank">github.com/parveezsyed28</a>  
-LinkedIn: <a href="https://linkedin.com/in/parveez-banu-syed-azizuddin2807give" target="_blank">linkedin.com/in/parveez-banu2807</a>
+LinkedIn: <a href="https://linkedin.com/in/parveez-banu2807" target="_blank">linkedin.com/in/parveez-banu2807</a>
