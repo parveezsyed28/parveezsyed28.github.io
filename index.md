@@ -6,13 +6,203 @@ permalink: /
 classes: wide
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<style>
+  /* Overall page styles */
+  body {
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+    background: linear-gradient(135deg, #f0f4ff, #e6f0ff);
+    color: #1a1a1a;
+    line-height: 1.6;
+    margin: 0 20px;
+    text-align: center;
+  }
+
+  /* Header container */
+  .header-container {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    background: linear-gradient(90deg, #357edd, #6ea8fe);
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(53, 126, 221, 0.35);
+    color: white;
+  }
+
+  .header-container h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    animation: fadeInDown 1s ease forwards;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  }
+
+  .header-container p {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.3s;
+  }
+
+  /* Section headings */
+  h2 {
+    font-size: 2.4rem;
+    color: #1e3a8a;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+  }
+
+  h3 {
+    color: #3b82f6;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  /* Paragraphs */
+  p {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    font-size: 1rem;
+  }
+
+  /* Lists */
+  ul, ol {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding-left: 1.2em;
+    margin-bottom: 1em;
+  }
+
+  ul li, ol li {
+    margin-bottom: 0.5em;
+  }
+
+  /* Media (images/videos) */
+  .media {
+    margin: 15px auto 30px auto;
+    max-width: 720px;
+    text-align: center;
+  }
+
+  .media img,
+  .media video {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .side-by-side {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .side-by-side img,
+  .side-by-side video {
+    max-width: 48%;
+    max-height: 350px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  }
+
+  /* GitHub link styling */
+  .github-link {
+    display: inline-block;
+    margin-top: 8px;
+    color: #1e3a8a;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 5px 12px;
+    border: 1.5px solid #1e3a8a;
+    border-radius: 8px;
+    background-color: #e0ebff;
+  }
+
+  .github-link:hover {
+    color: #fff;
+    background: linear-gradient(90deg, #357edd, #6ea8fe);
+    transform: scale(1.08);
+  }
+
+  /* Contact info */
+  .contact-info {
+    max-width: 720px;
+    margin: 50px auto 60px auto;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .contact-info a {
+    display: inline-block;
+    margin: 0 15px;
+    color: #1e3a8a;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+  }
+
+  .contact-info a:hover {
+    color: #6ea8fe;
+    transform: scale(1.1);
+  }
+
+  hr {
+    max-width: 720px;
+    margin: 40px auto;
+    border: 0;
+    border-top: 2px solid #d0d7e5;
+  }
+
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    body { margin: 0 10px; }
+    .side-by-side { flex-direction: column; }
+    .side-by-side img, .side-by-side video { max-width: 100%; margin-bottom: 20px; }
+    .contact-info a { margin: 0 10px; font-size: 1rem; }
+  }
+</style>
 
 <div class="header-container">
   <h1>Parveez Banu Syed Azizuddin</h1>
   <p>Mechatronics Engineer | Robotics Enthusiast | ROS 2 Developer</p>
 </div>
-
 
 ## About Me
 
@@ -30,36 +220,34 @@ This project focuses on creating a robot that maintains a steady distance alongs
 - Implemented obstacle detection and avoidance algorithms in Python.  
 - Designed simulation environment replicating real-world navigation challenges.
 
-**Challenges faced:**
-
+**Challenges faced:**  
 - Ensuring accurate sensor data processing and filtering for reliable obstacle detection.  
 - Tuning velocity commands to achieve smooth and safe robot movements.  
 - Configuring Gazebo plugins and model files for correct sensor simulation.
 
-**Learning outcomes:**
-
+**Learning outcomes:**  
 - Mastered ROS 2 topics and message handling for real-time sensor and control data.  
 - Gained experience in Gazebo robot modeling and simulation environment setup.  
 - Enhanced understanding of autonomous navigation using LiDAR-based perception.
 
-**Skills & tools used:**
-
+**Skills & tools used:**  
 ROS 2 Humble, Python  
 Gazebo Classic Simulation  
 URDF / Xacro Robot Description  
 LiDAR sensor integration  
 Ubuntu Linux, Visual Studio Code
 
-<div class="project-media">
+<div class="media">
   <video controls>
     <source src="assets/images/Wall_follower.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
   <br />
-  <a class="github-link" href="https://github.com/parveezsyed28/Wall-Following-Robot-with-LiDAR" target="_blank" rel="noopener">GitHub Repository</a>
+  <a class="github-link" href="https://github.com/parveezsyed28/Wall-Following-Robot-with-LiDAR" target="_blank">GitHub Repository</a>
 </div>
 
 ---
+
 
 
 ### Obstacle Avoidance with LiDAR (ROS 2 + Gazebo)
