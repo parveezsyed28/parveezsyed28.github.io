@@ -66,9 +66,6 @@ I am a Mechatronics Engineer with hands-on experience in ROS 2, embedded systems
   <br />
   <a class="github-link" href="https://github.com/parveezsyed28/Wall-Following-Robot-with-LiDAR" target="_blank">GitHub</a>
 </div>
-</div>
-
-<div class="project-card">
 
 ---
    
@@ -83,9 +80,6 @@ I am a Mechatronics Engineer with hands-on experience in ROS 2, embedded systems
   <br />
   <a class="github-link" href="https://github.com/parveezsyed28/obstacle_avoidance_lidar" target="_blank">GitHub</a>
 </div>
-</div>
-
-<div class="project-card">
 
 ---
 
@@ -100,8 +94,6 @@ I am a Mechatronics Engineer with hands-on experience in ROS 2, embedded systems
 </div>
 <a class="github-link" href="https://github.com/parveezsyed28/ros2_bot_description" target="_blank">GitHub</a>
 </div>
-
-<div class="project-card">
 
 ---
    
@@ -132,10 +124,9 @@ I am a Mechatronics Engineer with hands-on experience in ROS 2, embedded systems
 <a class="github-link" href="https://github.com/parveezsyed28/adc_speed_controlled_robot" target="_blank">GitHub</a>
 </div>
 
-<div class="project-card">
-
 ---
 
+<div class="project-card">
 <h3>Obstacle Avoider Robot</h3>
 
 <p>IR sensor-based obstacle detection and motor control with ATmega16 microcontroller.</p>
@@ -149,10 +140,9 @@ I am a Mechatronics Engineer with hands-on experience in ROS 2, embedded systems
 <a class="github-link" href="https://github.com/parveezsyed28/obstacle_avoider_robot" target="_blank">GitHub</a>
 </div>
 
-<div class="project-card">
-
 ---
 
+<div class="project-card">
 <h3>Table Top Robot</h3>
 
 <p>Edge-detection robot preventing falls, using IR sensors on ATmega16.</p>
@@ -165,10 +155,10 @@ I am a Mechatronics Engineer with hands-on experience in ROS 2, embedded systems
 <a class="github-link" href="https://github.com/parveezsyed28/table_top_robot" target="_blank">GitHub</a>
 </div>
 
-<div class="project-card">
 
 ---
 
+<div class="project-card">
 <h3>Line Follower Robot</h3>
 
 <p>Black line following using bottom IR sensors, motor control via ATmega16 and L293D.</p>
@@ -184,6 +174,7 @@ I am a Mechatronics Engineer with hands-on experience in ROS 2, embedded systems
 
 ---
 
+<div class="project-card">
 ## Industrial Automation Projects
 
 <h3>ABB RobotStudio + Teach Pendant</h3>
