@@ -55,11 +55,11 @@ I am a Mechatronics Engineer with hands-on experience in ROS 2, embedded systems
 
 <div class="project-card">
    
-### Wall Following Robot (ROS 2 + Gazebo)
+<h3>Wall Following Robot (ROS 2 + Gazebo)</h3>
 
 <p>Robot maintains a steady distance from walls using LiDAR and ROS 2 Humble + Gazebo Classic.<p>
 
-<p>**Skills & Tools:** ROS 2 Humble, Python, Gazebo, URDF/Xacro, LiDAR<p>
+<p>Skills & Tools: ROS 2 Humble, Python, Gazebo, URDF/Xacro, LiDAR<p>
 
 <div class="project-media">
   <video controls><source src="assets/images/Wall_follower.mp4" type="video/mp4" /></video>
@@ -72,10 +72,11 @@ I am a Mechatronics Engineer with hands-on experience in ROS 2, embedded systems
 
 ---
    
-### Obstacle Avoidance Robot (ROS 2 + Gazebo)
-Differential drive robot avoids obstacles dynamically in simulated environments.
+<h3>Obstacle Avoidance Robot (ROS 2 + Gazebo)</h3>
 
-**Skills & Tools:** ROS 2 Humble, Python, Gazebo, URDF/Xacro, LiDAR
+<p>Differential drive robot avoids obstacles dynamically in simulated environments.<p>
+
+<p>Skills & Tools: ROS 2 Humble, Python, Gazebo, URDF/Xacro, LiDAR<p>
 
 <div class="project-media">
   <video controls><source src="assets/images/Obstacle_Avoidance.mp4" type="video/mp4" /></video>
@@ -88,11 +89,11 @@ Differential drive robot avoids obstacles dynamically in simulated environments.
 
 ---
 
-### Robot Description & Simulation (ROS2 + Fusion 360)
+<h3>Robot Description & Simulation (ROS2 + Fusion 360)</h3>
 
-Custom two-wheeled robot modeled in Fusion 360 and simulated in Gazebo with URDF/Xacro.
+<p>Custom two-wheeled robot modeled in Fusion 360 and simulated in Gazebo with URDF/Xacro.<p>
 
-**Skills & Tools:** Fusion 360, ROS 2 Humble, Gazebo, URDF/Xacro
+<p>Skills & Tools: Fusion 360, ROS 2 Humble, Gazebo, URDF/Xacro<p>
 
 <div class="media">
   <video controls><source src="assets/images/robot_teleop.mp4" type="video/mp4" /></video>
@@ -104,11 +105,11 @@ Custom two-wheeled robot modeled in Fusion 360 and simulated in Gazebo with URDF
 
 ---
    
-### Turtlesim Geometric Shape Drawer
+<h3>Turtlesim Geometric Shape Drawer</h3>
 
-ROS 2 Python node draws shapes in Turtlesim based on user input.
+<p>ROS 2 Python node draws shapes in Turtlesim based on user input.<p>
 
-**Skills & Tools:** ROS 2 Humble, Python, Turtlesim
+<p>Skills & Tools: ROS 2 Humble, Python, Turtlesim<p>
 
 <div class="media">
   <video controls><source src="assets/images/Turtlesim.mp4" type="video/mp4" /></video>
@@ -122,11 +123,11 @@ ROS 2 Python node draws shapes in Turtlesim based on user input.
 
 <div class="project-card">
    
-### ADC-Based Robot
+<h3>ADC-Based Robot</h3>
 
-Obstacle avoidance, cliff detection, line following, and potentiometer-based speed control using ATmega16 ADC.
+<p>Obstacle avoidance, cliff detection, line following, and potentiometer-based speed control using ATmega16 ADC.<p>
 
-**Skills & Tools:** Embedded C, ATmega16, IR Sensors, L293D, Potentiometer
+<p>Skills & Tools: Embedded C, ATmega16, IR Sensors, L293D, Potentiometer<p>
 
 <a class="github-link" href="https://github.com/parveezsyed28/adc_speed_controlled_robot" target="_blank">GitHub</a>
 </div>
@@ -135,11 +136,11 @@ Obstacle avoidance, cliff detection, line following, and potentiometer-based spe
 
 ---
 
-### Obstacle Avoider Robot
+<h3>Obstacle Avoider Robot</h3>
 
-IR sensor-based obstacle detection and motor control with ATmega16 microcontroller.
+<p>IR sensor-based obstacle detection and motor control with ATmega16 microcontroller.<p>
 
-**Skills & Tools:** Embedded C, ATmega16, IR Sensors, L293D
+<p>Skills & Tools: Embedded C, ATmega16, IR Sensors, L293D<p>
 
 <div class="media side-by-side">
   <img src="assets/images/obstacle_avoider.png" alt="Obstacle Avoider Robot" />
@@ -152,11 +153,11 @@ IR sensor-based obstacle detection and motor control with ATmega16 microcontroll
 
 ---
 
-### Table Top Robot
+<h3>Table Top Robot</h3>
 
-Edge-detection robot preventing falls, using IR sensors on ATmega16.
+<p>Edge-detection robot preventing falls, using IR sensors on ATmega16.<p>
 
-**Skills & Tools:** Embedded C, ATmega16, IR Sensors
+<p>Skills & Tools: Embedded C, ATmega16, IR Sensors<p>
 
 <div class="media">
   <img src="assets/images/table_top.png" alt="Table Top Robot" />
@@ -168,11 +169,11 @@ Edge-detection robot preventing falls, using IR sensors on ATmega16.
 
 ---
 
-### Line Follower Robot
+<h3>Line Follower Robot</h3>
 
-Black line following using bottom IR sensors, motor control via ATmega16 and L293D.
+<p>Black line following using bottom IR sensors, motor control via ATmega16 and L293D.<p>
 
-**Skills & Tools:** Embedded C, ATmega16, IR Sensors, L293D
+<p>Skills & Tools: Embedded C, ATmega16, IR Sensors, L293D<p>
 
 <div class="media side-by-side">
   <img src="assets/images/line_follower.png" alt="Line Follower Robot" />
