@@ -51,10 +51,12 @@ I am a Mechatronics Engineer with hands-on experience in ROS 2, embedded systems
 
 ---
 
-## Robotics Projects
+## ROS2 Projects
 
 <div class="project-card">
+   
 ### Wall Following Robot (ROS 2 + Gazebo)
+
 Robot maintains a steady distance from walls using LiDAR and ROS 2 Humble + Gazebo Classic.
 
 **Skills & Tools:** ROS 2 Humble, Python, Gazebo, URDF/Xacro, LiDAR
@@ -67,6 +69,9 @@ Robot maintains a steady distance from walls using LiDAR and ROS 2 Humble + Gaze
 </div>
 
 <div class="project-card">
+
+---
+   
 ### Obstacle Avoidance Robot (ROS 2 + Gazebo)
 Differential drive robot avoids obstacles dynamically in simulated environments.
 
@@ -80,7 +85,11 @@ Differential drive robot avoids obstacles dynamically in simulated environments.
 </div>
 
 <div class="project-card">
+
+---
+
 ### Robot Description & Simulation (ROS2 + Fusion 360)
+
 Custom two-wheeled robot modeled in Fusion 360 and simulated in Gazebo with URDF/Xacro.
 
 **Skills & Tools:** Fusion 360, ROS 2 Humble, Gazebo, URDF/Xacro
@@ -92,7 +101,11 @@ Custom two-wheeled robot modeled in Fusion 360 and simulated in Gazebo with URDF
 </div>
 
 <div class="project-card">
+
+---
+   
 ### Turtlesim Geometric Shape Drawer
+
 ROS 2 Python node draws shapes in Turtlesim based on user input.
 
 **Skills & Tools:** ROS 2 Humble, Python, Turtlesim
@@ -108,7 +121,9 @@ ROS 2 Python node draws shapes in Turtlesim based on user input.
 ## Embedded Projects
 
 <div class="project-card">
+   
 ### ADC-Based Robot
+
 Obstacle avoidance, cliff detection, line following, and potentiometer-based speed control using ATmega16 ADC.
 
 **Skills & Tools:** Embedded C, ATmega16, IR Sensors, L293D, Potentiometer
@@ -117,7 +132,11 @@ Obstacle avoidance, cliff detection, line following, and potentiometer-based spe
 </div>
 
 <div class="project-card">
+
+---
+
 ### Obstacle Avoider Robot
+
 IR sensor-based obstacle detection and motor control with ATmega16 microcontroller.
 
 **Skills & Tools:** Embedded C, ATmega16, IR Sensors, L293D
@@ -130,7 +149,11 @@ IR sensor-based obstacle detection and motor control with ATmega16 microcontroll
 </div>
 
 <div class="project-card">
+
+---
+
 ### Table Top Robot
+
 Edge-detection robot preventing falls, using IR sensors on ATmega16.
 
 **Skills & Tools:** Embedded C, ATmega16, IR Sensors
@@ -142,7 +165,11 @@ Edge-detection robot preventing falls, using IR sensors on ATmega16.
 </div>
 
 <div class="project-card">
+
+---
+
 ### Line Follower Robot
+
 Black line following using bottom IR sensors, motor control via ATmega16 and L293D.
 
 **Skills & Tools:** Embedded C, ATmega16, IR Sensors, L293D
