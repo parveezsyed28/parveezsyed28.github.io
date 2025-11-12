@@ -173,7 +173,7 @@ Python, Linux
 
 <div class="media">
   <video controls><source src="assets/images/robot_teleop.mp4" type="video/mp4" /></video>
-</div>
+<br />
 <a class="github-link" href="https://github.com/parveezsyed28/ros2_bot_description" target="_blank">GitHub</a>
 </div>
 
@@ -211,7 +211,7 @@ Publisher/Subscriber and Service Calls
 
 <div class="media">
   <video controls><source src="assets/images/Turtlesim.mp4" type="video/mp4" /></video>
-</div>
+<br />
 <a class="github-link" href="https://github.com/parveezsyed28/user_input_turtle_shape" target="_blank">GitHub</a>
 </div>
 
@@ -381,8 +381,9 @@ Motor Driver Control
 
 ---
 
-<div class="project-card">
 ## Industrial Automation Projects
+
+<div class="project-card">
 
 <h2>ABB RobotStudio + Teach Pendant Projects</h2>
 
