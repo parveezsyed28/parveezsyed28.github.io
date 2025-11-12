@@ -57,9 +57,9 @@ I am a Mechatronics Engineer with hands-on experience in ROS 2, embedded systems
    
 ### Wall Following Robot (ROS 2 + Gazebo)
 
-Robot maintains a steady distance from walls using LiDAR and ROS 2 Humble + Gazebo Classic.
+<p>Robot maintains a steady distance from walls using LiDAR and ROS 2 Humble + Gazebo Classic.<p>
 
-**Skills & Tools:** ROS 2 Humble, Python, Gazebo, URDF/Xacro, LiDAR
+<p>**Skills & Tools:** ROS 2 Humble, Python, Gazebo, URDF/Xacro, LiDAR<p>
 
 <div class="project-media">
   <video controls><source src="assets/images/Wall_follower.mp4" type="video/mp4" /></video>
