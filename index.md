@@ -140,9 +140,36 @@ Ubuntu Linux, Visual Studio Code
 
 <h3>Robot Description & Simulation (ROS2 + Fusion 360)</h3>
 
-<p>Custom two-wheeled robot modeled in Fusion 360 and simulated in Gazebo with URDF/Xacro.</p>
+<p>This project features a custom-designed two-wheeled robot created using Fusion 360 and described with URDF/Xacro files. The model includes detailed STL meshes and integrates Gazebo plugins such as the differential drive controller for realistic motion simulation. The robot is simulated within Gazebo to test movement and sensor plugins, providing a solid foundation for further ROS 2 robotic development.</p>
 
-<p><strong>Skills & Tools:</strong> Fusion 360, ROS 2 Humble, Gazebo, URDF/Xacro</p>
+<p>
+- Designed mechanical components in Fusion 360 and exported STL meshes.
+- Created accurate URDF and Xacro descriptions with sensors and plugins.
+- Simulated robot kinematics and sensor data in Gazebo.
+</p>
+
+<p><strong>Challenges faced:</strong>
+
+ - Managing mesh file references and ensuring proper visualization in Gazebo.
+ - Configuring differential drive plugin parameters for smooth robot control.
+ - Synchronizing URDF with Gazebo-specific XML extensions.
+</p>
+
+<p><strong>Learning outcomes:</strong>
+
+- Gained experience in robot modeling and simulation workflows.
+- Understood integration of hardware CAD designs with ROS 2 simulation environments.
+- Developed skills in robot plugin configuration for Gazebo.
+</p>
+
+<p><strong>Skills & Tools:</strong>
+Fusion 360 CAD  
+ROS 2 Humble, Gazebo Classic  
+URDF / Xacro Robot Modeling  
+STL Meshes and Gazebo Plugins  
+Python, Linux
+</p>
+
 
 <div class="media">
   <video controls><source src="assets/images/robot_teleop.mp4" type="video/mp4" /></video>
@@ -154,9 +181,33 @@ Ubuntu Linux, Visual Studio Code
    
 <h3>Turtlesim Geometric Shape Drawer</h3>
 
-<p>ROS 2 Python node draws shapes in Turtlesim based on user input.</p>
+<p>A ROS 2 Python node that controls the turtlesim to draw geometric shapes based on interactive user input. It includes service calls to reset the turtlesim, allowing repeated shape drawing. This project helps demonstrate ROS 2 communication concepts like publishers, subscribers, and service clients in a simple and visual way.</p>
 
-<p><strong>Skills & Tools:</strong> ROS 2 Humble, Python, Turtlesim</p>
+<p>
+- Implemented publisher and subscriber nodes for turtle velocity commands.
+- Handled CLI input and reset services in ROS 2.
+- Designed code modularity for ease of extending shapes.
+</p>
+
+<p><strong>Challenges faced:</strong>
+
+- Synchronizing service calls and publisher commands for smooth turtle control.
+- Managing timing and velocity parameters for precise shape drawing.
+</p>
+
+<p><strong>Learning outcomes:</strong>
+
+- Deepened understanding of ROS 2 communication patterns.
+- Improved ability to build interactive robotic applications.
+- Practiced Python scripting in ROS 2 nodes.
+</p>
+
+<p><strong>Skills & Tools:</strong>
+ROS 2 Humble, Python  
+Turtlesim Simulator  
+Publisher/Subscriber and Service Calls
+</p>
+
 
 <div class="media">
   <video controls><source src="assets/images/Turtlesim.mp4" type="video/mp4" /></video>
@@ -172,9 +223,36 @@ Ubuntu Linux, Visual Studio Code
    
 <h3>ADC-Based Robot</h3>
 
-<p>Obstacle avoidance, cliff detection, line following, and potentiometer-based speed control using ATmega16 ADC.</p>
+<p>
+This advanced robot integrates multiple sensors for obstacle avoidance, cliff detection, and black line following. It also includes dynamic speed control using a potentiometer connected to the ATmega16 microcontroller's ADC module. The robot uses analog sensor inputs to adapt motor speed and navigate various environments.
+</p>
 
-<p><strong>Skills & Tools:</strong> Embedded C, ATmega16, IR Sensors, L293D, Potentiometer</p>
+<p>
+- Utilizes front, top, left, and right IR sensors for comprehensive environment awareness.
+- Speed control implemented via ADC reading from a trimpot.
+- Embedded C programming for real-time sensor processing and motor control.
+</p>
+
+<p><strong>Challenges faced:</strong>
+
+- Balancing sensor readings and motor control for smooth navigation.
+- Implementing accurate ADC sampling and PWM motor speed control.
+- Hardware integration of multiple sensors with the microcontroller.
+</p>
+
+<p><strong>Learning outcomes:</strong>
+
+- Mastered ADC usage in microcontrollers for analog sensor data.
+- Developed complex embedded systems integrating multiple sensors.
+- Improved skills in hardware-software co-design.
+</p>
+
+<p><strong>Skills & Tools:</strong>
+Embedded C, ATmega16 ADC module  
+IR Sensors, Potentiometer for Speed Control  
+L293D Motor Driver  
+Real-time Embedded Systems
+</p>
 
 <a class="github-link" href="https://github.com/parveezsyed28/adc_speed_controlled_robot" target="_blank">GitHub</a>
 </div>
@@ -184,9 +262,35 @@ Ubuntu Linux, Visual Studio Code
 <div class="project-card">
 <h3>Obstacle Avoider Robot</h3>
 
-<p>IR sensor-based obstacle detection and motor control with ATmega16 microcontroller.</p>
+<p>
+This microcontroller-based robot avoids obstacles using IR sensors programmed with Embedded C on the ATmega16. The robot detects obstacles using front-facing IR sensors and controls motion via an L293D motor driver. The design emphasizes robust sensor integration and real-time control logic on limited hardware.
+</p>
 
-<p><strong>Skills & Tools:</strong> Embedded C, ATmega16, IR Sensors, L293D</p>
+<p>
+- Implemented IR sensor interfacing and obstacle detection logic.
+- Controlled motor driver signals with embedded C code.
+- Developed chassis and hardware layout optimized for sensor placement.
+</p>
+
+<p><strong>Challenges faced:</strong>
+
+- Ensuring sensor readings were reliable under different lighting conditions.
+- Timing motor control signals to avoid jerky movement.
+- Managing power distribution to motors and sensors effectively.
+</p>
+
+<p><strong>Learning outcomes:</strong>
+
+- Built expertise in embedded C programming for real-time control.
+- Gained practical experience in sensor integration on microcontrollers.
+- Understood motor driver interfacing and motion control.
+</p>
+
+<p><strong>Skills & Tools:</strong>
+Embedded C, ATmega16  
+IR Sensors, L293D Motor Driver  
+PCB Design & Hardware Integration
+</p>
 
 <div class="media side-by-side">
   <img src="assets/images/obstacle_avoider.png" alt="Obstacle Avoider Robot" />
@@ -200,9 +304,32 @@ Ubuntu Linux, Visual Studio Code
 <div class="project-card">
 <h3>Table Top Robot</h3>
 
-<p>Edge-detection robot preventing falls, using IR sensors on ATmega16.</p>
+<p>
+This robot is designed to detect table edges and avoid falling by using IR sensors programmed on the ATmega16 microcontroller. It continuously monitors edge proximity and maneuvers accordingly to maintain stability on the table surface.
+</p>
 
-<p><strong>Skills & Tools:</strong> Embedded C, ATmega16, IR Sensors</p>
+<p>
+- Used real-time IR sensor data for edge detection.
+- Embedded control logic to adjust robot motion based on sensor feedback.
+</p>
+
+<p><strong>Challenges faced:</strong>
+
+- Achieving fast and reliable edge detection for safe operation.
+- Balancing sensor sensitivity and false positive reduction.
+</p>
+
+<p><strong>Learning outcomes:</strong>
+
+- Mastered edge detection concepts with IR sensors.
+- Refined embedded control strategies for safety features.
+</p>
+
+<p><strong>Skills & Tools:</strong>
+Embedded C, ATmega16  
+IR Sensors for Edge Detection  
+Real-time Embedded Control
+</p>
 
 <div class="media">
   <img src="assets/images/table_top.png" alt="Table Top Robot" />
@@ -216,9 +343,34 @@ Ubuntu Linux, Visual Studio Code
 <div class="project-card">
 <h3>Line Follower Robot</h3>
 
-<p>Black line following using bottom IR sensors, motor control via ATmega16 and L293D.</p>
+<p>
+A robot designed to follow a black line using bottom-mounted IR sensors. The control system uses sensor feedback to maintain alignment on the path. The robot was developed with embedded C programming on the ATmega16 microcontroller, utilizing analog sensor input for reliable line detection.
+</p>
 
-<p><strong>Skills & Tools:</strong> Embedded C, ATmega16, IR Sensors, L293D</p>
+<p>
+- Implemented analog IR sensor interfacing for line detection.
+- Developed control logic for real-time path following.
+- Compact and efficient hardware design.
+</p>
+
+<p><strong>Challenges faced:</strong>
+
+- Ensuring accurate sensor readings without noise filtering.
+- Fine-tuning sensor placement for reliable line detection.
+- Implementing smooth motor control to follow curves.
+</p>
+
+<p><strong>Learning outcomes:</strong>
+
+- Gained understanding of sensor-based path following.
+- Applied embedded control techniques in constrained environments.
+</p>
+
+<p><strong>Skills & Tools:</strong>
+Embedded C, ATmega16  
+IR Sensors, Analog Signal Processing  
+Motor Driver Control
+</p>
 
 <div class="media side-by-side">
   <img src="assets/images/line_follower.png" alt="Line Follower Robot" />
@@ -232,26 +384,58 @@ Ubuntu Linux, Visual Studio Code
 <div class="project-card">
 ## Industrial Automation Projects
 
-<h3>ABB RobotStudio + Teach Pendant</h3>
+<h2>ABB RobotStudio + Teach Pendant Projects</h2>
 
-- **Pick & Place / Sorting Simulation**  
-- **Drawing / Pattern Simulation**  
-<p><strong>Tools:</strong> ABB RobotStudio, ABB Teach Pendant, TCP</p> 
-<p><strong>Skills Learned:</strong> Trajectory planning, TCP configuration, precise motion control</p>
+<h3>Pick & Place / Sorting Simulation</h3>
+<p><strong>Objective:</strong> Simulate and program ABB robot for pick & place and color sorting tasks with precise motion.</p>  
+<p><strong>Tools & Environment:</strong> ABB RobotStudio, ABB Teach Pendant, Tool Center Point (TCP) configuration</p>  
+<p><strong>Key Learnings:</strong> Understanding TCP, trajectory planning, and precise robotic motion control</p>  
+<p><strong>Highlights:</strong> Successfully implemented object manipulation and sorting sequences, demonstrating accuracy and repeatability</p>  
 
-<h3>Nachi Robot Teach Pendant</h3>
+<h3>Drawing / Pattern Simulation</h3>
+<p><strong>Objective:</strong> Program ABB robot to draw geometric patterns or designs.</p>  
+<p><strong>Tools & Environment:</strong> ABB RobotStudio, ABB Teach Pendant, Tool Center Point (TCP)</p> 
+<p><strong>Key Learnings:</strong> Trajectory programming, smooth motion control, TCP adjustments for precise tool path</p>  
+<p><strong>Highlights:</strong> Executed multiple pattern-drawing sequences with minimal error, showcasing motion precision</p>  
 
-- **Pick & Place & Color Sorting**  
-- **Drawing / Pattern Making**  
-<p><strong>Tools:</strong> Nachi Teach Pendant, TCP</p>
-<p><strong>Skills Learned:</strong> Motion sequences, sensor integration, TCP adjustments</p>
+---
 
-### PLC Projects
+<h2>Nachi Robot Teach Pendant Projects</h2>
 
-<h3>Water Treatment Plant Backwash Automation</h3> 
-<h3>Small Foundry Energy Efficiency & QA Control</h3>  
-<p><strong>Tools:</strong> RSLogix 5000, Ladder/Structured Text, PLCs</p> 
-<p><strong>Skills Learned:</strong> Sequence programming, interlock logic, process optimization</p>
+<h3>Pick & Place</h3>
+<p><strong>Objective:</strong> Control Nachi robot using teach pendant for basic pick & place tasks</p>  
+<p><strong>Tools & Environment:</strong> Nachi Teach Pendant, TCP configuration</p>  
+<p><strong>Key Learnings:</strong> Accurate tool manipulation, motion control using teach pendant</p>  
+<p><strong>Highlights:</strong> Completed object handling tasks with reliable accuracy</p>  
+
+<h3>Color Sorting</h3>
+<p><strong>Objective:</strong> Program Nachi robot to sort objects based on color using teach pendant</p>  
+<p><strong>Tools & Environment:</strong> Nachi Teach Pendant, TCP configuration</p>
+<p><strong>Key Learnings:</strong> Integration of sensor feedback with robotic motion, TCP calibration</p>  
+<p><strong>Highlights:</strong> Achieved reliable color sorting with minimal errors</p>  
+
+<h3>Drawing / Pattern Making</h3>
+<p><strong>Objective:</strong> Create geometric drawings with Nachi robot using teach pendant</p>  
+<p><strong>Tools & Environment:</strong> Nachi Teach Pendant, TCP configuration</p> 
+<p><strong>Key Learnings:</strong> Trajectory planning, precise TCP adjustments, creative motion sequences</p>  
+<p><strong>Highlights:</strong> Successfully executed multiple drawing sequences with repeatable accuracy</p>  
+
+---
+
+<h2>PLC Projects</h2>
+
+<h3>Water Treatment Plant Backwash Automation</h3>
+<p><strong>Objective:</strong> Automate backwash sequence of pumps and valves with interlocks and fail-safes</p>  
+<p><strong>Tools & Environment:</strong> RSLogix 500 / Studio 5000, Ladder Logic, PLC sensors and actuators</p>  
+<p><strong>Key Learnings:</strong> Process automation, sequence programming, interlock implementation</p>
+<p><strong>Highlights:</strong> Developed a reliable automated sequence ensuring safe and efficient operation</p> 
+
+<h3>Small Foundry Energy Efficiency & QA Control</h3>
+<p><strong>Objective:</strong> Monitor energy usage and ensure quality control in a small foundry setup</p>  
+<p><strong>Tools & Environment:</strong> RSLogix 500 / Studio 5000, Ladder / Structured Text, PLC integration</p>  
+<p><strong>Key Learnings:</strong> Energy monitoring logic, sensor integration, process control optimization</p> 
+<p><strong>Highlights:</strong> Implemented energy-efficient control logic with basic QA monitoring</p> 
+
 
 ---
 
