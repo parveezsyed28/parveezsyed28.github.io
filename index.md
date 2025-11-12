@@ -47,7 +47,7 @@ ul li, ol li { margin-bottom: 0.4em; }
 
 ## About Me
 
-I am a Mechatronics Engineer with hands-on experience in ROS 2, embedded systems, industrial automation, and robotics simulation. My projects showcase practical problem-solving skills, integrating hardware and software to develop autonomous and industrial systems.
+Welcome to my portfolio, a space where curiosity and continuous learning drive my journey into robotics and autonomous systems. With a foundation in Electrical and Electronics Engineering and experience as a Mechatronics Engineer, I am actively expanding my skills in ROS 2, embedded systems, and simulation through hands-on projects and self-driven exploration. This collection highlights my growth as a robotics enthusiast and my commitment to mastering the integration of hardware and software to solve real-world challenges. Explore my work and join me as I build expertise and contribute to the exciting field of robotics.
 
 ---
 
@@ -57,9 +57,34 @@ I am a Mechatronics Engineer with hands-on experience in ROS 2, embedded systems
    
 <h3>Wall Following Robot (ROS 2 + Gazebo)</h3>
 
-<p>Robot maintains a steady distance from walls using LiDAR and ROS 2 Humble + Gazebo Classic.</p>
+<p>This project focuses on creating a robot that maintains a steady distance alongside walls using LiDAR data. It leverages ROS 2 Humble and Gazebo Classic to simulate wall-following behavior by processing laser scan data and generating velocity commands to navigate corridors and turns smoothly. The robot’s custom URDF/Xacro model includes detailed sensor and actuator configurations optimized for precise wall tracking in maze-like environments.</p>
 
-<p><strong>Skills & Tools:</strong> ROS 2 Humble, Python, Gazebo, URDF/Xacro, LiDAR</p>
+<p>
+- Developed custom robot model and integrated LiDAR sensor.  
+- Implemented obstacle detection and avoidance algorithms in Python.  
+- Designed simulation environment replicating real-world navigation challenges.
+</p>
+
+<p><strong>Challenges faced:</strong>
+
+   - Ensuring accurate sensor data processing and filtering for reliable obstacle detection.  
+   - Tuning velocity commands to achieve smooth and safe robot movements.  
+   - Configuring Gazebo plugins and model files for correct sensor simulation.
+</p>
+
+<p><strong>Learning outcomes:</strong>
+
+- Mastered ROS 2 topics and message handling for real-time sensor and control data.  
+- Gained experience in Gazebo robot modeling and simulation environment setup.  
+- Enhanced understanding of autonomous navigation using LiDAR-based perception.
+</p>
+
+<p><strong>Skills & Tools:</strong>
+
+ROS 2 Humble, Python  
+Gazebo Classic Simulation  
+.</p>
+
 
 <div class="project-media">
   <video controls><source src="assets/images/Wall_follower.mp4" type="video/mp4" /></video>
@@ -71,9 +96,39 @@ I am a Mechatronics Engineer with hands-on experience in ROS 2, embedded systems
    
 <h3>Obstacle Avoidance Robot (ROS 2 + Gazebo)</h3>
 
-<p>Differential drive robot avoids obstacles dynamically in simulated environments.</p>
+<p>This project simulates a differential drive robot designed to detect and avoid obstacles dynamically while navigating an open or cluttered environment. Using ROS 2 and Gazebo Classic, the robot processes laser scan data to identify obstacles in real time, adapting its velocity commands to steer clear of collisions. The simulation includes a custom URDF/Xacro robot model with integrated sensors, enabling reactive navigation in unpredictable scenarios.</p>
 
-<p><strong>Skills & Tools:</strong> ROS 2 Humble, Python, Gazebo, URDF/Xacro, LiDAR</p>
+<p>
+Developed custom robot model and integrated LiDAR sensor.
+- Implemented obstacle detection and avoidance algorithms in Python.
+- Designed simulation environment replicating real-world navigation challenges.
+</p>
+
+<p><strong>Challenges faced:</strong>
+
+  - Ensuring accurate sensor data processing and filtering for reliable obstacle detection.
+- Tuning velocity commands to achieve smooth and safe robot movements.
+- Configuring Gazebo plugins and model files for correct sensor simulation.
+
+</p>
+
+<p><strong>Learning outcomes:</strong>
+
+- Mastered ROS 2 topics and message handling for real-time sensor and control data.
+- Gained experience in Gazebo robot modeling and simulation environment setup.
+- Enhanced understanding of autonomous navigation using LiDAR-based perception.
+
+</p>
+
+<p><strong>Skills & Tools:</strong>
+ROS 2 Humble, Python  
+Gazebo Classic Simulation  
+URDF / Xacro Robot Description  
+LiDAR sensor integration  
+Ubuntu Linux, Visual Studio Code
+  
+</p>
+
 
 <div class="project-media">
   <video controls><source src="assets/images/Obstacle_Avoidance.mp4" type="video/mp4" /></video>
