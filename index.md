@@ -538,7 +538,65 @@ Motor Driver Control
 - Fusion 360, CAD Modeling, KiCad PCB Design  
 - Linux (Ubuntu), Git & GitHub
 
+
 ---
+
+## Industrial Automation & Robotics Projects
+
+### ABB RobotStudio + Teach Pendant Projects
+
+#### Pick & Place / Sorting Simulation
+**Objective:** Simulate and program ABB robot for pick & place and color sorting tasks with precise motion.  
+**Tools & Environment:** ABB RobotStudio, ABB Teach Pendant, Tool Center Point (TCP) configuration  
+**Key Learnings:** Understanding TCP, trajectory planning, and precise robotic motion control  
+**Highlights:** Successfully implemented object manipulation and sorting sequences, demonstrating accuracy and repeatability  
+
+#### Drawing / Pattern Simulation
+**Objective:** Program ABB robot to draw geometric patterns or designs.  
+**Tools & Environment:** ABB RobotStudio, ABB Teach Pendant, Tool Center Point (TCP)  
+**Key Learnings:** Trajectory programming, smooth motion control, TCP adjustments for precise tool path  
+**Highlights:** Executed multiple pattern-drawing sequences with minimal error, showcasing motion precision  
+
+---
+
+### Nachi Robot Teach Pendant Projects
+
+#### Pick & Place
+**Objective:** Control Nachi robot using teach pendant for basic pick & place tasks  
+**Tools & Environment:** Nachi Teach Pendant, TCP configuration  
+**Key Learnings:** Accurate tool manipulation, motion control using teach pendant  
+**Highlights:** Completed object handling tasks with reliable accuracy  
+
+#### Color Sorting
+**Objective:** Program Nachi robot to sort objects based on color using teach pendant  
+**Tools & Environment:** Nachi Teach Pendant, TCP configuration  
+**Key Learnings:** Integration of sensor feedback with robotic motion, TCP calibration  
+**Highlights:** Achieved reliable color sorting with minimal errors  
+
+#### Drawing / Pattern Making
+**Objective:** Create geometric drawings with Nachi robot using teach pendant  
+**Tools & Environment:** Nachi Teach Pendant, TCP configuration  
+**Key Learnings:** Trajectory planning, precise TCP adjustments, creative motion sequences  
+**Highlights:** Successfully executed multiple drawing sequences with repeatable accuracy  
+
+---
+
+### PLC Projects
+
+#### Water Treatment Plant Backwash Automation
+**Objective:** Automate backwash sequence of pumps and valves with interlocks and fail-safes  
+**Tools & Environment:** RSLogix 500 / Studio 5000, Ladder Logic, PLC sensors and actuators  
+**Key Learnings:** Process automation, sequence programming, interlock implementation  
+**Highlights:** Developed a reliable automated sequence ensuring safe and efficient operation  
+
+#### Small Foundry Energy Efficiency & QA Control
+**Objective:** Monitor energy usage and ensure quality control in a small foundry setup  
+**Tools & Environment:** RSLogix 500 / Studio 5000, Ladder / Structured Text, PLC integration  
+**Key Learnings:** Energy monitoring logic, sensor integration, process control optimization  
+**Highlights:** Implemented energy-efficient control logic with basic QA monitoring  
+
+---
+
 
 ## Contact
 
