@@ -57,9 +57,9 @@ I am a Mechatronics Engineer with hands-on experience in ROS 2, embedded systems
    
 <h3>Wall Following Robot (ROS 2 + Gazebo)</h3>
 
-<p>Robot maintains a steady distance from walls using LiDAR and ROS 2 Humble + Gazebo Classic.<p>
+<p>Robot maintains a steady distance from walls using LiDAR and ROS 2 Humble + Gazebo Classic.</p>
 
-<p>Skills & Tools: ROS 2 Humble, Python, Gazebo, URDF/Xacro, LiDAR<p>
+<p><strong>Skills & Tools:</strong> ROS 2 Humble, Python, Gazebo, URDF/Xacro, LiDAR</p>
 
 <div class="project-media">
   <video controls><source src="assets/images/Wall_follower.mp4" type="video/mp4" /></video>
@@ -74,9 +74,9 @@ I am a Mechatronics Engineer with hands-on experience in ROS 2, embedded systems
    
 <h3>Obstacle Avoidance Robot (ROS 2 + Gazebo)</h3>
 
-<p>Differential drive robot avoids obstacles dynamically in simulated environments.<p>
+<p>Differential drive robot avoids obstacles dynamically in simulated environments.</p>
 
-<p>Skills & Tools: ROS 2 Humble, Python, Gazebo, URDF/Xacro, LiDAR<p>
+<p><strong>Skills & Tools:</strong> ROS 2 Humble, Python, Gazebo, URDF/Xacro, LiDAR</p>
 
 <div class="project-media">
   <video controls><source src="assets/images/Obstacle_Avoidance.mp4" type="video/mp4" /></video>
@@ -91,9 +91,9 @@ I am a Mechatronics Engineer with hands-on experience in ROS 2, embedded systems
 
 <h3>Robot Description & Simulation (ROS2 + Fusion 360)</h3>
 
-<p>Custom two-wheeled robot modeled in Fusion 360 and simulated in Gazebo with URDF/Xacro.<p>
+<p>Custom two-wheeled robot modeled in Fusion 360 and simulated in Gazebo with URDF/Xacro.</p>
 
-<p>Skills & Tools: Fusion 360, ROS 2 Humble, Gazebo, URDF/Xacro<p>
+<p><strong>Skills & Tools:</strong> Fusion 360, ROS 2 Humble, Gazebo, URDF/Xacro</p>
 
 <div class="media">
   <video controls><source src="assets/images/robot_teleop.mp4" type="video/mp4" /></video>
@@ -107,9 +107,9 @@ I am a Mechatronics Engineer with hands-on experience in ROS 2, embedded systems
    
 <h3>Turtlesim Geometric Shape Drawer</h3>
 
-<p>ROS 2 Python node draws shapes in Turtlesim based on user input.<p>
+<p>ROS 2 Python node draws shapes in Turtlesim based on user input.</p>
 
-<p>Skills & Tools: ROS 2 Humble, Python, Turtlesim<p>
+<p><strong>Skills & Tools:</strong> ROS 2 Humble, Python, Turtlesim</p>
 
 <div class="media">
   <video controls><source src="assets/images/Turtlesim.mp4" type="video/mp4" /></video>
@@ -125,9 +125,9 @@ I am a Mechatronics Engineer with hands-on experience in ROS 2, embedded systems
    
 <h3>ADC-Based Robot</h3>
 
-<p>Obstacle avoidance, cliff detection, line following, and potentiometer-based speed control using ATmega16 ADC.<p>
+<p>Obstacle avoidance, cliff detection, line following, and potentiometer-based speed control using ATmega16 ADC.</p>
 
-<p>Skills & Tools: Embedded C, ATmega16, IR Sensors, L293D, Potentiometer<p>
+<p><strong>Skills & Tools:</strong> Embedded C, ATmega16, IR Sensors, L293D, Potentiometer</p>
 
 <a class="github-link" href="https://github.com/parveezsyed28/adc_speed_controlled_robot" target="_blank">GitHub</a>
 </div>
@@ -138,9 +138,9 @@ I am a Mechatronics Engineer with hands-on experience in ROS 2, embedded systems
 
 <h3>Obstacle Avoider Robot</h3>
 
-<p>IR sensor-based obstacle detection and motor control with ATmega16 microcontroller.<p>
+<p>IR sensor-based obstacle detection and motor control with ATmega16 microcontroller.</p>
 
-<p>Skills & Tools: Embedded C, ATmega16, IR Sensors, L293D<p>
+<p><strong>Skills & Tools:</strong> Embedded C, ATmega16, IR Sensors, L293D</p>
 
 <div class="media side-by-side">
   <img src="assets/images/obstacle_avoider.png" alt="Obstacle Avoider Robot" />
@@ -155,9 +155,9 @@ I am a Mechatronics Engineer with hands-on experience in ROS 2, embedded systems
 
 <h3>Table Top Robot</h3>
 
-<p>Edge-detection robot preventing falls, using IR sensors on ATmega16.<p>
+<p>Edge-detection robot preventing falls, using IR sensors on ATmega16.</p>
 
-<p>Skills & Tools: Embedded C, ATmega16, IR Sensors<p>
+<p><strong>Skills & Tools:</strong> Embedded C, ATmega16, IR Sensors</p>
 
 <div class="media">
   <img src="assets/images/table_top.png" alt="Table Top Robot" />
@@ -171,9 +171,9 @@ I am a Mechatronics Engineer with hands-on experience in ROS 2, embedded systems
 
 <h3>Line Follower Robot</h3>
 
-<p>Black line following using bottom IR sensors, motor control via ATmega16 and L293D.<p>
+<p>Black line following using bottom IR sensors, motor control via ATmega16 and L293D.</p>
 
-<p>Skills & Tools: Embedded C, ATmega16, IR Sensors, L293D<p>
+<p><strong>Skills & Tools:</strong> Embedded C, ATmega16, IR Sensors, L293D</p>
 
 <div class="media side-by-side">
   <img src="assets/images/line_follower.png" alt="Line Follower Robot" />
@@ -186,26 +186,26 @@ I am a Mechatronics Engineer with hands-on experience in ROS 2, embedded systems
 
 ## Industrial Automation Projects
 
-### ABB RobotStudio + Teach Pendant
+<h3>ABB RobotStudio + Teach Pendant</h3>
 
 - **Pick & Place / Sorting Simulation**  
 - **Drawing / Pattern Simulation**  
-**Tools:** ABB RobotStudio, ABB Teach Pendant, TCP  
-**Skills Learned:** Trajectory planning, TCP configuration, precise motion control
+<p><strong>Tools:</strong> ABB RobotStudio, ABB Teach Pendant, TCP</p> 
+<p><strong>Skills Learned:</strong> Trajectory planning, TCP configuration, precise motion control</p>
 
-### Nachi Robot Teach Pendant
+<h3>Nachi Robot Teach Pendant</h3>
 
 - **Pick & Place & Color Sorting**  
 - **Drawing / Pattern Making**  
-**Tools:** Nachi Teach Pendant, TCP  
-**Skills Learned:** Motion sequences, sensor integration, TCP adjustments
+<p><strong>Tools:</strong> Nachi Teach Pendant, TCP</p>
+<p><strong>Skills Learned:</strong> Motion sequences, sensor integration, TCP adjustments</p>
 
 ### PLC Projects
 
-- **Water Treatment Plant Backwash Automation**  
-- **Small Foundry Energy Efficiency & QA Control**  
-**Tools:** RSLogix 500 / Studio 5000, Ladder/Structured Text, PLCs  
-**Skills Learned:** Sequence programming, interlock logic, process optimization
+<h3>Water Treatment Plant Backwash Automation</h3> 
+<h3>Small Foundry Energy Efficiency & QA Control</h3>  
+<p><strong>Tools:</strong> RSLogix 5000, Ladder/Structured Text, PLCs</p> 
+<p><strong>Skills Learned:</strong> Sequence programming, interlock logic, process optimization</p>
 
 ---
 
