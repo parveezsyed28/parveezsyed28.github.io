@@ -94,16 +94,25 @@ title: "Portfolio – Parveez Banu Syed Azizuddin"
 
 .project-img, .project-media video {
   width: 600px;       /* fixed width */
-  height: 340px;      /* fixed height, or use auto to keep aspect ratio */
+  height: 340px;      /* fixed height */
   border-radius: 12px;
   transition: transform 0.3s ease;
-  object-fit: cover;  /* ensures images/videos don’t stretch weirdly */
+  object-fit: cover;  /* ensures images/videos don’t stretch */
 }
 
-
-.project-card:hover .project-img {
-  transform: scale(1.03);
+.project-card:hover .project-img,
+.project-card:hover .project-media video {
+  transform: scale(1.03); /* subtle zoom on hover */
 }
+
+.media.side-by-side img {
+  width: 290px;      /* two images side by side within 600px total */
+  height: 170px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-right: 10px;
+}
+
 
 /* --------------------------- */
 /*      SECTION ANIMATION      */
@@ -412,13 +421,13 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
     Embedded C, ATmega16, IR Sensors, L293D Motor Driver, PCB Design & Hardware Integration
   </p>
 
+   <!-- Side-by-side images -->
   <div class="media side-by-side">
     <img src="assets/images/obstacle_avoider.png" alt="Obstacle Avoider Robot" />
     <img src="assets/images/Obstacle_avoider_connection.png" alt="Obstacle Avoider Circuit" />
   </div>
   <a class="github-link" href="https://github.com/parveezsyed28/obstacle_avoider_robot" target="_blank">GitHub</a>
 </div>
-
 ---
 
 ## 🟦 **Table Top Robot**
@@ -451,6 +460,10 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
     <strong>Skills & Tools:</strong><br>
     Embedded C, ATmega16, IR Sensors, Real-time Embedded Control
   </p>
+
+  <div class="project-media">
+    <img class="project-img" src="assets/images/table_top.png" alt="Table Top Robot" />
+  </div>
 
   <a class="github-link" href="https://github.com/parveezsyed28/table_top_robot" target="_blank">GitHub</a>
 </div>
@@ -490,9 +503,9 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
     Embedded C, ATmega16, IR Sensors, Analog Signal Processing, Motor Driver Control
   </p>
 
-  <div class="media side-by-side">
-    <img src="assets/images/line_follower.png" alt="Line Follower Robot" />
-    <img src="assets/images/line_follower_connection.png" alt="Line Follower Circuit" />
+ <div class="project-media side-by-side">
+    <img class="project-img" src="assets/images/line_follower.png" alt="Line Follower Robot" />
+    <img class="project-img" src="assets/images/line_follower_connection.png" alt="Line Follower Circuit" />
   </div>
   <a class="github-link" href="https://github.com/parveezsyed28/line_follower_robot" target="_blank">GitHub</a>
 </div>
