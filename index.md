@@ -397,13 +397,13 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 
  <p><strong>Skills & Tools:</strong></p>
 <div class="project-skills">
-  <span class="skill-item">Fusion 360</span>
-  <span class="skill-item">ROS 2 Humble</span>
-  <span class="skill-item">Gazebo Classic</span>
-  <span class="skill-item">URDF/Xacro</span>
-  <span class="skill-item">STL Meshes</span>
-  <span class="skill-item">Python</span>
-  <span class="skill-item">Ubuntu</span>
+   <span class="skill-item skill-ros">ROS2 Humble</span>
+  <span class="skill-item skill-python">Python</span>
+  <span class="skill-item skill-gazebo">Gazebo Classic</span>
+  <span class="skill-item skill-urdf">URDF/Xacro</span>
+  <span class="skill-item skill-cad">Fusion 360</span>
+  <span class="skill-item skill-stl">STL Meshes</span>
+  <span class="skill-item skill-linux">Ubuntu</span>
 </div>
 
   <div class="project-media">
@@ -448,9 +448,9 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 
   <p><strong>Skills & Tools:</strong></p>
 <div class="project-skills">
-  <span class="skill-item">ROS 2 Humble</span>
-  <span class="skill-item">Python</span>
-  <span class="skill-item">Turtlesim Simulator</span>
+  <span class="skill-item skill-ros">ROS2 Humble</span>
+  <span class="skill-item skill-python">Python</span>
+   <span class="skill-item skill-turtlesim">Turtlesim</span>
   <span class="skill-item">Publisher/Subscriber</span>
   <span class="skill-item">Service Calls</span>
 </div>
@@ -500,14 +500,15 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 
 <p><strong>Skills & Tools:</strong></p>
  <div class="project-skills">
-  <span class="skill-item">Embedded C</span>
-  <span class="skill-item">ATmega16 ADC module</span>
-  <span class="skill-item">IR Sensors</span>
+   <span class="skill-item skill-embedded">Embedded C</span>
+  <span class="skill-item skill-atmega16">ATmega16</span>
+  <span class="skill-item skill-ir">IR Sensors</span>
+  <span class="skill-item skill-l293d">L293D Motor Driver</span>
   <span class="skill-item">Potentiometer</span>
-  <span class="skill-item">L293D Motor Driver</span>
-  <span class="skill-item">7805 Voltage Regulator</span>
-  <span class="skill-item">IC555 Timer</span>
-  <span class="skill-item">Analog to digital Signal Processing</span>
+  <span class="skill-item skill-7805">7805 Voltage Regulator</span>
+  <span class="skill-item skill-555">IC555 Timer</span>
+  <span class="skill-item skill-pwm">PWM Control</span>
+  <span class="skill-item skill-adc">ADC</span>
 </div>
 
   <a class="github-link" href="https://github.com/parveezsyed28/adc_speed_controlled_robot" target="_blank">GitHub</a>
@@ -546,14 +547,14 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 
 <p><strong>Skills & Tools:</strong></p>
  <div class="project-skills">
-  <span class="skill-item">Embedded C</span>
-  <span class="skill-item">ATmega16</span>
-  <span class="skill-item">IR Sensors</span>
-  <span class="skill-item">L293D Motor Driver</span>
+  <span class="skill-item skill-embedded">Embedded C</span>
+  <span class="skill-item skill-atmega16">ATmega16</span>
+  <span class="skill-item skill-ir">IR Sensors</span>
+  <span class="skill-item skill-l293d">L293D Motor Driver</span>
   <span class="skill-item">PCB Design</span>
-  <span class="skill-item">Hardware Integration</span>
-  <span class="skill-item">7805 Voltage Regulator</span>
-  <span class="skill-item">IC555 Timer</span>
+  <span class="skill-item skill-hardware">Hardware Integration</span>
+  <span class="skill-item skill-7805">7805 Voltage Regulator</span>
+  <span class="skill-item skill-555">IC555 Timer</span>
 </div>
 
    <!-- Side-by-side images -->
@@ -593,9 +594,9 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 
 <p><strong>Skills & Tools:</strong></p>
  <div class="project-skills">
-  <span class="skill-item">Embedded C</span>
-  <span class="skill-item">ATmega16</span>
-  <span class="skill-item">IR Sensors</span>
+   <span class="skill-item skill-embedded">Embedded C</span>
+  <span class="skill-item skill-atmega16">ATmega16</span>
+  <span class="skill-item skill-ir">IR Sensors</span>
   <span class="skill-item">Real-time Embedded Control</span>
 </div>
 >
@@ -639,10 +640,10 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 
   <p><strong>Skills & Tools:</strong></p>
     <div class="project-skills">
-  <span class="skill-item">Embedded C</span>
-  <span class="skill-item">ATmega16</span>
-  <span class="skill-item">IR Sensors</span>
-  <span class="skill-item">Motor Driver Control</span>
+  <span class="skill-item skill-embedded">Embedded C</span>
+  <span class="skill-item skill-atmega16">ATmega16</span>
+  <span class="skill-item skill-ir">IR Sensors</span>
+  <span class="skill-item skill-l293d">L293D Motor Driver</span>
 </div>
 
 
@@ -674,10 +675,9 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Developed precise motion control sequences for industrial tasks.</p>
 <p><strong>Skills & Tools:</strong></p>
 <div class="project-skills">
-  <span class="skill-item">ABB RobotStudio</span>
-  <span class="skill-item">Teach Pendant</span>
-  <span class="skill-item">TCP</span>
-  <span class="skill-item">Motion Control</span>
+  <span class="skill-item skill-abb">ABB RobotStudio</span>
+  <span class="skill-item skill-tcp">TCP Configuration</span>
+  <span class="skill-item skill-motion">Motion Control</span>
 </div>
 
 
@@ -695,10 +695,10 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Developed repeatable drawing sequences with minimal deviation.</p>
 <p><strong>Skills & Tools:</strong></p>
 <div class="project-skills">
-  <span class="skill-item">ABB RobotStudio</span>
-  <span class="skill-item">Teach Pendant</span>
-  <span class="skill-item">TCP</span>
-  <span class="skill-item">Trajectory Programming</span>
+  <span class="skill-item skill-abb">ABB RobotStudio</span>
+  <span class="skill-item skill-tcp">TCP Configuration</span>
+  <span class="skill-item skill-motion">Motion Control</span>
+  <span class="skill-item skill-trajectory">Trajectory Planning</span>
 </div>
 
 
@@ -718,9 +718,9 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Implemented reliable pick & place sequences for industrial tasks.</p>
 <p><strong>Skills & Tools:</strong></p>
 <div class="project-skills">
-  <span class="skill-item">Nachi Teach Pendant</span>
-  <span class="skill-item">TCP</span>
-  <span class="skill-item">Motion Control</span>
+  <span class="skill-item skill-nachi">Nachi Teach Pendant</span>
+  <span class="skill-item skill-tcp">TCP Configuration</span>
+  <span class="skill-item skill-motion">Motion Control</span>
 </div>
 
 <div class="project-card">
@@ -737,10 +737,10 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Learned precise TCP adjustment for repeatable performance.</p>
 <p><strong>Skills & Tools:</strong></p>
 <div class="project-skills">
-  <span class="skill-item">Nachi Teach Pendant</span>
-  <span class="skill-item">TCP</span>
+   <span class="skill-item skill-nachi">Nachi Teach Pendant</span>
+  <span class="skill-item skill-tcp">TCP Configuration</span>
+  <span class="skill-item skill-motion">Motion Control</span>
   <span class="skill-item">Sensor Integration</span>
-  <span class="skill-item">Motion Control</span>
 </div>
 
 
@@ -758,10 +758,10 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Built repeatable pattern-making sequences using the teach pendant.</p>
 <p><strong>Skills & Tools:</strong></p>
 <div class="project-skills">
-  <span class="skill-item">Nachi Teach Pendant</span>
-  <span class="skill-item">TCP</span>
-  <span class="skill-item">Trajectory Programming</span>
-  <span class="skill-item">Motion Control</span>
+  <span class="skill-item skill-nachi">Nachi Teach Pendant</span>
+  <span class="skill-item skill-tcp">TCP Configuration</span>
+  <span class="skill-item skill-motion">Motion Control</span>
+  <span class="skill-item skill-trajectory">Trajectory Planning</span>
 </div>
 
 
@@ -781,11 +781,11 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Built robust automation sequences for industrial systems.</p>
 <p><strong>Skills & Tools:</strong></p>
 <div class="project-skills">
-  <span class="skill-item">RSLogix 5000</span>
-  <span class="skill-item">Ladder Logic</span>
-  <span class="skill-item">structured text</span>
-  <span class="skill-item">PLC Integration</span>
-  <span class="skill-item">Sensors & Actuators</span>
+ <span class="skill-item skill-plc">PLC</span>
+  <span class="skill-item skill-allenbradley">Allen Bradley</span>
+  <span class="skill-item skill-ladder">Ladder Logic</span>
+  <span class="skill-item skill-structuredtext">Structured Text</span>
+  <span class="skill-item skill-fbd">Functional Block Diagram (FBD)</span>
 </div>
 
 <div class="project-card">
@@ -802,12 +802,12 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Learned basic QA monitoring via PLC automation.</p>
 <p><strong>Skills & Tools:</strong></p>
 <div class="project-skills">
-  <span class="skill-item">Studio 5000</span>
-  <span class="skill-item">Ladder Logic</span>
-  <span class="skill-item">Structured Text</span>
-  <span class="skill-item">Functional Block Diagram (FBD)</span>
-  <span class="skill-item">PLC Integration</span>
-  <span class="skill-item">Sensors & Actuators</span>
+  <span class="skill-item skill-plc">PLC</span>
+  <span class="skill-item skill-allenbradley">Allen Bradley</span>
+  <span class="skill-item skill-rslogix">RSLogix 500/5000</span>
+  <span class="skill-item skill-ladder">Ladder Logic</span>
+  <span class="skill-item skill-structuredtext">Structured Text</span>
+  <span class="skill-item skill-fbd">Functional Block Diagram (FBD)</span>
 </div>
 
 
