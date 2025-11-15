@@ -673,12 +673,13 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Mastered trajectory planning and tool positioning.  
 - Understood ABB RobotStudio simulation and teach pendant integration.  
 - Developed precise motion control sequences for industrial tasks.</p>
-</div>
+  
 <p><strong>Skills & Tools:</strong></p>
 <div class="project-skills">
   <span class="skill-item skill-abb">ABB RobotStudio</span>
   <span class="skill-item skill-tcp">TCP Configuration</span>
   <span class="skill-item skill-motion">Motion Control</span>
+ </div>
 </div>
 
 
@@ -694,13 +695,14 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Gained experience in trajectory programming for complex patterns.  
 - Learned fine-tuning of TCP parameters for consistent precision.  
 - Developed repeatable drawing sequences with minimal deviation.</p>
-</div>
+
 <p><strong>Skills & Tools:</strong></p>
 <div class="project-skills">
   <span class="skill-item skill-abb">ABB RobotStudio</span>
   <span class="skill-item skill-tcp">TCP Configuration</span>
   <span class="skill-item skill-motion">Motion Control</span>
   <span class="skill-item skill-trajectory">Trajectory Planning</span>
+ </div>
 </div>
 
 
@@ -718,12 +720,13 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Mastered basic robot motion programming using teach pendant.  
 - Developed skills in accurate tool manipulation.  
 - Implemented reliable pick & place sequences for industrial tasks.</p>
-</div>
+
 <p><strong>Skills & Tools:</strong></p>
 <div class="project-skills">
   <span class="skill-item skill-nachi">Nachi Teach Pendant</span>
   <span class="skill-item skill-tcp">TCP Configuration</span>
   <span class="skill-item skill-motion">Motion Control</span>
+  </div>
 </div>
 
 <div class="project-card">
@@ -738,13 +741,14 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Gained experience integrating perception with motion control.  
 - Developed reliable color sorting sequences.  
 - Learned precise TCP adjustment for repeatable performance.</p>
-</div>
+
 <p><strong>Skills & Tools:</strong></p>
 <div class="project-skills">
    <span class="skill-item skill-nachi">Nachi Teach Pendant</span>
   <span class="skill-item skill-tcp">TCP Configuration</span>
   <span class="skill-item skill-motion">Motion Control</span>
   <span class="skill-item">Sensor Integration</span>
+  </div>
 </div>
 
 
@@ -760,13 +764,14 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Mastered trajectory planning for creative tasks.  
 - Learned fine control of TCP for precision.  
 - Built repeatable pattern-making sequences using the teach pendant.</p>
-</div>
+
 <p><strong>Skills & Tools:</strong></p>
 <div class="project-skills">
   <span class="skill-item skill-nachi">Nachi Teach Pendant</span>
   <span class="skill-item skill-tcp">TCP Configuration</span>
   <span class="skill-item skill-motion">Motion Control</span>
   <span class="skill-item skill-trajectory">Trajectory Planning</span>
+ </div>
 </div>
 
 
@@ -784,7 +789,7 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Learned process automation and sequence programming.  
 - Gained experience implementing interlocks and safety features.  
 - Built robust automation sequences for industrial systems.</p>
-</div>
+
 <p><strong>Skills & Tools:</strong></p>
 <div class="project-skills">
  <span class="skill-item skill-plc">PLC</span>
@@ -792,6 +797,7 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
   <span class="skill-item skill-ladder">Ladder Logic</span>
   <span class="skill-item skill-structuredtext">Structured Text</span>
   <span class="skill-item skill-fbd">Functional Block Diagram (FBD)</span>
+ </div>
 </div>
 
 <div class="project-card">
@@ -806,7 +812,7 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Gained knowledge in energy-efficient control logic.  
 - Practiced sensor integration and process optimization.  
 - Learned basic QA monitoring via PLC automation.</p>
-</div>
+
 <p><strong>Skills & Tools:</strong></p>
 <div class="project-skills">
   <span class="skill-item skill-plc">PLC</span>
@@ -815,6 +821,7 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
   <span class="skill-item skill-ladder">Ladder Logic</span>
   <span class="skill-item skill-structuredtext">Structured Text</span>
   <span class="skill-item skill-fbd">Functional Block Diagram (FBD)</span>
+  </div>
 </div>
 
 
