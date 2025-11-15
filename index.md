@@ -511,7 +511,7 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
   <span class="skill-item skill-adc">ADC</span>
 </div>
 
-  <a class="github-link" href="https://github.com/parveezsyed28/adc_speed_controlled_robot" target="_blank">GitHub</a>
+  <a class="github-link" href="https://github.com/parveezsyed28/ADC_speed_controlled_robot" target="_blank">GitHub</a>
 </div>
 
 ---
