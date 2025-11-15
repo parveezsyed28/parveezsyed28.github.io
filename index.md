@@ -208,3 +208,54 @@ Hi! I'm **Parveez Banu Syed Azizuddin**, a Mechatronics Specialist with hands-on
 📍 Toronto, Canada  
 
 ---
+
+<!-- ========================= -->
+<!--  FLOATING RETURN TO TOP   -->
+<!-- ========================= -->
+
+<button id="topBtn" title="Go to top">▲</button>
+
+<style>
+#topBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+  background: #1e90ff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#topBtn:hover {
+  transform: scale(1.1);
+}
+</style>
+
+<script>
+// Show button when scrolled down
+window.onscroll = function() {
+  const btn = document.getElementById("topBtn");
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    btn.style.opacity = "1";
+    btn.style.pointerEvents = "auto";
+  } else {
+    btn.style.opacity = "0";
+    btn.style.pointerEvents = "none";
+  }
+};
+
+// Smooth scroll to top
+document.getElementById("topBtn").onclick = function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+</script>
+
