@@ -143,6 +143,24 @@ title: "Portfolio – Parveez Banu Syed Azizuddin"
   background-color: #0056b3;
 }
 
+.project-skills {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-item {
+  display: inline-block;
+  background-color: #f0f0f0; /* neutral gray */
+  color: #333;               /* dark text */
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  border: 1px solid #ccc;    /* subtle border */
+}
+
+
 
 
 /* --------------------------- */
@@ -219,10 +237,14 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
     - Enhanced understanding of autonomous navigation using LiDAR-based perception.
   </p>
 
-  <p>
-    <strong>Skills & Tools:</strong><br>
-    ROS 2 Humble, Python, Gazebo Classic Simulation, URDF/Xacro, RViz
-  </p>
+ 
+     <div class="project-skills">
+    <span class="skill-item">ROS 2 Humble</span>
+    <span class="skill-item">Python</span>
+    <span class="skill-item">Gazebo classic simulation Classic</span>
+    <span class="skill-item">RViz</span>
+    <span class="skill-item">URDF / Xacro</span>
+  </div>
 
   <div class="project-media">
     <video controls>
