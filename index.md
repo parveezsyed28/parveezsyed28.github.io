@@ -43,6 +43,19 @@ title: "Portfolio – Parveez Banu Syed Azizuddin"
   padding: 5px 0;
 }
 
+.section-title {
+  font-size: 2rem;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  color: #0a7cff;
+  font-weight: 800;
+  padding: 10px 15px;
+  background: rgba(0, 123, 255, 0.08);
+  border-left: 5px solid #0a7cff;
+  border-radius: 6px;
+}
+
+
 /* Hover underline animation */
 .top-nav ul li a::after {
   content: "";
