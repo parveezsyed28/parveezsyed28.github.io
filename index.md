@@ -1,472 +1,210 @@
 ---
-layout: single
-title: "Parveez Banu Syed Azizuddin"
-author_profile: true
-permalink: /
-classes: wide
+layout: default
+title: "Portfolio – Parveez Banu Syed Azizuddin"
 ---
+
+<!-- ========================= -->
+<!--       TOP NAV MENU        -->
+<!-- ========================= -->
+
+<nav class="top-nav">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#ros2-projects">ROS2 Projects</a></li>
+    <li><a href="#embedded-projects">Embedded Projects</a></li>
+    <li><a href="#automation-projects">Industrial Automation</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
 <style>
-/* ============================
-   Overall Page Styles
-=============================== */
-body { font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; background: linear-gradient(135deg, #f5f9ff, #e0f0ff); color: #1a1a1a; margin: 0 20px; text-align: center; line-height: 1.6; }
-.header-container { margin-top: 50px; margin-bottom: 50px; }
-.header-container h1 { font-size: 3rem; font-weight: 900; background: linear-gradient(270deg, #357edd, #ff6ec7, #ffba3c); background-size: 600% 600%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: gradientMove 8s ease infinite, fadeInDown 1s ease forwards; letter-spacing: 1.2px; }
-.header-container p { font-size: 1.4rem; font-weight: 600; color: #357edd; margin-top: 10px; animation: fadeInUp 1s ease forwards; animation-delay: 0.3s; }
-h2 { font-size: 2.2rem; color: #2a4d8f; margin-top: 60px; margin-bottom: 30px; font-weight: 700; text-align: center; position: relative; animation: fadeIn 1s ease forwards; }
-h2::after { content: ""; display: block; width: 100px; height: 4px; margin: 8px auto 0; background: linear-gradient(90deg, #ff6ec7, #357edd, #ffba3c); border-radius: 2px; animation: fadeIn 1.5s ease forwards; }
-h3 { font-size: 1.6rem; color: #ff6ec7; margin-top: 40px; margin-bottom: 15px; animation: fadeIn 1s ease forwards; }
-p { max-width: 720px; margin-left: auto; margin-right: auto; text-align: justify; }
-ul, ol { max-width: 720px; margin-left: auto; margin-right: auto; text-align: left; padding-left: 1.2em; margin-bottom: 1em; }
-ul li, ol li { margin-bottom: 0.4em; }
-.project-card { background: #ffffffcc; border-radius: 12px; padding: 20px; margin: 30px auto; max-width: 750px; box-shadow: 0 8px 20px rgba(0,0,0,0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; }
-.project-card:hover { transform: translateY(-5px) scale(1.02); box-shadow: 0 12px 25px rgba(0,0,0,0.25); }
-.project-card h3 { margin-bottom: 12px; }
-.media, .project-media { margin: 15px auto 30px auto; max-width: 720px; text-align: center; }
-.media img, .project-media img, .media video, .project-media video { max-width: 100%; max-height: 400px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.15); }
-.side-by-side { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
-.side-by-side img, .side-by-side video { max-width: 48%; max-height: 350px; }
-.github-link { display: inline-block; margin-top: 8px; color: #fff; font-weight: 600; font-size: 0.95rem; text-decoration: none; padding: 6px 12px; border-radius: 8px; background: linear-gradient(90deg, #357edd, #ff6ec7, #ffba3c); transition: transform 0.3s ease, box-shadow 0.3s ease; }
-.github-link:hover { transform: scale(1.05); box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
-.skill-tag { display: inline-block; margin: 5px 6px; padding: 6px 12px; border-radius: 20px; background: linear-gradient(90deg, #ff6ec7, #357edd, #ffba3c); color: #fff; font-weight: 600; font-size: 0.9rem; transition: transform 0.3s ease; }
-.skill-tag:hover { transform: scale(1.1); }
-.contact-info a { display: inline-block; margin: 0 15px; color: #fff; text-decoration: none; font-weight: 600; font-size: 1.1rem; padding: 6px 12px; border-radius: 8px; background: linear-gradient(90deg, #357edd, #ff6ec7, #ffba3c); transition: transform 0.3s ease, box-shadow 0.3s ease; }
-.contact-info a:hover { transform: scale(1.1); box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-@keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
-@keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-@keyframes gradientMove { 0%{background-position:0% 50%;} 50%{background-position:100% 50%;} 100%{background-position:0% 50%;} }
-@media (max-width: 768px){ .side-by-side { flex-direction: column; } .side-by-side img, .side-by-side video { max-width: 100%; } .header-container h1 { font-size: 2.2rem; } .header-container p { font-size: 1.2rem; } }
+/* --------------------------- */
+/*       BASIC NAV STYLE       */
+/* --------------------------- */
+.top-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 25px;
+  background: #111;
+  padding: 12px 20px;
+  border-radius: 8px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.top-nav ul li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  padding: 5px 0;
+}
+
+/* Hover underline animation */
+.top-nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: #1e90ff;
+  transition: width 0.3s ease;
+}
+
+.top-nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* --------------------------- */
+/*    PROJECT CARD + EFFECTS   */
+/* --------------------------- */
+
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 25px;
+  background: #f9f9f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.project-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.03);
+}
+
+/* --------------------------- */
+/*      SECTION ANIMATION      */
+/* --------------------------- */
+
+.section-title {
+  font-size: 2rem;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  color: #1e90ff;
+  opacity: 0;
+  animation: fadeSlideUp 0.8s forwards;
+}
+
+/* Fade + Slide Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --------------------------- */
+/*       SMOOTH SCROLL         */
+/* --------------------------- */
+html {
+  scroll-behavior: smooth;
+}
 </style>
 
-<div class="header-container">
-  <h1>Parveez Banu Syed Azizuddin</h1>
-  <p>Mechatronics Engineer | Robotics & Embedded Systems | Automation Enthusiast</p>
-</div>
+---
 
-## About Me
+# <span id="home"></span>👋 **Welcome**
 
-Welcome to my portfolio, a space where curiosity and continuous learning drive my journey into robotics and autonomous systems. With a foundation in Electrical and Electronics Engineering and experience as a Mechatronics Engineer, I am actively expanding my skills in ROS 2, embedded systems, and simulation through hands-on projects and self-driven exploration. This collection highlights my growth as a robotics enthusiast and my commitment to mastering the integration of hardware and software to solve real-world challenges. Explore my work and join me as I build expertise and contribute to the exciting field of robotics.
+Hi! I'm **Parveez Banu Syed Azizuddin**, a Mechatronics Specialist with hands-on experience building robots, ROS2 simulations, automation systems, embedded controllers, and more.
 
 ---
 
-## ROS2 Projects
+# <span id="ros2-projects"></span>🤖 **ROS2 Projects**
 
+## 🟦 **Wall Follower Bot – ROS2**
 <div class="project-card">
-   
-<h3>Wall Following Robot (ROS 2 + Gazebo)</h3>
-
-<p>This project focuses on creating a robot that maintains a steady distance alongside walls using LiDAR data. It leverages ROS 2 Humble and Gazebo Classic to simulate wall-following behavior by processing laser scan data and generating velocity commands to navigate corridors and turns smoothly. The robot’s custom URDF/Xacro model includes detailed sensor and actuator configurations optimized for precise wall tracking in maze-like environments.</p>
-
-<p>
-- Developed custom robot model and integrated LiDAR sensor.  
-- Implemented obstacle detection and avoidance algorithms in Python.  
-- Designed simulation environment replicating real-world navigation challenges.
-</p>
-
-<p><strong>Challenges faced:</strong>
-
-   - Ensuring accurate sensor data processing and filtering for reliable obstacle detection.  
-   - Tuning velocity commands to achieve smooth and safe robot movements.  
-   - Configuring Gazebo plugins and model files for correct sensor simulation.
-</p>
-
-<p><strong>Learning outcomes:</strong>
-
-- Mastered ROS 2 topics and message handling for real-time sensor and control data.  
-- Gained experience in Gazebo robot modeling and simulation environment setup.  
-- Enhanced understanding of autonomous navigation using LiDAR-based perception.
-</p>
-
-<p><strong>Skills & Tools:</strong>
-
-ROS 2 Humble, Python  
-Gazebo Classic Simulation  
-.</p>
-
-
-<div class="project-media">
-  <video controls><source src="assets/images/Wall_follower.mp4" type="video/mp4" /></video>
-  <br />
-  <a class="github-link" href="https://github.com/parveezsyed28/Wall-Following-Robot-with-LiDAR" target="_blank">GitHub</a>
+  <img class="project-img" src="images/wall_follower.png">
+  <p>Custom ROS2 robot with LIDAR-based wall detection.  
+  <strong>Tools:</strong> ROS2, Gazebo, RViz, Fusion 360</p>
 </div>
 
----
-   
-<h3>Obstacle Avoidance Robot (ROS 2 + Gazebo)</h3>
-
-<p>This project simulates a differential drive robot designed to detect and avoid obstacles dynamically while navigating an open or cluttered environment. Using ROS 2 and Gazebo Classic, the robot processes laser scan data to identify obstacles in real time, adapting its velocity commands to steer clear of collisions. The simulation includes a custom URDF/Xacro robot model with integrated sensors, enabling reactive navigation in unpredictable scenarios.</p>
-
-<p>
-Developed custom robot model and integrated LiDAR sensor.
-- Implemented obstacle detection and avoidance algorithms in Python.
-- Designed simulation environment replicating real-world navigation challenges.
-</p>
-
-<p><strong>Challenges faced:</strong>
-
-  - Ensuring accurate sensor data processing and filtering for reliable obstacle detection.
-- Tuning velocity commands to achieve smooth and safe robot movements.
-- Configuring Gazebo plugins and model files for correct sensor simulation.
-
-</p>
-
-<p><strong>Learning outcomes:</strong>
-
-- Mastered ROS 2 topics and message handling for real-time sensor and control data.
-- Gained experience in Gazebo robot modeling and simulation environment setup.
-- Enhanced understanding of autonomous navigation using LiDAR-based perception.
-
-</p>
-
-<p><strong>Skills & Tools:</strong>
-ROS 2 Humble, Python  
-Gazebo Classic Simulation  
-URDF / Xacro Robot Description  
-LiDAR sensor integration  
-Ubuntu Linux, Visual Studio Code
-  
-</p>
-
-
-<div class="project-media">
-  <video controls><source src="assets/images/Obstacle_Avoidance.mp4" type="video/mp4" /></video>
-  <br />
-  <a class="github-link" href="https://github.com/parveezsyed28/obstacle_avoidance_lidar" target="_blank">GitHub</a>
-</div>
-
----
-
-<h3>Robot Description & Simulation (ROS2 + Fusion 360)</h3>
-
-<p>This project features a custom-designed two-wheeled robot created using Fusion 360 and described with URDF/Xacro files. The model includes detailed STL meshes and integrates Gazebo plugins such as the differential drive controller for realistic motion simulation. The robot is simulated within Gazebo to test movement and sensor plugins, providing a solid foundation for further ROS 2 robotic development.</p>
-
-<p>
-- Designed mechanical components in Fusion 360 and exported STL meshes.
-- Created accurate URDF and Xacro descriptions with sensors and plugins.
-- Simulated robot kinematics and sensor data in Gazebo.
-</p>
-
-<p><strong>Challenges faced:</strong>
-
- - Managing mesh file references and ensuring proper visualization in Gazebo.
- - Configuring differential drive plugin parameters for smooth robot control.
- - Synchronizing URDF with Gazebo-specific XML extensions.
-</p>
-
-<p><strong>Learning outcomes:</strong>
-
-- Gained experience in robot modeling and simulation workflows.
-- Understood integration of hardware CAD designs with ROS 2 simulation environments.
-- Developed skills in robot plugin configuration for Gazebo.
-</p>
-
-<p><strong>Skills & Tools:</strong>
-Fusion 360 CAD  
-ROS 2 Humble, Gazebo Classic  
-URDF / Xacro Robot Modeling  
-STL Meshes and Gazebo Plugins  
-Python, Linux
-</p>
-
-
-<div class="media">
-  <video controls><source src="assets/images/robot_teleop.mp4" type="video/mp4" /></video>
-<br />
-<a class="github-link" href="https://github.com/parveezsyed28/ros2_bot_description" target="_blank">GitHub</a>
-</div>
-
----
-   
-<h3>Turtlesim Geometric Shape Drawer</h3>
-
-<p>A ROS 2 Python node that controls the turtlesim to draw geometric shapes based on interactive user input. It includes service calls to reset the turtlesim, allowing repeated shape drawing. This project helps demonstrate ROS 2 communication concepts like publishers, subscribers, and service clients in a simple and visual way.</p>
-
-<p>
-- Implemented publisher and subscriber nodes for turtle velocity commands.
-- Handled CLI input and reset services in ROS 2.
-- Designed code modularity for ease of extending shapes.
-</p>
-
-<p><strong>Challenges faced:</strong>
-
-- Synchronizing service calls and publisher commands for smooth turtle control.
-- Managing timing and velocity parameters for precise shape drawing.
-</p>
-
-<p><strong>Learning outcomes:</strong>
-
-- Deepened understanding of ROS 2 communication patterns.
-- Improved ability to build interactive robotic applications.
-- Practiced Python scripting in ROS 2 nodes.
-</p>
-
-<p><strong>Skills & Tools:</strong>
-ROS 2 Humble, Python  
-Turtlesim Simulator  
-Publisher/Subscriber and Service Calls
-</p>
-
-
-<div class="media">
-  <video controls><source src="assets/images/Turtlesim.mp4" type="video/mp4" /></video>
-<br />
-<a class="github-link" href="https://github.com/parveezsyed28/user_input_turtle_shape" target="_blank">GitHub</a>
-</div>
-
----
-
-## Embedded Projects
-
+## 🟦 **TortoiseBot Navigation**
 <div class="project-card">
-   
-<h3>ADC-Based Robot</h3>
-
-<p>
-This advanced robot integrates multiple sensors for obstacle avoidance, cliff detection, and black line following. It also includes dynamic speed control using a potentiometer connected to the ATmega16 microcontroller's ADC module. The robot uses analog sensor inputs to adapt motor speed and navigate various environments.
-</p>
-
-<p>
-- Utilizes front, top, left, and right IR sensors for comprehensive environment awareness.
-- Speed control implemented via ADC reading from a trimpot.
-- Embedded C programming for real-time sensor processing and motor control.
-</p>
-
-<p><strong>Challenges faced:</strong>
-
-- Balancing sensor readings and motor control for smooth navigation.
-- Implementing accurate ADC sampling and PWM motor speed control.
-- Hardware integration of multiple sensors with the microcontroller.
-</p>
-
-<p><strong>Learning outcomes:</strong>
-
-- Mastered ADC usage in microcontrollers for analog sensor data.
-- Developed complex embedded systems integrating multiple sensors.
-- Improved skills in hardware-software co-design.
-</p>
-
-<p><strong>Skills & Tools:</strong>
-Embedded C, ATmega16 ADC module  
-IR Sensors, Potentiometer for Speed Control  
-L293D Motor Driver  
-Real-time Embedded Systems
-</p>
-
-<a class="github-link" href="https://github.com/parveezsyed28/adc_speed_controlled_robot" target="_blank">GitHub</a>
+  <img class="project-img" src="images/tortoisebot_nav.png">
+  <p>Navigation stack with Nav2, map saving, SLAM.</p>
 </div>
 
----
-
+## 🟦 **ROS2 Obstacle Avoidance (Simulation)**
 <div class="project-card">
-<h3>Obstacle Avoider Robot</h3>
-
-<p>
-This microcontroller-based robot avoids obstacles using IR sensors programmed with Embedded C on the ATmega16. The robot detects obstacles using front-facing IR sensors and controls motion via an L293D motor driver. The design emphasizes robust sensor integration and real-time control logic on limited hardware.
-</p>
-
-<p>
-- Implemented IR sensor interfacing and obstacle detection logic.
-- Controlled motor driver signals with embedded C code.
-- Developed chassis and hardware layout optimized for sensor placement.
-</p>
-
-<p><strong>Challenges faced:</strong>
-
-- Ensuring sensor readings were reliable under different lighting conditions.
-- Timing motor control signals to avoid jerky movement.
-- Managing power distribution to motors and sensors effectively.
-</p>
-
-<p><strong>Learning outcomes:</strong>
-
-- Built expertise in embedded C programming for real-time control.
-- Gained practical experience in sensor integration on microcontrollers.
-- Understood motor driver interfacing and motion control.
-</p>
-
-<p><strong>Skills & Tools:</strong>
-Embedded C, ATmega16  
-IR Sensors, L293D Motor Driver  
-PCB Design & Hardware Integration
-</p>
-
-<div class="media side-by-side">
-  <img src="assets/images/obstacle_avoider.png" alt="Obstacle Avoider Robot" />
-  <img src="assets/images/Obstacle_avoider_connection.png" alt="Obstacle Avoider Circuit" />
-</div>
-<a class="github-link" href="https://github.com/parveezsyed28/obstacle_avoider_robot" target="_blank">GitHub</a>
+  <img class="project-img" src="images/ros2_obstacle.png">
+  <p>LIDAR-based obstacle avoidance simulation.</p>
 </div>
 
 ---
 
+# <span id="embedded-projects"></span>🔧 **Embedded Projects**
+
+## 🟩 **Obstacle Avoider – Microcontroller Version**
 <div class="project-card">
-<h3>Table Top Robot</h3>
-
-<p>
-This robot is designed to detect table edges and avoid falling by using IR sensors programmed on the ATmega16 microcontroller. It continuously monitors edge proximity and maneuvers accordingly to maintain stability on the table surface.
-</p>
-
-<p>
-- Used real-time IR sensor data for edge detection.
-- Embedded control logic to adjust robot motion based on sensor feedback.
-</p>
-
-<p><strong>Challenges faced:</strong>
-
-- Achieving fast and reliable edge detection for safe operation.
-- Balancing sensor sensitivity and false positive reduction.
-</p>
-
-<p><strong>Learning outcomes:</strong>
-
-- Mastered edge detection concepts with IR sensors.
-- Refined embedded control strategies for safety features.
-</p>
-
-<p><strong>Skills & Tools:</strong>
-Embedded C, ATmega16  
-IR Sensors for Edge Detection  
-Real-time Embedded Control
-</p>
-
-<div class="media">
-  <img src="assets/images/table_top.png" alt="Table Top Robot" />
-</div>
-<a class="github-link" href="https://github.com/parveezsyed28/table_top_robot" target="_blank">GitHub</a>
+  <img class="project-img" src="images/obstacle_avoider_embedded.png">
+  <p>Hardware robot using ultrasonic sensors + motor drivers.</p>
 </div>
 
-
----
-
+## 🟩 **Line Follower Robot**
 <div class="project-card">
-<h3>Line Follower Robot</h3>
-
-<p>
-A robot designed to follow a black line using bottom-mounted IR sensors. The control system uses sensor feedback to maintain alignment on the path. The robot was developed with embedded C programming on the ATmega16 microcontroller, utilizing analog sensor input for reliable line detection.
-</p>
-
-<p>
-- Implemented analog IR sensor interfacing for line detection.
-- Developed control logic for real-time path following.
-- Compact and efficient hardware design.
-</p>
-
-<p><strong>Challenges faced:</strong>
-
-- Ensuring accurate sensor readings without noise filtering.
-- Fine-tuning sensor placement for reliable line detection.
-- Implementing smooth motor control to follow curves.
-</p>
-
-<p><strong>Learning outcomes:</strong>
-
-- Gained understanding of sensor-based path following.
-- Applied embedded control techniques in constrained environments.
-</p>
-
-<p><strong>Skills & Tools:</strong>
-Embedded C, ATmega16  
-IR Sensors, Analog Signal Processing  
-Motor Driver Control
-</p>
-
-<div class="media side-by-side">
-  <img src="assets/images/line_follower.png" alt="Line Follower Robot" />
-  <img src="assets/images/line_follower_connection.png" alt="Line Follower Circuit" />
-</div>
-<a class="github-link" href="https://github.com/parveezsyed28/line_follower_robot" target="_blank">GitHub</a>
+  <img class="project-img" src="images/line_follower.png">
+  <p>IR sensor tracking + PID tuning.</p>
 </div>
 
----
-
-## Industrial Automation Projects
-
+## 🟩 **ADC Controlled Robot**
 <div class="project-card">
-
-<h2>ABB RobotStudio + Teach Pendant Projects</h2>
-
-<h3>Pick & Place / Sorting Simulation</h3>
-<p><strong>Objective:</strong> Simulate and program ABB robot for pick & place and color sorting tasks with precise motion.</p>  
-<p><strong>Tools & Environment:</strong> ABB RobotStudio, ABB Teach Pendant, Tool Center Point (TCP) configuration</p>  
-<p><strong>Key Learnings:</strong> Understanding TCP, trajectory planning, and precise robotic motion control</p>  
-<p><strong>Highlights:</strong> Successfully implemented object manipulation and sorting sequences, demonstrating accuracy and repeatability</p>  
-
-<h3>Drawing / Pattern Simulation</h3>
-<p><strong>Objective:</strong> Program ABB robot to draw geometric patterns or designs.</p>  
-<p><strong>Tools & Environment:</strong> ABB RobotStudio, ABB Teach Pendant, Tool Center Point (TCP)</p> 
-<p><strong>Key Learnings:</strong> Trajectory programming, smooth motion control, TCP adjustments for precise tool path</p>  
-<p><strong>Highlights:</strong> Executed multiple pattern-drawing sequences with minimal error, showcasing motion precision</p>  
-
----
-
-<h2>Nachi Robot Teach Pendant Projects</h2>
-
-<h3>Pick & Place</h3>
-<p><strong>Objective:</strong> Control Nachi robot using teach pendant for basic pick & place tasks</p>  
-<p><strong>Tools & Environment:</strong> Nachi Teach Pendant, TCP configuration</p>  
-<p><strong>Key Learnings:</strong> Accurate tool manipulation, motion control using teach pendant</p>  
-<p><strong>Highlights:</strong> Completed object handling tasks with reliable accuracy</p>  
-
-<h3>Color Sorting</h3>
-<p><strong>Objective:</strong> Program Nachi robot to sort objects based on color using teach pendant</p>  
-<p><strong>Tools & Environment:</strong> Nachi Teach Pendant, TCP configuration</p>
-<p><strong>Key Learnings:</strong> Integration of sensor feedback with robotic motion, TCP calibration</p>  
-<p><strong>Highlights:</strong> Achieved reliable color sorting with minimal errors</p>  
-
-<h3>Drawing / Pattern Making</h3>
-<p><strong>Objective:</strong> Create geometric drawings with Nachi robot using teach pendant</p>  
-<p><strong>Tools & Environment:</strong> Nachi Teach Pendant, TCP configuration</p> 
-<p><strong>Key Learnings:</strong> Trajectory planning, precise TCP adjustments, creative motion sequences</p>  
-<p><strong>Highlights:</strong> Successfully executed multiple drawing sequences with repeatable accuracy</p>  
-
----
-
-<h2>PLC Projects</h2>
-
-<h3>Water Treatment Plant Backwash Automation</h3>
-<p><strong>Objective:</strong> Automate backwash sequence of pumps and valves with interlocks and fail-safes</p>  
-<p><strong>Tools & Environment:</strong> RSLogix 500 / Studio 5000, Ladder Logic, PLC sensors and actuators</p>  
-<p><strong>Key Learnings:</strong> Process automation, sequence programming, interlock implementation</p>
-<p><strong>Highlights:</strong> Developed a reliable automated sequence ensuring safe and efficient operation</p> 
-
-<h3>Small Foundry Energy Efficiency & QA Control</h3>
-<p><strong>Objective:</strong> Monitor energy usage and ensure quality control in a small foundry setup</p>  
-<p><strong>Tools & Environment:</strong> RSLogix 500 / Studio 5000, Ladder / Structured Text, PLC integration</p>  
-<p><strong>Key Learnings:</strong> Energy monitoring logic, sensor integration, process control optimization</p> 
-<p><strong>Highlights:</strong> Implemented energy-efficient control logic with basic QA monitoring</p> 
-
-
----
-
-## Skills & Tools
-
-<div>
-<span class="skill-tag">ROS 2 Humble</span>
-<span class="skill-tag">Gazebo Classic</span>
-<span class="skill-tag">URDF / Xacro</span>
-<span class="skill-tag">Python</span>
-<span class="skill-tag">Embedded C</span>
-<span class="skill-tag">ATmega16</span>
-<span class="skill-tag">L293D Motor Driver</span>
-<span class="skill-tag">IR Sensors</span>
-<span class="skill-tag">Fusion 360</span>
-<span class="skill-tag">CAD Modeling</span>
-<span class="skill-tag">KiCad PCB Design</span>
-<span class="skill-tag">Linux (Ubuntu)</span>
-<span class="skill-tag">Git & GitHub</span>
-<span class="skill-tag">ABB RobotStudio</span>
-<span class="skill-tag">Nachi Teach Pendant</span>
-<span class="skill-tag">PLC Ladder Logic</span>
+  <img class="project-img" src="images/adc_robot.png">
+  <p>Analog-input motion control using ADC.</p>
 </div>
 
 ---
 
-## Contact
+# <span id="automation-projects"></span>🏭 **Industrial Automation**
 
-<div class="contact-info">
-<a href="mailto:parveezbanu.s@gmail.com">Email</a>
-<a href="https://github.com/parveezsyed28" target="_blank">GitHub</a>
-<a href="https://linkedin.com/in/parveez-banu2807" target="_blank">LinkedIn</a>
+## 🟪 **ABB RobotStudio**
+<div class="project-card">
+  <img class="project-img" src="images/abb_robotstudio.png">
+  <p>Pick & place, trajectory planning, TCP setup.</p>
 </div>
+
+## 🟪 **Nachi Robotics – Color Sorting**
+<div class="project-card">
+  <img class="project-img" src="images/nachi_robot.png">
+  <p>Motion sequences + pattern making.</p>
+</div>
+
+---
+
+# <span id="skills"></span>🧠 **Skills**
+
+- ROS2, Gazebo, RViz  
+- Python for robotics  
+- Fusion 360 modeling  
+- Embedded C, Arduino  
+- PLC basics (AB, Delta)  
+- Electromechanical troubleshooting  
+
+---
+
+# <span id="contact"></span>📬 **Contact**
+
+📧 **parveezsyed28@gmail.com**  
+🌐 **parveezsyed28.github.io**  
+📍 Toronto, Canada  
+
+---
