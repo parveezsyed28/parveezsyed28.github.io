@@ -120,6 +120,30 @@ title: "Portfolio – Parveez Banu Syed Azizuddin"
   object-fit: cover;
 }
 
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.skill-tag {
+  display: inline-block;
+  background-color: #007BFF;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: transform 0.3s, background-color 0.3s;
+  cursor: default;
+}
+
+.skill-tag:hover {
+  transform: translateY(-3px) scale(1.05);
+  background-color: #0056b3;
+}
+
+
 
 /* --------------------------- */
 /*      SECTION ANIMATION      */
@@ -637,13 +661,26 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 
 <h1 id="skills" class="section-title">🧠 Skills</h1>
 
-- ROS2, Gazebo, RViz  
-- Python for robotics  
-- Fusion 360 modeling  
-- Embedded C, Arduino  
-- Industrial Robotics: ABB RobotStudio & Teach Pendant, Nachi Teach Pendant  
-- PLC: Allen-Bradley (RSLogix 500, Studio 5000), Delta PLC basics  
-- Electromechanical troubleshooting
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<div class="skills">
+  <span class="skill-tag" data-aos="fade-up">ROS2</span>
+  <span class="skill-tag" data-aos="fade-up" data-aos-delay="100">Gazebo</span>
+  <span class="skill-tag" data-aos="fade-up" data-aos-delay="200">RViz</span>
+  <span class="skill-tag" data-aos="fade-up" data-aos-delay="300">Python</span>
+  <span class="skill-tag" data-aos="fade-up" data-aos-delay="400">Embedded C</span>
+  <span class="skill-tag" data-aos="fade-up" data-aos-delay="500">Arduino</span>
+  <span class="skill-tag" data-aos="fade-up" data-aos-delay="600">PLC (Allen Bradley / Delta)</span>
+  <span class="skill-tag" data-aos="fade-up" data-aos-delay="700">ABB RobotStudio</span>
+  <span class="skill-tag" data-aos="fade-up" data-aos-delay="800">Nachi Teach Pendant</span>
+  <span class="skill-tag" data-aos="fade-up" data-aos-delay="900">Fusion 360 / CAD Modeling</span>
+  <span class="skill-tag" data-aos="fade-up" data-aos-delay="1000">Electromechanical Troubleshooting</span>
+</div>
+
   
 
 ---
