@@ -657,9 +657,9 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 
 <h1 id="automation-projects" class="section-title">🏭 Industrial Automation</h1>
 
-### 🔹 Industrial Robotics
+<h2>🔹 Industrial Robotics</h2>
 
-#### ABB RobotStudio + Teach Pendant Projects
+<h3>ABB RobotStudio + Teach Pendant Projects</h3>
 
 <div class="project-card">
 <h3>Pick & Place / Sorting Simulation</h3>
@@ -673,6 +673,7 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Mastered trajectory planning and tool positioning.  
 - Understood ABB RobotStudio simulation and teach pendant integration.  
 - Developed precise motion control sequences for industrial tasks.</p>
+</div>
 <p><strong>Skills & Tools:</strong></p>
 <div class="project-skills">
   <span class="skill-item skill-abb">ABB RobotStudio</span>
@@ -693,6 +694,7 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Gained experience in trajectory programming for complex patterns.  
 - Learned fine-tuning of TCP parameters for consistent precision.  
 - Developed repeatable drawing sequences with minimal deviation.</p>
+</div>
 <p><strong>Skills & Tools:</strong></p>
 <div class="project-skills">
   <span class="skill-item skill-abb">ABB RobotStudio</span>
@@ -716,6 +718,7 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Mastered basic robot motion programming using teach pendant.  
 - Developed skills in accurate tool manipulation.  
 - Implemented reliable pick & place sequences for industrial tasks.</p>
+</div>
 <p><strong>Skills & Tools:</strong></p>
 <div class="project-skills">
   <span class="skill-item skill-nachi">Nachi Teach Pendant</span>
@@ -735,6 +738,7 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Gained experience integrating perception with motion control.  
 - Developed reliable color sorting sequences.  
 - Learned precise TCP adjustment for repeatable performance.</p>
+</div>
 <p><strong>Skills & Tools:</strong></p>
 <div class="project-skills">
    <span class="skill-item skill-nachi">Nachi Teach Pendant</span>
@@ -756,6 +760,7 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Mastered trajectory planning for creative tasks.  
 - Learned fine control of TCP for precision.  
 - Built repeatable pattern-making sequences using the teach pendant.</p>
+</div>
 <p><strong>Skills & Tools:</strong></p>
 <div class="project-skills">
   <span class="skill-item skill-nachi">Nachi Teach Pendant</span>
@@ -779,6 +784,7 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Learned process automation and sequence programming.  
 - Gained experience implementing interlocks and safety features.  
 - Built robust automation sequences for industrial systems.</p>
+</div>
 <p><strong>Skills & Tools:</strong></p>
 <div class="project-skills">
  <span class="skill-item skill-plc">PLC</span>
@@ -800,6 +806,7 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Gained knowledge in energy-efficient control logic.  
 - Practiced sensor integration and process optimization.  
 - Learned basic QA monitoring via PLC automation.</p>
+</div>
 <p><strong>Skills & Tools:</strong></p>
 <div class="project-skills">
   <span class="skill-item skill-plc">PLC</span>
