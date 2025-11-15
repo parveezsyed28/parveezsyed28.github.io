@@ -106,19 +106,19 @@ title: "Portfolio – Parveez Banu Syed Azizuddin"
 }
 
 .media.side-by-side {
-  display: flex;              /* makes images align horizontally */
+  display: flex;              /* horizontal layout */
+  flex-wrap: wrap;            /* allows wrapping on smaller screens */
   gap: 20px;                  /* space between images */
-  justify-content: center;    /* center the group on page */
-  flex-wrap: wrap;            /* stack on smaller screens */
+  justify-content: flex-start; /* align left instead of center */
 }
 
 .media.side-by-side img {
-  width: 48%;                 /* two images side by side */
-  height: auto;               /* maintain aspect ratio */
-  border-radius: 12px;        /* optional styling */
-  object-fit: cover;          /* avoids stretching */
+  flex: 1 1 calc(50% - 10px); /* each image takes roughly half the width minus gap */
+  max-width: 100%;             /* prevents overflow */
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
 }
-
 
 
 /* --------------------------- */
