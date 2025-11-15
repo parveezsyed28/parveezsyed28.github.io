@@ -164,12 +164,52 @@ title: "Portfolio – Parveez Banu Syed Azizuddin"
   background-color: #f0f0f0;
 }
 
-/* Optional colored categories */
+/* Robotics / Simulation Skills */
 .skill-ros { background-color: #d0f0f5; }
-.skill-python { background-color: #ffe0b2; }
 .skill-gazebo { background-color: #e8e0ff; }
+.skill-rviz { background-color: #cce5ff; }
 .skill-urdf { background-color: #f0f0f0; }
+.skill-turtlesim { background-color: #d1f7c4; }
+.skill-python { background-color: #ffe0b2; }
+
+/* CAD / Modeling Skills */
 .skill-cad { background-color: #d4edda; }
+.skill-fusion360 { background-color: #c8e6c9; }
+.skill-stl { background-color: #f1f8e9; }
+
+/* Embedded / Microcontroller Skills */
+.skill-embedded { background-color: #fff3e0; }
+.skill-atmega16 { background-color: #ffe0b2; }
+.skill-ir { background-color: #ffecb3; }
+.skill-l293d { background-color: #ffe6cc; }
+.skill-pwm { background-color: #fff0e0; }
+.skill-adc { background-color: #fff4e0; }
+.skill-hardware { background-color: #f5f5dc; }
+.skill-555 { background-color: #fce4ec; }
+.skill-7805 { background-color: #ffe6f0; }
+.skill-voltreg { background-color: #fff0f5; }
+
+/* PLC / Industrial Automation Skills */
+.skill-plc { background-color: #e0f7fa; }
+.skill-allenbradley { background-color: #b2ebf2; }
+.skill-delta { background-color: #b2dfdb; }
+.skill-rslogix { background-color: #cceeee; }
+.skill-studio5000 { background-color: #d0f0f0; }
+.skill-ladder { background-color: #f0f4c3; }
+.skill-structuredtext { background-color: #fff9c4; }
+.skill-fbd { background-color: #e6f7ff; }
+
+/* Robotics Industrial Skills */
+.skill-abb { background-color: #e3f2fd; }
+.skill-nachi { background-color: #bbdefb; }
+.skill-tcp { background-color: #c8e6c9; }
+.skill-motion { background-color: #dcedc8; }
+.skill-trajectory { background-color: #f0f4c3; }
+
+/* General / Tools */
+.skill-linux { background-color: #f0f0f0; color: #333; }
+.skill-git { background-color: #f1f1f1; color: #333; }
+.skill-vscode { background-color: #e8eaf6; }
 
 
 
@@ -302,10 +342,15 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
     - Enhanced understanding of autonomous navigation using LiDAR-based perception.
   </p>
 
-  <p>
-    <strong>Skills & Tools:</strong><br>
-    ROS 2 Humble, Python, Gazebo Classic Simulation, URDF/Xacro Robot Description, LiDAR sensor integration, Ubuntu Linux
-  </p>
+ <p><strong>Skills & Tools:</strong></p>
+<div class="project-skills">
+  <span class="skill-item skill-ros">ROS 2 Humble</span>
+  <span class="skill-item skill-python">Python</span>
+  <span class="skill-item skill-gazebo">Gazebo Classic</span>
+  <span class="skill-item skill-urdf">URDF/Xacro</span>
+  <span class="skill-item skill-lidar">LiDAR </span>
+  <span class="skill-item skill-linux">Ubuntu</span>
+</div>
 
   <div class="project-media">
     <video controls>
@@ -350,10 +395,16 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
     - Developed skills in robot plugin configuration for Gazebo.
   </p>
 
-  <p>
-    <strong>Skills & Tools:</strong><br>
-    Fusion 360 CAD, ROS 2 Humble, Gazebo Classic, URDF/Xacro, STL Meshes, Python, Linux
-  </p>
+ <p><strong>Skills & Tools:</strong></p>
+<div class="project-skills">
+  <span class="skill-item">Fusion 360</span>
+  <span class="skill-item">ROS 2 Humble</span>
+  <span class="skill-item">Gazebo Classic</span>
+  <span class="skill-item">URDF/Xacro</span>
+  <span class="skill-item">STL Meshes</span>
+  <span class="skill-item">Python</span>
+  <span class="skill-item">Ubuntu</span>
+</div>
 
   <div class="project-media">
     <video controls>
@@ -395,10 +446,14 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
     - Practiced Python scripting in ROS 2 nodes.
   </p>
 
-  <p>
-    <strong>Skills & Tools:</strong><br>
-    ROS 2 Humble, Python, Turtlesim Simulator, Publisher/Subscriber and Service Calls
-  </p>
+  <p><strong>Skills & Tools:</strong></p>
+<div class="project-skills">
+  <span class="skill-item">ROS 2 Humble</span>
+  <span class="skill-item">Python</span>
+  <span class="skill-item">Turtlesim Simulator</span>
+  <span class="skill-item">Publisher/Subscriber</span>
+  <span class="skill-item">Service Calls</span>
+</div>
 
   <div class="project-media">
     <video controls>
@@ -443,10 +498,17 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
     - Enhanced hardware-software co-design skills.
   </p>
 
-  <p>
-    <strong>Skills & Tools:</strong><br>
-    Embedded C, ATmega16 ADC module, IR Sensors, Potentiometer, L293D Motor Driver, Real-time Embedded Systems
-  </p>
+<p><strong>Skills & Tools:</strong></p>
+ <div class="project-skills">
+  <span class="skill-item">Embedded C</span>
+  <span class="skill-item">ATmega16 ADC module</span>
+  <span class="skill-item">IR Sensors</span>
+  <span class="skill-item">Potentiometer</span>
+  <span class="skill-item">L293D Motor Driver</span>
+  <span class="skill-item">7805 Voltage Regulator</span>
+  <span class="skill-item">IC555 Timer</span>
+  <span class="skill-item">Analog to digital Signal Processing</span>
+</div>
 
   <a class="github-link" href="https://github.com/parveezsyed28/adc_speed_controlled_robot" target="_blank">GitHub</a>
 </div>
@@ -482,10 +544,17 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
     - Learned motor driver interfacing and motion control.
   </p>
 
-  <p>
-    <strong>Skills & Tools:</strong><br>
-    Embedded C, ATmega16, IR Sensors, L293D Motor Driver, PCB Design & Hardware Integration
-  </p>
+<p><strong>Skills & Tools:</strong></p>
+ <div class="project-skills">
+  <span class="skill-item">Embedded C</span>
+  <span class="skill-item">ATmega16</span>
+  <span class="skill-item">IR Sensors</span>
+  <span class="skill-item">L293D Motor Driver</span>
+  <span class="skill-item">PCB Design</span>
+  <span class="skill-item">Hardware Integration</span>
+  <span class="skill-item">7805 Voltage Regulator</span>
+  <span class="skill-item">IC555 Timer</span>
+</div>
 
    <!-- Side-by-side images -->
   <div class="media side-by-side">
@@ -522,10 +591,14 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
     - Refined embedded control strategies for safety.
   </p>
 
-  <p>
-    <strong>Skills & Tools:</strong><br>
-    Embedded C, ATmega16, IR Sensors, Real-time Embedded Control
-  </p>
+<p><strong>Skills & Tools:</strong></p>
+ <div class="project-skills">
+  <span class="skill-item">Embedded C</span>
+  <span class="skill-item">ATmega16</span>
+  <span class="skill-item">IR Sensors</span>
+  <span class="skill-item">Real-time Embedded Control</span>
+</div>
+>
 
   <div class="project-media">
     <img class="project-img" src="assets/images/table_top.png" alt="Table Top Robot" />
@@ -564,10 +637,14 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
     - Applied embedded control techniques in constrained environments.
   </p>
 
-  <p>
-    <strong>Skills & Tools:</strong><br>
-    Embedded C, ATmega16, IR Sensors, Analog Signal Processing, Motor Driver Control
-  </p>
+  <p><strong>Skills & Tools:</strong></p>
+    <div class="project-skills">
+  <span class="skill-item">Embedded C</span>
+  <span class="skill-item">ATmega16</span>
+  <span class="skill-item">IR Sensors</span>
+  <span class="skill-item">Motor Driver Control</span>
+</div>
+
 
  <div class="project-media side-by-side">
     <img class="project-img" src="assets/images/line_follower.png" alt="Line Follower Robot" />
@@ -595,8 +672,14 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Mastered trajectory planning and tool positioning.  
 - Understood ABB RobotStudio simulation and teach pendant integration.  
 - Developed precise motion control sequences for industrial tasks.</p>
-<p><strong>Skills & Tools:</strong> ABB RobotStudio, Teach Pendant, TCP, Motion Control</p>
+<p><strong>Skills & Tools:</strong></p>
+<div class="project-skills">
+  <span class="skill-item">ABB RobotStudio</span>
+  <span class="skill-item">Teach Pendant</span>
+  <span class="skill-item">TCP</span>
+  <span class="skill-item">Motion Control</span>
 </div>
+
 
 <div class="project-card">
 <h3>Drawing / Pattern Simulation</h3>
@@ -610,8 +693,14 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Gained experience in trajectory programming for complex patterns.  
 - Learned fine-tuning of TCP parameters for consistent precision.  
 - Developed repeatable drawing sequences with minimal deviation.</p>
-<p><strong>Skills & Tools:</strong> ABB RobotStudio, Teach Pendant, TCP, Trajectory Programming</p>
+<p><strong>Skills & Tools:</strong></p>
+<div class="project-skills">
+  <span class="skill-item">ABB RobotStudio</span>
+  <span class="skill-item">Teach Pendant</span>
+  <span class="skill-item">TCP</span>
+  <span class="skill-item">Trajectory Programming</span>
 </div>
+
 
 #### Nachi Robot Teach Pendant Projects
 
@@ -627,7 +716,11 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Mastered basic robot motion programming using teach pendant.  
 - Developed skills in accurate tool manipulation.  
 - Implemented reliable pick & place sequences for industrial tasks.</p>
-<p><strong>Skills & Tools:</strong> Nachi Teach Pendant, TCP, Motion Control</p>
+<p><strong>Skills & Tools:</strong></p>
+<div class="project-skills">
+  <span class="skill-item">Nachi Teach Pendant</span>
+  <span class="skill-item">TCP</span>
+  <span class="skill-item">Motion Control</span>
 </div>
 
 <div class="project-card">
@@ -642,8 +735,14 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Gained experience integrating perception with motion control.  
 - Developed reliable color sorting sequences.  
 - Learned precise TCP adjustment for repeatable performance.</p>
-<p><strong>Skills & Tools:</strong> Nachi Teach Pendant, TCP, Sensor Integration, Motion Control</p>
+<p><strong>Skills & Tools:</strong></p>
+<div class="project-skills">
+  <span class="skill-item">Nachi Teach Pendant</span>
+  <span class="skill-item">TCP</span>
+  <span class="skill-item">Sensor Integration</span>
+  <span class="skill-item">Motion Control</span>
 </div>
+
 
 <div class="project-card">
 <h3>Drawing / Pattern Making</h3>
@@ -657,8 +756,14 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Mastered trajectory planning for creative tasks.  
 - Learned fine control of TCP for precision.  
 - Built repeatable pattern-making sequences using the teach pendant.</p>
-<p><strong>Skills & Tools:</strong> Nachi Teach Pendant, TCP, Trajectory Programming, Motion Control</p>
+<p><strong>Skills & Tools:</strong></p>
+<div class="project-skills">
+  <span class="skill-item">Nachi Teach Pendant</span>
+  <span class="skill-item">TCP</span>
+  <span class="skill-item">Trajectory Programming</span>
+  <span class="skill-item">Motion Control</span>
 </div>
+
 
 ### 🔹 PLC Projects
 
@@ -674,7 +779,13 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Learned process automation and sequence programming.  
 - Gained experience implementing interlocks and safety features.  
 - Built robust automation sequences for industrial systems.</p>
-<p><strong>Skills & Tools:</strong> RSLogix 500 / Studio 5000, Ladder Logic, PLC Integration, Sensors & Actuators</p>
+<p><strong>Skills & Tools:</strong></p>
+<div class="project-skills">
+  <span class="skill-item">RSLogix 5000</span>
+  <span class="skill-item">Ladder Logic</span>
+  <span class="skill-item">structured text</span>
+  <span class="skill-item">PLC Integration</span>
+  <span class="skill-item">Sensors & Actuators</span>
 </div>
 
 <div class="project-card">
@@ -689,8 +800,16 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 - Gained knowledge in energy-efficient control logic.  
 - Practiced sensor integration and process optimization.  
 - Learned basic QA monitoring via PLC automation.</p>
-<p><strong>Skills & Tools:</strong> RSLogix 500 / Studio 5000, Ladder & Structured Text, PLC Integration, Sensors</p>
+<p><strong>Skills & Tools:</strong></p>
+<div class="project-skills">
+  <span class="skill-item">Studio 5000</span>
+  <span class="skill-item">Ladder Logic</span>
+  <span class="skill-item">Structured Text</span>
+  <span class="skill-item">Functional Block Diagram (FBD)</span>
+  <span class="skill-item">PLC Integration</span>
+  <span class="skill-item">Sensors & Actuators</span>
 </div>
+
 
 ---
 
@@ -712,7 +831,7 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
   <span class="skill-tag" data-aos="fade-up" data-aos-delay="600">PLC (Allen Bradley / Delta)</span>
   <span class="skill-tag" data-aos="fade-up" data-aos-delay="700">ABB RobotStudio</span>
   <span class="skill-tag" data-aos="fade-up" data-aos-delay="800">Nachi Teach Pendant</span>
-  <span class="skill-tag" data-aos="fade-up" data-aos-delay="900">Fusion 360 / CAD Modeling</span>
+  <span class="skill-tag" data-aos="fade-up" data-aos-delay="900">Fusion 360</span>
   <span class="skill-tag" data-aos="fade-up" data-aos-delay="1000">Electromechanical Troubleshooting</span>
 </div>
 
