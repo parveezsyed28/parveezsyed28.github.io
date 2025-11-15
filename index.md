@@ -92,11 +92,14 @@ title: "Portfolio – Parveez Banu Syed Azizuddin"
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-.project-img {
-  width: 100%;
+.project-img, .project-media video {
+  width: 600px;       /* fixed width */
+  height: 340px;      /* fixed height, or use auto to keep aspect ratio */
   border-radius: 12px;
   transition: transform 0.3s ease;
+  object-fit: cover;  /* ensures images/videos don’t stretch weirdly */
 }
+
 
 .project-card:hover .project-img {
   transform: scale(1.03);
@@ -147,7 +150,6 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 ## 🟦 **Wall Following Robot (ROS 2 + Gazebo)**
 
 <div class="project-card">
-  <img class="project-img" src="images/wall_follower.png">
 
   <p>
     This project focuses on creating a robot that maintains a steady distance alongside walls using LiDAR data. 
@@ -197,8 +199,7 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 ## 🟦 **Obstacle Avoidance Robot (ROS 2 + Gazebo)**
 
 <div class="project-card">
-  <img class="project-img" src="images/obstacle_avoidance.png">
-
+  
   <p>
     This project simulates a differential-drive robot designed to detect and avoid obstacles dynamically while navigating an open or cluttered environment. 
     Using ROS 2 Humble and Gazebo Classic, the robot processes laser scan data in real time to adjust velocity commands and steer clear of collisions. 
@@ -246,7 +247,6 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 ## 🟦 **Robot Description & Simulation (ROS2 + Fusion 360)**
 
 <div class="project-card">
-  <img class="project-img" src="images/robot_teleop.png">
 
   <p>
     This project features a custom-designed two-wheeled robot created in Fusion 360 and described with URDF/Xacro files. 
@@ -294,7 +294,6 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 ## 🟦 **Turtlesim Geometric Shape Drawer (ROS 2 Python)**
 
 <div class="project-card">
-  <img class="project-img" src="images/turtlesim.png">
 
   <p>
     A ROS 2 Python node that controls the Turtlesim to draw geometric shapes based on interactive user input. 
@@ -343,7 +342,6 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 ## 🟦 **ADC-Based Robot**
 
 <div class="project-card">
-  <img class="project-img" src="assets/images/adc_robot.png">
 
   <p>
     Advanced microcontroller-based robot integrating multiple sensors for obstacle avoidance, cliff detection, and black line following. Includes dynamic speed control via a potentiometer connected to the ATmega16 ADC module. Analog sensor inputs allow adaptive motor speed control for various environments.
@@ -383,7 +381,6 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 ## 🟦 **Obstacle Avoider Robot**
 
 <div class="project-card">
-  <img class="project-img" src="assets/images/obstacle_avoider.png">
 
   <p>
     Microcontroller-based robot that avoids obstacles using IR sensors programmed in Embedded C on the ATmega16. Motion is controlled via an L293D motor driver. Emphasis on robust sensor integration and real-time control logic on limited hardware.
@@ -427,7 +424,6 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 ## 🟦 **Table Top Robot**
 
 <div class="project-card">
-  <img class="project-img" src="assets/images/table_top.png">
 
   <p>
     Designed to detect table edges and prevent falls using IR sensors on ATmega16. Continuously monitors edge proximity and adjusts motion to maintain stability.
@@ -464,7 +460,6 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 ## 🟦 **Line Follower Robot**
 
 <div class="project-card">
-  <img class="project-img" src="assets/images/line_follower.png">
 
   <p>
     Robot designed to follow a black line using bottom-mounted IR sensors. Embedded C control on ATmega16 ensures alignment on the path using analog sensor feedback.
