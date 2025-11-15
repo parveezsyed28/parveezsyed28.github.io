@@ -136,13 +136,13 @@ html {
 
 ---
 
-# <span id="home"></span>👋 **Welcome**
+<h1 id="home" class="section-title">👋 Welcome</h1>
 
 Hi! I'm **Parveez Banu Syed Azizuddin**, a Mechatronics Specialist with hands-on experience building robots, ROS2 simulations, automation systems, embedded controllers, and more.
 
 ---
 
-# <span id="ros2-projects"></span>🤖 **ROS2 Projects**
+<h1 id="ros2-projects" class="section-title">🤖 ROS2 Projects</h1>
 
 ## 🟦 **Wall Follower Bot – ROS2**
 <div class="project-card">
@@ -165,7 +165,7 @@ Hi! I'm **Parveez Banu Syed Azizuddin**, a Mechatronics Specialist with hands-on
 
 ---
 
-# <span id="embedded-projects"></span>🔧 **Embedded Projects**
+<h1 id="embedded-projects" class="section-title">🔧 Embedded Projects</h1>
 
 ## 🟩 **Obstacle Avoider – Microcontroller Version**
 <div class="project-card">
@@ -187,7 +187,7 @@ Hi! I'm **Parveez Banu Syed Azizuddin**, a Mechatronics Specialist with hands-on
 
 ---
 
-# <span id="automation-projects"></span>🏭 **Industrial Automation**
+<h1 id="automation-projects" class="section-title">🏭 Industrial Automation</h1>
 
 ## 🟪 **ABB RobotStudio**
 <div class="project-card">
@@ -203,7 +203,7 @@ Hi! I'm **Parveez Banu Syed Azizuddin**, a Mechatronics Specialist with hands-on
 
 ---
 
-# <span id="skills"></span>🧠 **Skills**
+<h1 id="skills" class="section-title">🧠 Skills</h1>
 
 - ROS2, Gazebo, RViz  
 - Python for robotics  
@@ -214,7 +214,7 @@ Hi! I'm **Parveez Banu Syed Azizuddin**, a Mechatronics Specialist with hands-on
 
 ---
 
-# <span id="contact"></span>📬 **Contact**
+<h1 id="contact" class="section-title">📬 Contact</h1>
 
 📧 **parveezsyed28@gmail.com**  
 🌐 **parveezsyed28.github.io**  
