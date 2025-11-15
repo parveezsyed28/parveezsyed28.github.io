@@ -100,6 +100,10 @@ title: "Portfolio – Parveez Banu Syed Azizuddin"
   object-fit: cover;  /* ensures images/videos don’t stretch */
 }
 
+ .project-media {
+  margin-top: 20px; /* adds space above video */
+}
+
 .project-card:hover .project-img,
 .project-card:hover .project-media video {
   transform: scale(1.03); /* subtle zoom on hover */
@@ -152,13 +156,20 @@ title: "Portfolio – Parveez Banu Syed Azizuddin"
 
 .skill-item {
   display: inline-block;
-  background-color: #f0f0f0; /* neutral gray */
-  color: #333;               /* dark text */
   padding: 5px 10px;
   border-radius: 6px;
   font-size: 13px;
-  border: 1px solid #ccc;    /* subtle border */
+  border: 1px solid #ccc;
+  color: #333;
+  background-color: #f0f0f0;
 }
+
+/* Optional colored categories */
+.skill-ros { background-color: #d0f0f5; }
+.skill-python { background-color: #ffe0b2; }
+.skill-gazebo { background-color: #e8e0ff; }
+.skill-urdf { background-color: #f0f0f0; }
+.skill-cad { background-color: #d4edda; }
 
 
 
@@ -237,13 +248,15 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
     - Enhanced understanding of autonomous navigation using LiDAR-based perception.
   </p>
 
- 
-     <div class="project-skills">
-    <span class="skill-item">ROS 2 Humble</span>
-    <span class="skill-item">Python</span>
-    <span class="skill-item">Gazebo classic simulation Classic</span>
-    <span class="skill-item">RViz</span>
-    <span class="skill-item">URDF / Xacro</span>
+ <p>
+    <strong>Skills & Tools:</strong>
+  </p>
+  <div class="project-skills">
+    <span class="skill-item skill-ros">ROS2</span>
+    <span class="skill-item skill-python">Python</span>
+    <span class="skill-item skill-gazebo">Gazebo Classic</span>
+    <span class="skill-item skill-urdf">URDF/Xacro</span>
+    <span class="skill-item skill-cad">Fusion 360</span>
   </div>
 
   <div class="project-media">
