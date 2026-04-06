@@ -801,6 +801,49 @@ Hi! I'm **Parveez Banu Syed Azizuddin**. Welcome to my portfolio, a space where 
 </div>
 
 <div class="project-card">
+<h3>Automatic Water Filling System</h3>
+<p><strong>Objective:</strong> Designed a 7-stage automated water bottle filling system with sensor interlocks, timer-based sequencing, and real-time HMI monitoring.</p>
+<p><strong>Tools & Environment:</strong> CODESYS V3, Ladder Logic, CODESYS Visualization (HMI), Software Simulation</p>
+<p><strong>Challenges faced:</strong>
+- Designed reliable sequential control using interlocks and seal-in logic to prevent stage conflicts.<br>
+- Resolved HMI variable binding issues in CODESYS simulation mode.<br>
+- Implemented robust TON timers and CTU counters with correct reset and latch behavior.
+</p>
+<p><strong>Learning outcomes:</strong>
+- Built sequential PLC logic using timers and counters for industrial-style automation.<br>
+- Developed interactive HMI with real-time status indicators and variable binding.<br>
+- Strengthened understanding of interlock design and fail-safe control systems.
+</p>
+
+<div class="project-media">
+  <!-- HMI Video -->
+  <p><strong>HMI Simulation Demo:</strong></p>
+  <p><em>Demo: Real-time monitoring and control of the 7-stage bottle filling process</em></p>
+  <video controls>
+    <source src="assets/images/Automatic_Bottle_Filling.mp4" type="video/mp4" />
+  </video>
+  <br><br>
+  <!-- Ladder Logic Screenshots -->
+  <p><strong>Ladder Logic Implementation:</strong></p>
+  <p><em>Sequential control logic divided into stages</em></p>
+  <div class="ladder-gallery">
+    <img src="assets/images/Automatic_Water_Filling_1.png" alt="Ladder Logic Stage 1-3">
+    <img src="assets/images/Automatic_Water_Filling_2.png" alt="Ladder Logic Stage 4-5">
+    <img src="assets/images/Automatic_Water_Filling_3.png" alt="Ladder Logic Stage 6-7">
+  </div>
+</div>
+
+<p><strong>Skills & Tools:</strong></p>
+<div class="project-skills">
+  <span class="skill-item skill-plc">PLC</span>
+  <span class="skill-item skill-codesys">CODESYS V3</span>
+  <span class="skill-item skill-ladder">Ladder Logic</span>
+  <span class="skill-item skill-hmi">HMI Development</span>
+  <span class="skill-item skill-simulation">Simulation</span>
+</div>
+</div>
+
+<div class="project-card">
 <h3>Small Foundry Energy Efficiency & QA Control</h3>
 <p><strong>Objective:</strong> Monitor energy usage and ensure quality control in a small foundry setup.</p>  
 <p><strong>Tools & Environment:</strong> RSLogix 500 / Studio 5000, Ladder / Structured Text, PLC integration</p>
