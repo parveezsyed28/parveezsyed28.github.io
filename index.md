@@ -212,6 +212,20 @@ title: "Portfolio – Parveez Banu Syed Azizuddin"
 .skill-vscode { background-color: #e8eaf6; }
 
 
+.ladder-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.ladder-gallery img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
 
 
 /* --------------------------- */
