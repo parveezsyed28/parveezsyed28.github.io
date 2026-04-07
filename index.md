@@ -221,7 +221,7 @@ title: "Portfolio – Parveez Banu Syed Azizuddin"
 
 .ladder-gallery img {
   width: 100%;
-  max-width: 400px;
+  max-width: 900px;
   border-radius: 8px;
   object-fit: cover;
 }
