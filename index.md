@@ -28,7 +28,7 @@ title: "Portfolio – Parveez Banu Syed Azizuddin"
     </button>
     <ul class="hero-nav-links" id="navLinks">
       <li><a href="#home">Home</a></li>
-      <li><a href="#ros2-projects">ROS 2</a></li>
+      <li><a href="#ros2-projects">ROS2</a></li>
       <li><a href="#embedded-projects">Embedded</a></li>
       <li><a href="#automation-projects">Automation</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -41,7 +41,7 @@ title: "Portfolio – Parveez Banu Syed Azizuddin"
     <h1 class="hero-name">Parveez Banu<br>Syed Azizuddin</h1>
     <p class="hero-typed"><span id="typed-output"></span></p>
     <div class="hero-cta-row">
-      <a href="#automation-projects" class="hero-btn">View Projects</a>
+      <a href="#ros2-projects" class="hero-btn">View Projects</a>
       <a href="#contact" class="hero-btn hero-btn-ghost">Get In Touch</a>
     </div>
   </div>
@@ -57,6 +57,26 @@ title: "Portfolio – Parveez Banu Syed Azizuddin"
 <!-- ========================= -->
 
 <style>
+
+/* ── HIDE JEKYLL THEME HEADER ── */
+header, .site-header, #header,
+.page-header, .site-title,
+.site-nav, nav.site-nav,
+.masthead, #masthead,
+.header-wrapper {
+  display: none !important;
+}
+
+/* ── FORCE DARK BACKGROUND EVERYWHERE ── */
+html, body,
+.site-body, .site-wrapper,
+.page-content, .post-content,
+.wrapper, .inner, #main,
+#main-content, .main-content-wrap,
+.container, .content-wrapper {
+  background: #0c1117 !important;
+  color: #cbd5e1 !important;
+}
 
 /* ── RESET ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -158,16 +178,17 @@ body {
 .hero-nav-links {
   display: flex;
   list-style: none;
-  gap: 36px;
+  gap: 24px;
 }
 .hero-nav-links a {
   font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.14em;
+  font-size: 10px;
+  letter-spacing: 0.10em;
   text-transform: uppercase;
   color: var(--muted);
   text-decoration: none;
   transition: color 0.2s;
+  white-space: nowrap;
 }
 .hero-nav-links a:hover { color: var(--accent); }
 
