@@ -868,7 +868,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
 </div>
 
 <div class="project-card plc-card">
-  <h3>Automatic Water Filling System</h3>
+  <h3>Automatic Bottle Filling and Packing System</h3>
   <p>A 7-stage automated filling system with sensor-based sequencing, timers, and HMI monitoring built in CODESYS. Managing stage transitions without conflicts while maintaining accurate timing was the challenge — properly structured logic with timers, counters, and interlocks is critical for stable and scalable automation.</p>
   <p><strong>Tools:</strong> CODESYS V3 · Ladder Logic · CODESYS Visualization (HMI) · Software Simulation</p>
   <div class="project-media">
